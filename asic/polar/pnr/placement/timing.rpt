@@ -1,0 +1,55 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 13:27:43 2026
+****************************************
+
+  Startpoint: start_Tx (input port clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_10_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             6.25      6.25
+
+  start_Tx (in)                                    0.07      6.32 r
+  u_framer/u_ctrl/U131/ZN (INVX0)                  0.12      6.43 f
+  u_framer/u_ctrl/U71/QN (NOR4X0)                  0.37      6.80 r
+  u_framer/u_ctrl/U118/ZN (INVX0)                  0.32      7.12 f
+  u_framer/u_ctrl/U49/QN (NAND2X1)                 0.31      7.43 r
+  u_framer/u_ctrl/PLACE_HFSINV_301_961/ZN (INVX0)
+                                                   0.25      7.68 f
+  u_framer/u_ctrl/U248/Q (AND2X1)                  0.37      8.04 f
+  u_framer/u_ctrl/PLACE_HFSBUF_92_582/Z (NBUFFX2)
+                                                   0.25      8.29 f
+  u_framer/u_ctrl/U58/QN (NOR2X0)                  0.49      8.78 r
+  u_framer/u_ctrl/U245/Q (AND2X1)                  0.42      9.20 r
+  u_framer/u_ctrl/U243/Q (AO222X1)                 0.34      9.54 r
+  u_framer/u_ctrl/bits_left_reg_10_/D (SDFFX1)     0.00      9.54 r
+  data arrival time                                          9.54
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  u_framer/u_ctrl/bits_left_reg_10_/CLK (SDFFX1)   0.00     31.25 r
+  clock uncertainty                               -0.45     30.80
+  library setup time                              -0.48     30.32
+  data required time                                        30.32
+  ------------------------------------------------------------------------
+  data required time                                        30.32
+  data arrival time                                         -9.54
+  ------------------------------------------------------------------------
+  slack (MET)                                               20.78
+
+
+1

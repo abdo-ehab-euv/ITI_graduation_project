@@ -1,0 +1,173 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Sep 18 13:22:18 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     37
+    Feedthrough (LINT-29)                                          12
+    Shorted outputs (LINT-31)                                      12
+    Constant outputs (LINT-52)                                     13
+
+Cells                                                              67
+    Cells do not drive (LINT-1)                                    23
+    Connected to power or ground (LINT-32)                         38
+    Nets connected to multiple pins on same cell (LINT-33)          6
+
+Nets                                                                1
+    Unloaded nets (LINT-2)                                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'ppdu_ctrl', cell 'B_23' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'B_24' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'B_25' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C968' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C972' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C976' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C979' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C991' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C992' does not drive any nets. (LINT-1)
+Warning: In design 'shr_rom', cell 'C165' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N3_MAX4', cell 'C58' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N5_MAX31', cell 'C68' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N5_MAX31', cell 'C71' does not drive any nets. (LINT-1)
+Warning: In design 'timer_N7', cell 'C66' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N4_MAX15', cell 'C63' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N4_MAX15', cell 'C66' does not drive any nets. (LINT-1)
+Warning: In design 'integrator_N12_1', cell 'C60' does not drive any nets. (LINT-1)
+Warning: In design 'twos_comp_gen_N12_2', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'twos_comp_gen_N6_1', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'integrator_N12_0', cell 'C60' does not drive any nets. (LINT-1)
+Warning: In design 'twos_comp_gen_N12_0', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'twos_comp_gen_N12_1', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'twos_comp_gen_N6_0', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'CSS_Transmitter_Top', net 'ppdu_done' driven by pin 'u_framer/ppdu_done' has no loads. (LINT-2)
+Warning: In design 'iq_demux', input port 'bits_in[11]' is connected directly to output port 'q_bits[5]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[10]' is connected directly to output port 'i_bits[5]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[9]' is connected directly to output port 'q_bits[4]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[8]' is connected directly to output port 'i_bits[4]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[7]' is connected directly to output port 'q_bits[3]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[6]' is connected directly to output port 'i_bits[3]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[5]' is connected directly to output port 'q_bits[2]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[4]' is connected directly to output port 'i_bits[2]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[3]' is connected directly to output port 'q_bits[1]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[2]' is connected directly to output port 'i_bits[1]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[1]' is connected directly to output port 'q_bits[0]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[0]' is connected directly to output port 'i_bits[0]'. (LINT-29)
+Warning: In design 'ppdu_ctrl', output port 'acc_clear' is connected directly to output port 'il_clear'. (LINT-31)
+Warning: In design 'shr_rom', output port 'last_idx[4]' is connected directly to output port 'last_idx[2]'. (LINT-31)
+Warning: In design 'shr_rom', output port 'last_idx[1]' is connected directly to output port 'last_idx[0]'. (LINT-31)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to output port 'PHI[0]'. (LINT-31)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to output port 'PHI[1]'. (LINT-31)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to output port 'PHI[2]'. (LINT-31)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to output port 'PHI[3]'. (LINT-31)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to output port 'PHI[4]'. (LINT-31)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to output port 'PHI[5]'. (LINT-31)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to output port 'PHI[6]'. (LINT-31)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to output port 'PHI[7]'. (LINT-31)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to output port 'PHI[8]'. (LINT-31)
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[11]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[10]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[9]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[8]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[7]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[6]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[4]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[3]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[2]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[1]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[0]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[11]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[10]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[9]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[8]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[7]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[6]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[4]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[3]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[2]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[1]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[0]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[11]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[10]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[9]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[8]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[7]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[6]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[4]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[3]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[2]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[1]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[0]' is connected to logic 0. 
+Warning: In design 'complex_exp_LUT_N12_M6', a pin on submodule 'sign_gen1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'complex_exp_LUT_N12_M6', a pin on submodule 'sign_gen2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_fc'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'X[11]', 'X[10]'', 'X[9]', 'X[6]', 'X[5]', 'X[3]', 'X[1]', 'X[0]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_fc'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'X[8]', 'X[7]'', 'X[4]', 'X[2]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_hBW'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'X[11]', 'X[9]'', 'X[8]', 'X[7]', 'X[5]', 'X[2]', 'X[1]', 'X[0]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_hBW'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'X[10]', 'X[6]'', 'X[4]', 'X[3]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_dfdt'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'X[11]', 'X[10]'', 'X[9]', 'X[8]', 'X[7]', 'X[6]', 'X[5]', 'X[1]', 'X[0]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_dfdt'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'X[4]', 'X[3]'', 'X[2]'.
+Warning: In design 'shr_rom', output port 'last_idx[1]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'shr_rom', output port 'last_idx[0]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[8]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'dqpsk_mapper_polar_N12', output port 'PHI[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'delay_LUT', output port 'delay[0]' is connected directly to 'logic 0'. (LINT-52)
+1

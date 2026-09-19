@@ -1,0 +1,71 @@
+****************************************
+Report : qor
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:11:59 2026
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'cartesian_tx_placement.dlib:cartesian_tx_placement.design'. (TIM-125)
+Information: Design Average RC for design cartesian_tx_placement  (NEX-011)
+Information: r = 0.530306 ohm/um, via_r = 0.872727 ohm/cut, c = 0.095097 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 0.562500 ohm/um, via_r = 0.879668 ohm/cut, c = 0.111223 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'CSS_Transmitter_Top'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 7607, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 219, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+
+Scenario           'default'
+Timing Path Group  'SYS_CLK'
+----------------------------------------
+Levels of Logic:                     27
+Critical Path Length:              9.56
+Critical Path Slack:              14.99
+Critical Path Clk Period:         31.25
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:             52
+Hierarchical Port Count:           1725
+Leaf Cell Count:                   6262
+Buf/Inv Cell Count:                1251
+Buf Cell Count:                     584
+Inv Cell Count:                     667
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          4998
+Sequential Cell Count:             1264
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            46759.22
+Noncombinational Area:         38862.03
+Buf/Inv Area:                   6993.10
+Total Buffer Area:              3284.58
+Total Inverter Area:            3708.52
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                          85621.25
+Cell Area (netlist and physical only):        85621.25
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              7611
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

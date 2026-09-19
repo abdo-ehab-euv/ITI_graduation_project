@@ -1,0 +1,19 @@
+****************************************
+Report : clock
+Design : CSS_Transmitter_Top
+Mode   : default
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:30:28 2026
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+SYS_CLK         31.25   {0 15.625}                    {clk}
+
+1

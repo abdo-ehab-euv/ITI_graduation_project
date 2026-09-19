@@ -1,0 +1,61 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Sep 17 20:47:26 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_clocks -file C:/Users/iamth/AppData/Roaming/Xilinx/Vivado/cartesian_final_reports/cart_clocks.rpt
+| Design       : zedboard_cartesian_final_hw_top
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------
+
+Clock Report
+
+
+Attributes
+  P: Propagated
+  G: Generated
+  A: Auto-derived
+  R: Renamed
+  V: Virtual
+  I: Inverted
+  S: Pin phase-shifted with Latency mode
+
+Clock            Period(ns)  Waveform(ns)    Attributes  Sources
+board_clk_100    10.000      {0.000 5.000}   P           {gclk_i}
+clkfb_mmcm_w     10.000      {0.000 5.000}   P,G,A       {u_mmcm/CLKFBOUT}
+core_clk_mmcm_w  31.250      {0.000 15.625}  P,G,A       {u_mmcm/CLKOUT0}
+
+
+====================================================
+Generated Clocks
+====================================================
+
+Generated Clock     : clkfb_mmcm_w
+Master Source       : u_mmcm/CLKIN1
+Master Clock        : board_clk_100
+Multiply By         : 1
+Generated Sources   : {u_mmcm/CLKFBOUT}
+
+Generated Clock     : core_clk_mmcm_w
+Master Source       : u_mmcm/CLKIN1
+Master Clock        : board_clk_100
+Edges               : {1 2 3}
+Edge Shifts(ns)     : {0.000 10.625 21.250}
+Generated Sources   : {u_mmcm/CLKOUT0}
+
+
+
+====================================================
+User Uncertainty
+====================================================
+
+
+
+====================================================
+User Jitter
+====================================================
+
+Clock          Jitter(ns)
+board_clk_100  0.050
+

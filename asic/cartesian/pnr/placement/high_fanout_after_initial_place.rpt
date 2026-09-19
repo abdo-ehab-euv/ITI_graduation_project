@@ -1,0 +1,17 @@
+****************************************
+Report : net_fanout
+        -threshold
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:11:13 2026
+****************************************
+
+NetName                Fanout Driver
+-------                ------ ------
+clk                      1264 clk
+rstn                       59 rstn
+Scan_En                    36 Scan_En
+u_framer/u_payload_ram/n769
+                           40 u_framer/u_payload_ram/U454/Z
+u_framer/u_acc/n171        24 u_framer/u_acc/U117/Z
+1

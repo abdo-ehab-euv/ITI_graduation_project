@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : area
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:05:27 2026
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/ICer/Downloads/Lib/synopsys/models/saed90nm_max.db)
+
+Number of ports:                         1226
+Number of nets:                          8665
+Number of cells:                         7425
+Number of combinational cells:           6098
+Number of sequential cells:              1275
+Number of macros/black boxes:               0
+Number of buf/inv:                       1990
+Number of references:                       4
+
+Combinational area:              54424.166180
+Buf/Inv area:                    11752.243454
+Noncombinational area:           31879.065256
+Macro/Black Box area:                0.000000
+Net Interconnect area:            6070.259880
+
+Total cell area:                 86303.231436
+Total area:                      92373.491316
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------------------
+CSS_Transmitter_Top               86303.2314    100.0     13.8240      0.0000  0.0000  CSS_Transmitter_Top
+Modulation_system_cart            17414.5537     20.2     60.8256      0.0000  0.0000  Modulation_system_cart_N2
+Modulation_system_cart/Address_A    176.0256      0.2     79.2576     96.7680  0.0000  address_counter_N3_MAX4
+Modulation_system_cart/Address_C    833.1264      1.0    267.2640    387.0720  0.0000  address_counter_N12_MAX1535
+Modulation_system_cart/Address_C/add_23
+                                    178.7904      0.2    178.7904      0.0000  0.0000  address_counter_N12_MAX1535_DW01_inc_0
+Modulation_system_cart/Address_D    263.5776      0.3    134.5536    129.0240  0.0000  address_counter_N4_MAX15
+Modulation_system_cart/CSK_GEN    13324.4929     15.4     64.5120    129.0240  0.0000  CSK_GEN_cart_N2_M6
+Modulation_system_cart/CSK_GEN/complex_exp_LUT
+                                  10123.7760     11.7  10123.7760      0.0000  0.0000  complex_exp_LUT_cart
+Modulation_system_cart/CSK_GEN/complex_multiplier_c
+                                   3007.1808      3.5    433.1520      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6
+Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53
+                                    642.3552      0.7    642.3552      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_3
+Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_54
+                                    643.2768      0.7    643.2768      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_2
+Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55
+                                    662.6304      0.8    662.6304      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_1
+Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56
+                                    625.7664      0.7    625.7664      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_0
+Modulation_system_cart/DeLAY_REG     32.2560      0.0      0.0000     32.2560  0.0000  dreg_N1
+Modulation_system_cart/I_bit_RAM    229.4784      0.3    100.4544    129.0240  0.0000  bit_RAM_Depth4_1
+Modulation_system_cart/Q_bit_RAM    234.0864      0.3    105.0624    129.0240  0.0000  bit_RAM_Depth4_0
+Modulation_system_cart/complex_multiplier_c
+                                    206.4384      0.2    206.4384      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_22_OUT_WIDTH2
+Modulation_system_cart/control_unit
+                                    253.4400      0.3    188.9280     64.5120  0.0000  Modulation_FSM_cart
+Modulation_system_cart/delay_LUT    160.3584      0.2    160.3584      0.0000  0.0000  delay_LUT
+Modulation_system_cart/delay_timer
+                                    658.9440      0.8    203.6736    258.0480  0.0000  timer_N7
+Modulation_system_cart/delay_timer/add_18
+                                     99.5328      0.1     99.5328      0.0000  0.0000  timer_N7_DW01_inc_1
+Modulation_system_cart/delay_timer/add_23
+                                     97.6896      0.1     97.6896      0.0000  0.0000  timer_N7_DW01_inc_0
+Modulation_system_cart/dqpsk_mapper
+                                     32.2560      0.0     32.2560      0.0000  0.0000  dqpsk_mapper_cartesian_N2
+Modulation_system_cart/feedback_memory
+                                    949.2480      1.1    440.5248    508.7232  0.0000  feedback_memory_cartesian_N2
+u_framer                          68874.8537     79.8     98.6112      0.0000  0.0000  css_tx_framer
+u_framer/u_acc                     1202.6880      1.4    605.4912    597.1968  0.0000  bit_accumulator
+u_framer/u_ctrl                    4603.3920      5.3   2499.3792   1748.2752  0.0000  ppdu_ctrl
+u_framer/u_ctrl/add_133              97.6896      0.1     97.6896      0.0000  0.0000  ppdu_ctrl_DW01_inc_2
+u_framer/u_ctrl/add_246             113.3568      0.1    113.3568      0.0000  0.0000  ppdu_ctrl_DW01_inc_0
+u_framer/u_ctrl/r149                144.6912      0.2    144.6912      0.0000  0.0000  ppdu_ctrl_DW01_inc_3
+u_framer/u_demux                     70.9632      0.1     70.9632      0.0000  0.0000  iq_demux
+u_framer/u_il                      3848.6016      4.5   2256.0768   1592.5248  0.0000  bit_interleaver
+u_framer/u_map_i                    787.9680      0.9    787.9680      0.0000  0.0000  symbol_mapper_1
+u_framer/u_map_q                    768.6144      0.9    768.6144      0.0000  0.0000  symbol_mapper_0
+u_framer/u_mux                      106.9056      0.1    106.9056      0.0000  0.0000  ppdu_mux
+u_framer/u_payload_ram            57172.3770     66.2   3561.0624    597.1968  0.0000  payload_ram
+u_framer/u_payload_ram/b00         3383.1936      3.9   1790.6688   1592.5248  0.0000  payload_ram_bank8x8_15
+u_framer/u_payload_ram/b01         3415.4496      4.0   1822.9248   1592.5248  0.0000  payload_ram_bank8x8_14
+u_framer/u_payload_ram/b02         3251.4048      3.8   1658.8800   1592.5248  0.0000  payload_ram_bank8x8_13
+u_framer/u_payload_ram/b03         3293.7984      3.8   1701.2736   1592.5248  0.0000  payload_ram_bank8x8_12
+u_framer/u_payload_ram/b04         3256.9344      3.8   1664.4096   1592.5248  0.0000  payload_ram_bank8x8_11
+u_framer/u_payload_ram/b05         3328.8192      3.9   1736.2944   1592.5248  0.0000  payload_ram_bank8x8_10
+u_framer/u_payload_ram/b06         3387.8016      3.9   1795.2768   1592.5248  0.0000  payload_ram_bank8x8_9
+u_framer/u_payload_ram/b07         3328.8192      3.9   1736.2944   1592.5248  0.0000  payload_ram_bank8x8_8
+u_framer/u_payload_ram/b08         3316.8384      3.8   1724.3136   1592.5248  0.0000  payload_ram_bank8x8_7
+u_framer/u_payload_ram/b09         3312.2304      3.8   1719.7056   1592.5248  0.0000  payload_ram_bank8x8_6
+u_framer/u_payload_ram/b10         3257.8560      3.8   1665.3312   1592.5248  0.0000  payload_ram_bank8x8_5
+u_framer/u_payload_ram/b11         3315.9168      3.8   1723.3920   1592.5248  0.0000  payload_ram_bank8x8_4
+u_framer/u_payload_ram/b12         3244.0320      3.8   1651.5072   1592.5248  0.0000  payload_ram_bank8x8_3
+u_framer/u_payload_ram/b13         3266.1504      3.8   1673.6256   1592.5248  0.0000  payload_ram_bank8x8_2
+u_framer/u_payload_ram/b14         3343.5648      3.9   1751.0400   1592.5248  0.0000  payload_ram_bank8x8_1
+u_framer/u_payload_ram/b15         3311.3088      3.8   1718.7840   1592.5248  0.0000  payload_ram_bank8x8_0
+u_framer/u_shr                      214.7328      0.2    214.7328      0.0000  0.0000  shr_rom
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------------------
+Total                                                  54424.1662  31879.0653  0.0000
+
+1

@@ -1,0 +1,12 @@
+*.log
+*.jou
+*.wdb
+*.str
+*.dlib
+*.ndm
+*.ddc
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+__pycache__/

@@ -1,0 +1,129 @@
+In mode: Internal_scan...
+  Design has scan chains in this mode
+  Design is scan routed
+  Post-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  ...checking vector rules...
+  ...checking clock rules...
+  ...checking scan chain rules...
+  ...checking scan compression rules...
+  ...checking X-state rules...
+  ...checking tristate rules...
+  ...extracting scan details...
+
+-----------------------------------------------------------------
+Begin Clock violations...
+
+ Warning: Clock rstn used as data is different than capture clock clk for inputs CLK/D of stable DFF (u_framer/u_ctrl/busy_prev_reg). (C26-1)
+Information: There are 181 other cells with the same violation. (TEST-171)
+
+Clock violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 182
+
+-----------------------------------------------------------------
+
+182 CLOCK VIOLATIONS
+   182 Clock as data different from capture clock for stable cell violations (C26)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  0 out of 1264 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      *1264 cells are valid scan cells
+
+Information: Test design rule checking completed. (TEST-123)
+  Running test coverage estimation...
+ 58256 faults were added to fault list.
+ ----------------------------------------------------------
+ #patterns     #faults     #ATPG faults  test      process
+ stored     detect/active  red/au/abort  coverage  CPU time
+ ---------  -------------  ------------  --------  --------
+ Begin deterministic ATPG: #uncollapsed_faults=49109, abort_limit=10...
+ 0           27037  22072         0/0/0    62.11%      0.02
+ 0            4898  17174         0/0/0    70.52%      0.03
+ 0            2719  14455         0/0/0    75.18%      0.03
+ 0            1688  12765         1/0/0    78.08%      0.03
+ 0            1280  11485         1/0/0    80.28%      0.03
+ 0            1147  10338         1/0/0    82.25%      0.05
+ 0            1255   9082         2/0/0    84.41%      0.05
+ 0             992   8087         4/0/0    86.12%      0.05
+ 0             773   7312         5/0/0    87.45%      0.06
+ 0             831   6479         7/0/0    88.88%      0.06
+ 0             654   5824         8/0/0    90.00%      0.06
+ 0             422   5400         9/1/0    90.73%      0.07
+ 0             438   4961        10/1/0    91.48%      0.07
+ 0             498   4461        11/2/0    92.34%      0.08
+ 0             286   4174        11/3/0    92.83%      0.08
+ 0             288   3883        13/4/0    93.33%      0.09
+ 0             311   3570        14/5/0    93.86%      0.09
+ 0             248   3319        15/6/0    94.29%      0.10
+ 0             266   3052        16/6/0    94.75%      0.10
+ 0             284   2767        17/6/0    95.24%      0.11
+ 0             206   2560        18/6/0    95.59%      0.12
+ 0             188   2370        20/6/0    95.92%      0.12
+ 0             201   2168        21/6/0    96.27%      0.12
+ 0             161   2005        23/6/0    96.55%      0.14
+ 0             127   1876        25/6/0    96.77%      0.14
+ 0             166   1708        27/6/0    97.06%      0.14
+ 0             118   1587        30/6/0    97.26%      0.15
+ 0             116   1468        32/7/0    97.47%      0.15
+ 0             127   1338        34/8/0    97.69%      0.16
+ 0              82   1249       37/10/0    97.84%      0.17
+ 0              93   1153       39/11/0    98.00%      0.17
+ 0              73   1077       41/12/0    98.13%      0.17
+ 0              87    985       45/12/0    98.29%      0.18
+ 0             104    878       48/12/0    98.47%      0.19
+ 0              74    795       50/13/0    98.60%      0.20
+ 0              73    720       52/13/0    98.73%      0.20
+ 0              77    638       55/13/0    98.87%      0.21
+ 0              59    573       58/14/0    98.98%      0.21
+ 0              51    513       61/15/0    99.08%      0.22
+ 0              77    430       64/16/0    99.22%      0.23
+ 0              65    359       68/17/0    99.34%      0.23
+ 0              58    295       72/17/0    99.45%      0.24
+ 0              54    233       76/19/0    99.55%      0.24
+ 0              45    184       80/19/0    99.63%      0.26
+ 0              46    132       84/19/0    99.72%      0.26
+ 0              56     65       91/19/0    99.83%      0.26
+ 0              53     12       91/19/0    99.93%      0.28
+ 0              12      0       91/19/0    99.95%      0.28
+ 
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           0
+ -----------------------------------------------
+ 
+
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT      58104
+ Possibly detected                PT          0
+ Undetectable                     UD        121
+ ATPG untestable                  AU         31
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                             58256
+ test coverage                            99.95%
+ -----------------------------------------------
+  Information: The test coverage above may be inferior
+               than the real test coverage with customized
+               protocol and test simulation library.
+1

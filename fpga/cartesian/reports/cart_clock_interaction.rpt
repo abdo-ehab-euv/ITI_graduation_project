@@ -1,0 +1,22 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Sep 17 20:47:26 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_clock_interaction -file C:/Users/iamth/AppData/Roaming/Xilinx/Vivado/cartesian_final_reports/cart_clock_interaction.rpt
+| Design       : zedboard_cartesian_final_hw_top
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+Clock Interaction Table
+-----------------------
+
+                                  WNS                            TNS Failing  TNS Total    WNS Path         Clock-Pair           Inter-Clock  
+From Clock       To Clock         Clock Edges  WNS(ns)  TNS(ns)    Endpoints    Endpoints  Requirement(ns)  Classification       Constraints  
+---------------  ---------------  -----------  -------  -------  -----------  -----------  ---------------  -------------------  -----------  
+core_clk_mmcm_w  core_clk_mmcm_w  rise - rise    18.62     0.00            0          640            31.25  Clean                Timed        
+
+

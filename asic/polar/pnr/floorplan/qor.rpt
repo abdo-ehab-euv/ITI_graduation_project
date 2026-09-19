@@ -1,0 +1,82 @@
+****************************************
+Report : qor
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 13:26:34 2026
+****************************************
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner default: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'polar_tx_floorplan.dlib:polar_tx_floorplan.design'. (TIM-125)
+Information: Design Average RC for design polar_tx_floorplan  (NEX-011)
+Information: r = 0.515372 ohm/um, via_r = 0.858630 ohm/cut, c = 0.064371 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 0.562500 ohm/um, via_r = 0.870988 ohm/cut, c = 0.073993 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'CSS_Transmitter_Top'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 8008, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 0, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+
+Scenario           'default'
+Timing Path Group  'SYS_CLK'
+----------------------------------------
+Levels of Logic:                     14
+Critical Path Length:              9.67
+Critical Path Slack:              20.62
+Critical Path Clk Period:         31.25
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:             56
+Hierarchical Port Count:           1482
+Leaf Cell Count:                   6606
+Buf/Inv Cell Count:                1908
+Buf Cell Count:                     517
+Inv Cell Count:                    1391
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          5285
+Sequential Cell Count:             1321
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            49150.77
+Noncombinational Area:         41022.26
+Buf/Inv Area:                  11671.14
+Total Buffer Area:              3935.23
+Total Inverter Area:            7735.91
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                          90173.03
+Cell Area (netlist and physical only):        90173.03
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              8038
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

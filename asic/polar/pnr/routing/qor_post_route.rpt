@@ -1,0 +1,52 @@
+****************************************
+Report : qor
+        -summary
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 13:41:21 2026
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+Information: The stitching and editing of coupling caps is turned ON for design 'polar_tx_routing.dlib:polar_tx_routing.design'. (TIM-125)
+Information: Design polar_tx_routing has 7364 nets, 0 global routed, 7362 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'CSS_Transmitter_Top'. (NEX-022)
+---extraction options---
+Corner: default
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_ccap_scale               : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_ccap_scale              : 1
+Global options:
+ late_ccap_threshold       : 0.003pf
+ late_ccap_ratio           : 0.03
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 12
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : true
+Extracting design: polar_tx_routing 
+Information: coupling capacitance is created explicitly. (NEX-029)
+Information: 7362 nets are successfully extracted. (NEX-028)
+Information: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 7362, routed nets = 7362, across physical hierarchy nets = 0, parasitics cached nets = 7362, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+Design             (Setup)            20.59           0.00              0
+
+Design             (Hold)              0.18           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                          85078.43
+Cell Area (netlist and physical only):       117920.56
+Nets with DRC Violations:        0
+1

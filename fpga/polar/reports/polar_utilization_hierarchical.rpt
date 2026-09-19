@@ -1,0 +1,52 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Sep 18 01:49:45 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file C:/Users/iamth/AppData/Roaming/Xilinx/Vivado/polar_final_reports/polar_utilization_hierarchical.rpt
+| Design       : zedboard_polar_final_hw_top
+| Device       : 7z020clg484-1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------+---------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|             Instance            |              Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------------------+---------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| zedboard_polar_final_hw_top     |                           (top) |        375 |        375 |       0 |    0 | 247 |      0 |      1 |          0 |
+|   (zedboard_polar_final_hw_top) |                           (top) |         14 |         14 |       0 |    0 |  37 |      0 |      0 |          0 |
+|   u_css_tx                      |             CSS_Transmitter_Top |        362 |        362 |       0 |    0 | 210 |      0 |      1 |          0 |
+|     (u_css_tx)                  |             CSS_Transmitter_Top |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|     u_framer                    |                   css_tx_framer |        200 |        200 |       0 |    0 | 132 |      0 |      1 |          0 |
+|       u_acc                     |                 bit_accumulator |         83 |         83 |       0 |    0 |  24 |      0 |      0 |          0 |
+|       u_ctrl                    |                       ppdu_ctrl |        113 |        113 |       0 |    0 |  44 |      0 |      0 |          0 |
+|       u_il                      |                 bit_interleaver |          4 |          4 |       0 |    0 |  64 |      0 |      0 |          0 |
+|       u_payload_ram             |                     payload_ram |          1 |          1 |       0 |    0 |   0 |      0 |      1 |          0 |
+|     u_modulator                 |               Modulation_system |        162 |        162 |       0 |    0 |  78 |      0 |      0 |          0 |
+|       (u_modulator)             |               Modulation_system |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       Address_A                 |                 address_counter |          4 |          4 |       0 |    0 |   3 |      0 |      0 |          0 |
+|       Address_C                 | address_counter__parameterized0 |         17 |         17 |       0 |    0 |   5 |      0 |      0 |          0 |
+|       Address_D                 | address_counter__parameterized1 |         10 |         10 |       0 |    0 |   4 |      0 |      0 |          0 |
+|       CSK_GEN                   |                         CSK_GEN |        111 |        111 |       0 |    0 |  34 |      0 |      0 |          0 |
+|         (CSK_GEN)               |                         CSK_GEN |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|         Frequency_integrator    |                      integrator |         19 |         19 |       0 |    0 |  11 |      0 |      0 |          0 |
+|         Phase_integrator        |                    integrator_1 |         91 |         91 |       0 |    0 |  11 |      0 |      0 |          0 |
+|         complex_exp_LUT         |                 complex_exp_LUT |          1 |          1 |       0 |    0 |  12 |      0 |      0 |          0 |
+|       DeLAY_REG                 |                            dreg |          0 |          0 |       0 |    0 |   1 |      0 |      0 |          0 |
+|       I_bit_RAM                 |                         bit_RAM |          1 |          1 |       0 |    0 |   4 |      0 |      0 |          0 |
+|       Q_bit_RAM                 |                       bit_RAM_0 |          1 |          1 |       0 |    0 |   4 |      0 |      0 |          0 |
+|       control_unit              |                  Modulation_FSM |         10 |         10 |       0 |    0 |   3 |      0 |      0 |          0 |
+|       delay_timer               |                           timer |          9 |          9 |       0 |    0 |   8 |      0 |      0 |          0 |
+|       feedback_memory           |           feedback_memory_polar |          5 |          5 |       0 |    0 |  12 |      0 |      0 |          0 |
++---------------------------------+---------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

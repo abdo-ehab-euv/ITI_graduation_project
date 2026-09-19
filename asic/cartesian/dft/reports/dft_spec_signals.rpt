@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : DFT signals
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:08:53 2026
+****************************************
+
+========================================
+TEST MODE: all_dft
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+Scan_Data_In       ScanDataIn          -         -         Delay 0.0 -
+Scan_Data_Out      ScanDataOut         -         -         -         -
+Scan_En            ScanEnable          1         -         -         Scan
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+Scan_Data_In       ScanDataIn          -         -         Delay 0.0 -
+Scan_Data_Out      ScanDataOut         -         -         -         -
+Scan_En            ScanEnable          1         -         -         Scan
+
+========================================
+TEST MODE: Mission_mode
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+Scan_Data_In       ScanDataIn          -         -         Delay 0.0 -
+Scan_Data_Out      ScanDataOut         -         -         -         -
+Scan_En            ScanEnable          1         -         -         Scan
+
+1

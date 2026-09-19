@@ -1,0 +1,109 @@
+In mode: Internal_scan...
+  Design has scan chains in this mode
+  Design is scan routed
+  Post-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  ...checking vector rules...
+  ...checking clock rules...
+  ...checking scan chain rules...
+  ...checking scan compression rules...
+  ...checking X-state rules...
+  ...checking tristate rules...
+  ...extracting scan details...
+
+-----------------------------------------------------------------
+Begin Clock violations...
+
+ Warning: Clock rstn used as data is different than capture clock clk for inputs CLK/D of stable DFF (u_framer/u_ctrl/busy_prev_reg). (C26-1)
+Information: There are 181 other cells with the same violation. (TEST-171)
+
+Clock violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 182
+
+-----------------------------------------------------------------
+
+182 CLOCK VIOLATIONS
+   182 Clock as data different from capture clock for stable cell violations (C26)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  0 out of 1321 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      *1321 cells are valid scan cells
+
+Information: Test design rule checking completed. (TEST-123)
+  Running test coverage estimation...
+ 54842 faults were added to fault list.
+ 0           26808  18184         1/0/0    66.69%      0.01
+ 0            3983  14199         3/0/0    73.99%      0.01
+ 0            2192  12006         3/1/0    78.01%      0.01
+ 0            1611  10395         3/1/0    80.96%      0.03
+ 0            1358   9035         4/1/0    83.45%      0.03
+ 0            1377   7656         5/1/0    85.97%      0.03
+ 0            1175   6479         7/1/0    88.13%      0.03
+ 0             844   5633         9/1/0    89.68%      0.04
+ 0             710   4921        11/1/0    90.98%      0.04
+ 0             519   4401        12/1/0    91.93%      0.04
+ 0             523   3876        13/2/0    92.89%      0.05
+ 0             492   3372        15/3/0    93.82%      0.05
+ 0             298   3071        17/3/0    94.37%      0.05
+ 0             444   2626        18/3/0    95.18%      0.05
+ 0             355   2267        20/3/0    95.84%      0.05
+ 0             295   1969        21/5/0    96.38%      0.05
+ 0             283   1680        23/6/0    96.91%      0.07
+ 0             207   1468        27/7/0    97.30%      0.07
+ 0             190   1275        29/8/0    97.65%      0.07
+ 0             105   1157        32/9/0    97.85%      0.07
+ 0             124   1028       35/10/0    98.08%      0.08
+ 0             144    881       37/11/0    98.35%      0.08
+ 0             110    766       41/12/0    98.56%      0.08
+ 0             102    658       45/12/0    98.76%      0.09
+ 0             102    551       49/13/0    98.95%      0.09
+ 0             100    447       53/13/0    99.14%      0.09
+ 0              83    356       59/14/0    99.31%      0.10
+ 0              67    282       65/15/0    99.44%      0.10
+ 0              71    198       75/15/0    99.59%      0.10
+ 0              51    137       82/16/0    99.70%      0.11
+ 0              49     79       90/17/0    99.81%      0.12
+ 0              51     18       98/18/0    99.92%      0.12
+ 0               5      0      111/18/0    99.95%      0.12
+ 
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           0
+ -----------------------------------------------
+ 
+
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT      54430
+ Possibly detected                PT          0
+ Undetectable                     UD        386
+ ATPG untestable                  AU         26
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                             54842
+ test coverage                            99.95%
+ -----------------------------------------------
+  Information: The test coverage above may be inferior
+               than the real test coverage with customized
+               protocol and test simulation library.
+1

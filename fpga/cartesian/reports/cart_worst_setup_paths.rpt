@@ -1,0 +1,802 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Sep 17 20:47:24 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_timing -delay_type max -max_paths 10 -file C:/Users/iamth/AppData/Roaming/Xilinx/Vivado/cartesian_final_reports/cart_worst_setup_paths.rpt
+| Design       : zedboard_cartesian_final_hw_top
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             18.624ns  (required time - arrival time)
+  Source:                 u_css_tx/Modulation_system_cart/Address_C/address_reg_rep[1]/C
+                            (rising edge-triggered cell FDCE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            tx_activity_seen_r_reg/CE
+                            (rising edge-triggered cell FDCE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        12.231ns  (logic 2.604ns (21.291%)  route 9.627ns (78.709%))
+  Logic Levels:           8  (CARRY4=1 LUT4=1 LUT5=1 LUT6=4 MUXF7=1)
+  Clock Path Skew:        -0.130ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.496ns = ( 29.754 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.790ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.822    -0.790    u_css_tx/Modulation_system_cart/Address_C/clk
+    SLICE_X4Y30          FDCE                                         r  u_css_tx/Modulation_system_cart/Address_C/address_reg_rep[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y30          FDCE (Prop_fdce_C_Q)         0.518    -0.272 r  u_css_tx/Modulation_system_cart/Address_C/address_reg_rep[1]/Q
+                         net (fo=97, routed)          3.023     2.751    u_css_tx/Modulation_system_cart/Address_C/address_reg_rep_n_0_[1]
+    SLICE_X10Y34         LUT6 (Prop_lut6_I1_O)        0.124     2.875 r  u_css_tx/Modulation_system_cart/Address_C/g19_b0/O
+                         net (fo=2, routed)           0.992     3.867    u_css_tx/Modulation_system_cart/Address_C/g19_b0_n_0
+    SLICE_X10Y33         LUT6 (Prop_lut6_I0_O)        0.124     3.991 r  u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_71/O
+                         net (fo=1, routed)           0.000     3.991    u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_71_n_0
+    SLICE_X10Y33         MUXF7 (Prop_muxf7_I0_O)      0.209     4.200 r  u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_33/O
+                         net (fo=2, routed)           0.865     5.065    u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_33_n_0
+    SLICE_X6Y33          LUT5 (Prop_lut5_I0_O)        0.297     5.362 r  u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_17/O
+                         net (fo=10, routed)          0.989     6.351    u_css_tx/Modulation_system_cart/CSK_GEN/complex_multiplier_c/P_imag_carry_1
+    SLICE_X3Y34          LUT4 (Prop_lut4_I3_O)        0.152     6.503 r  u_css_tx/Modulation_system_cart/CSK_GEN/complex_multiplier_c/P_imag_carry_i_3/O
+                         net (fo=2, routed)           0.675     7.178    u_css_tx/Modulation_system_cart/CSK_GEN/complex_multiplier_c/P_imag_carry_i_3_n_0
+    SLICE_X2Y35          CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.755     7.933 r  u_css_tx/Modulation_system_cart/CSK_GEN/complex_multiplier_c/P_imag_carry/O[2]
+                         net (fo=2, routed)           1.205     9.138    dac_imag_cart_w[2]
+    SLICE_X2Y41          LUT6 (Prop_lut6_I1_O)        0.301     9.439 r  tx_activity_seen_r_i_4/O
+                         net (fo=2, routed)           1.282    10.721    tx_activity_seen_r2
+    SLICE_X18Y43         LUT6 (Prop_lut6_I1_O)        0.124    10.845 r  tx_activity_seen_r_i_1/O
+                         net (fo=1, routed)           0.596    11.441    tx_activity_seen_r_i_1_n_0
+    SLICE_X18Y43         FDCE                                         r  tx_activity_seen_r_reg/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.577    29.754    core_clk_w
+    SLICE_X18Y43         FDCE                                         r  tx_activity_seen_r_reg/C
+                         clock pessimism              0.577    30.330    
+                         clock uncertainty           -0.096    30.234    
+    SLICE_X18Y43         FDCE (Setup_fdce_C_CE)      -0.169    30.065    tx_activity_seen_r_reg
+  -------------------------------------------------------------------
+                         required time                         30.065    
+                         arrival time                         -11.441    
+  -------------------------------------------------------------------
+                         slack                                 18.624    
+
+Slack (MET) :             19.710ns  (required time - arrival time)
+  Source:                 u_css_tx/Modulation_system_cart/Address_C/address_reg_rep[1]/C
+                            (rising edge-triggered cell FDCE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            tx_activity_seen_r_reg/D
+                            (rising edge-triggered cell FDCE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        11.391ns  (logic 2.604ns (22.860%)  route 8.787ns (77.140%))
+  Logic Levels:           8  (CARRY4=1 LUT3=1 LUT4=1 LUT5=1 LUT6=3 MUXF7=1)
+  Clock Path Skew:        -0.130ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.496ns = ( 29.754 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.790ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.822    -0.790    u_css_tx/Modulation_system_cart/Address_C/clk
+    SLICE_X4Y30          FDCE                                         r  u_css_tx/Modulation_system_cart/Address_C/address_reg_rep[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y30          FDCE (Prop_fdce_C_Q)         0.518    -0.272 r  u_css_tx/Modulation_system_cart/Address_C/address_reg_rep[1]/Q
+                         net (fo=97, routed)          3.023     2.751    u_css_tx/Modulation_system_cart/Address_C/address_reg_rep_n_0_[1]
+    SLICE_X10Y34         LUT6 (Prop_lut6_I1_O)        0.124     2.875 r  u_css_tx/Modulation_system_cart/Address_C/g19_b0/O
+                         net (fo=2, routed)           0.992     3.867    u_css_tx/Modulation_system_cart/Address_C/g19_b0_n_0
+    SLICE_X10Y33         LUT6 (Prop_lut6_I0_O)        0.124     3.991 r  u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_71/O
+                         net (fo=1, routed)           0.000     3.991    u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_71_n_0
+    SLICE_X10Y33         MUXF7 (Prop_muxf7_I0_O)      0.209     4.200 r  u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_33/O
+                         net (fo=2, routed)           0.865     5.065    u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_33_n_0
+    SLICE_X6Y33          LUT5 (Prop_lut5_I0_O)        0.297     5.362 r  u_css_tx/Modulation_system_cart/Address_C/P_real_carry_i_17/O
+                         net (fo=10, routed)          0.989     6.351    u_css_tx/Modulation_system_cart/CSK_GEN/complex_multiplier_c/P_imag_carry_1
+    SLICE_X3Y34          LUT4 (Prop_lut4_I3_O)        0.152     6.503 r  u_css_tx/Modulation_system_cart/CSK_GEN/complex_multiplier_c/P_imag_carry_i_3/O
+                         net (fo=2, routed)           0.675     7.178    u_css_tx/Modulation_system_cart/CSK_GEN/complex_multiplier_c/P_imag_carry_i_3_n_0
+    SLICE_X2Y35          CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.755     7.933 r  u_css_tx/Modulation_system_cart/CSK_GEN/complex_multiplier_c/P_imag_carry/O[2]
+                         net (fo=2, routed)           1.205     9.138    dac_imag_cart_w[2]
+    SLICE_X2Y41          LUT6 (Prop_lut6_I1_O)        0.301     9.439 r  tx_activity_seen_r_i_4/O
+                         net (fo=2, routed)           1.038    10.477    tx_activity_seen_r2
+    SLICE_X18Y43         LUT3 (Prop_lut3_I1_O)        0.124    10.601 r  tx_activity_seen_r_i_2/O
+                         net (fo=1, routed)           0.000    10.601    tx_activity_seen_r
+    SLICE_X18Y43         FDCE                                         r  tx_activity_seen_r_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.577    29.754    core_clk_w
+    SLICE_X18Y43         FDCE                                         r  tx_activity_seen_r_reg/C
+                         clock pessimism              0.577    30.330    
+                         clock uncertainty           -0.096    30.234    
+    SLICE_X18Y43         FDCE (Setup_fdce_C_D)        0.077    30.311    tx_activity_seen_r_reg
+  -------------------------------------------------------------------
+                         required time                         30.311    
+                         arrival time                         -10.601    
+  -------------------------------------------------------------------
+                         slack                                 19.710    
+
+Slack (MET) :             22.607ns  (required time - arrival time)
+  Source:                 u_css_tx/Modulation_system_cart/control_unit/FSM_onehot_state_reg_reg[1]_inv/C
+                            (rising edge-triggered cell FDPE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            u_css_tx/u_framer/u_acc/acc_reg[18]/R
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        7.877ns  (logic 1.374ns (17.443%)  route 6.503ns (82.557%))
+  Logic Levels:           5  (LUT2=1 LUT4=2 LUT5=2)
+  Clock Path Skew:        -0.146ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.501ns = ( 29.749 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.779ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.833    -0.779    u_css_tx/Modulation_system_cart/control_unit/clk
+    SLICE_X0Y39          FDPE                                         r  u_css_tx/Modulation_system_cart/control_unit/FSM_onehot_state_reg_reg[1]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y39          FDPE (Prop_fdpe_C_Q)         0.518    -0.261 r  u_css_tx/Modulation_system_cart/control_unit/FSM_onehot_state_reg_reg[1]_inv/Q
+                         net (fo=15, routed)          1.278     1.018    u_css_tx/Modulation_system_cart/control_unit/FSM_onehot_state_reg_reg[1]_inv_0[0]
+    SLICE_X14Y39         LUT2 (Prop_lut2_I0_O)        0.124     1.142 f  u_css_tx/Modulation_system_cart/control_unit/system_busy_INST_0/O
+                         net (fo=6, routed)           1.259     2.401    system_busy_debug_w
+    SLICE_X18Y43         LUT4 (Prop_lut4_I1_O)        0.124     2.525 r  u_css_tx_i_1/O
+                         net (fo=13, routed)          1.348     3.873    u_css_tx/u_framer/u_ctrl/start_Tx
+    SLICE_X12Y36         LUT4 (Prop_lut4_I0_O)        0.153     4.026 r  u_css_tx/u_framer/u_ctrl/hold_i[30]_i_1/O
+                         net (fo=55, routed)          0.934     4.960    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[0]_0
+    SLICE_X14Y38         LUT5 (Prop_lut5_I0_O)        0.331     5.291 r  u_css_tx/u_framer/u_ctrl/acc[17]_i_1/O
+                         net (fo=26, routed)          1.192     6.483    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_0
+    SLICE_X13Y36         LUT5 (Prop_lut5_I0_O)        0.124     6.607 r  u_css_tx/u_framer/u_ctrl/acc[23]_i_1/O
+                         net (fo=6, routed)           0.492     7.098    u_css_tx/u_framer/u_acc/acc_reg[18]_1
+    SLICE_X16Y36         FDRE                                         r  u_css_tx/u_framer/u_acc/acc_reg[18]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.572    29.749    u_css_tx/u_framer/u_acc/clk
+    SLICE_X16Y36         FDRE                                         r  u_css_tx/u_framer/u_acc/acc_reg[18]/C
+                         clock pessimism              0.577    30.325    
+                         clock uncertainty           -0.096    30.229    
+    SLICE_X16Y36         FDRE (Setup_fdre_C_R)       -0.524    29.705    u_css_tx/u_framer/u_acc/acc_reg[18]
+  -------------------------------------------------------------------
+                         required time                         29.705    
+                         arrival time                          -7.098    
+  -------------------------------------------------------------------
+                         slack                                 22.607    
+
+Slack (MET) :             22.607ns  (required time - arrival time)
+  Source:                 u_css_tx/Modulation_system_cart/control_unit/FSM_onehot_state_reg_reg[1]_inv/C
+                            (rising edge-triggered cell FDPE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            u_css_tx/u_framer/u_acc/acc_reg[19]/R
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        7.877ns  (logic 1.374ns (17.443%)  route 6.503ns (82.557%))
+  Logic Levels:           5  (LUT2=1 LUT4=2 LUT5=2)
+  Clock Path Skew:        -0.146ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.501ns = ( 29.749 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.779ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.833    -0.779    u_css_tx/Modulation_system_cart/control_unit/clk
+    SLICE_X0Y39          FDPE                                         r  u_css_tx/Modulation_system_cart/control_unit/FSM_onehot_state_reg_reg[1]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y39          FDPE (Prop_fdpe_C_Q)         0.518    -0.261 r  u_css_tx/Modulation_system_cart/control_unit/FSM_onehot_state_reg_reg[1]_inv/Q
+                         net (fo=15, routed)          1.278     1.018    u_css_tx/Modulation_system_cart/control_unit/FSM_onehot_state_reg_reg[1]_inv_0[0]
+    SLICE_X14Y39         LUT2 (Prop_lut2_I0_O)        0.124     1.142 f  u_css_tx/Modulation_system_cart/control_unit/system_busy_INST_0/O
+                         net (fo=6, routed)           1.259     2.401    system_busy_debug_w
+    SLICE_X18Y43         LUT4 (Prop_lut4_I1_O)        0.124     2.525 r  u_css_tx_i_1/O
+                         net (fo=13, routed)          1.348     3.873    u_css_tx/u_framer/u_ctrl/start_Tx
+    SLICE_X12Y36         LUT4 (Prop_lut4_I0_O)        0.153     4.026 r  u_css_tx/u_framer/u_ctrl/hold_i[30]_i_1/O
+                         net (fo=55, routed)          0.934     4.960    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[0]_0
+    SLICE_X14Y38         LUT5 (Prop_lut5_I0_O)        0.331     5.291 r  u_css_tx/u_framer/u_ctrl/acc[17]_i_1/O
+                         net (fo=26, routed)          1.192     6.483    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_0
+    SLICE_X13Y36         LUT5 (Prop_lut5_I0_O)        0.124     6.607 r  u_css_tx/u_framer/u_ctrl/acc[23]_i_1/O
+                         net (fo=6, routed)           0.492     7.098    u_css_tx/u_framer/u_acc/acc_reg[18]_1
+    SLICE_X16Y36         FDRE                                         r  u_css_tx/u_framer/u_acc/acc_reg[19]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.572    29.749    u_css_tx/u_framer/u_acc/clk
+    SLICE_X16Y36         FDRE                                         r  u_css_tx/u_framer/u_acc/acc_reg[19]/C
+                         clock pessimism              0.577    30.325    
+                         clock uncertainty           -0.096    30.229    
+    SLICE_X16Y36         FDRE (Setup_fdre_C_R)       -0.524    29.705    u_css_tx/u_framer/u_acc/acc_reg[19]
+  -------------------------------------------------------------------
+                         required time                         29.705    
+                         arrival time                          -7.098    
+  -------------------------------------------------------------------
+                         slack                                 22.607    
+
+Slack (MET) :             22.758ns  (required time - arrival time)
+  Source:                 u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[2]/CE
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        8.201ns  (logic 3.069ns (37.423%)  route 5.132ns (62.577%))
+  Logic Levels:           9  (CARRY4=4 LUT2=1 LUT3=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.500ns = ( 29.750 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.862ns
+    Clock Pessimism Removal (CPR):    0.613ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.750    -0.862    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X17Y38         FDRE                                         r  u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y38         FDRE (Prop_fdre_C_Q)         0.456    -0.406 r  u_css_tx/u_framer/u_ctrl/rate_q_reg/Q
+                         net (fo=96, routed)          1.582     1.177    u_css_tx/u_framer/u_ctrl/rate_q
+    SLICE_X16Y33         LUT3 (Prop_lut3_I0_O)        0.124     1.301 r  u_css_tx/u_framer/u_ctrl/left_next_carry_i_3/O
+                         net (fo=1, routed)           0.000     1.301    u_css_tx/u_framer/u_ctrl/left_next_carry_i_3_n_0
+    SLICE_X16Y33         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.834 r  u_css_tx/u_framer/u_ctrl/left_next_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.834    u_css_tx/u_framer/u_ctrl/left_next_carry_n_0
+    SLICE_X16Y34         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.053 f  u_css_tx/u_framer/u_ctrl/left_next_carry__0/O[0]
+                         net (fo=5, routed)           0.891     2.943    u_css_tx/u_framer/u_ctrl/in20[5]
+    SLICE_X17Y34         LUT2 (Prop_lut2_I0_O)        0.295     3.238 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12/O
+                         net (fo=1, routed)           0.000     3.238    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12_n_0
+    SLICE_X17Y34         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.788 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     3.788    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3_n_0
+    SLICE_X17Y35         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     4.059 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_2/CO[0]
+                         net (fo=3, routed)           0.838     4.898    u_css_tx/u_framer/u_ctrl/more1
+    SLICE_X15Y36         LUT4 (Prop_lut4_I3_O)        0.373     5.271 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_8/O
+                         net (fo=2, routed)           0.537     5.808    u_css_tx/u_framer/u_ctrl/more__0
+    SLICE_X14Y36         LUT5 (Prop_lut5_I4_O)        0.124     5.932 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6/O
+                         net (fo=2, routed)           0.582     6.513    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6_n_0
+    SLICE_X15Y36         LUT5 (Prop_lut5_I4_O)        0.124     6.637 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1/O
+                         net (fo=6, routed)           0.702     7.339    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1_n_0
+    SLICE_X16Y37         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.573    29.750    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X16Y37         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[2]/C
+                         clock pessimism              0.613    30.362    
+                         clock uncertainty           -0.096    30.266    
+    SLICE_X16Y37         FDRE (Setup_fdre_C_CE)      -0.169    30.097    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[2]
+  -------------------------------------------------------------------
+                         required time                         30.097    
+                         arrival time                          -7.339    
+  -------------------------------------------------------------------
+                         slack                                 22.758    
+
+Slack (MET) :             22.758ns  (required time - arrival time)
+  Source:                 u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[4]/CE
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        8.201ns  (logic 3.069ns (37.423%)  route 5.132ns (62.577%))
+  Logic Levels:           9  (CARRY4=4 LUT2=1 LUT3=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.500ns = ( 29.750 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.862ns
+    Clock Pessimism Removal (CPR):    0.613ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.750    -0.862    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X17Y38         FDRE                                         r  u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y38         FDRE (Prop_fdre_C_Q)         0.456    -0.406 r  u_css_tx/u_framer/u_ctrl/rate_q_reg/Q
+                         net (fo=96, routed)          1.582     1.177    u_css_tx/u_framer/u_ctrl/rate_q
+    SLICE_X16Y33         LUT3 (Prop_lut3_I0_O)        0.124     1.301 r  u_css_tx/u_framer/u_ctrl/left_next_carry_i_3/O
+                         net (fo=1, routed)           0.000     1.301    u_css_tx/u_framer/u_ctrl/left_next_carry_i_3_n_0
+    SLICE_X16Y33         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.834 r  u_css_tx/u_framer/u_ctrl/left_next_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.834    u_css_tx/u_framer/u_ctrl/left_next_carry_n_0
+    SLICE_X16Y34         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.053 f  u_css_tx/u_framer/u_ctrl/left_next_carry__0/O[0]
+                         net (fo=5, routed)           0.891     2.943    u_css_tx/u_framer/u_ctrl/in20[5]
+    SLICE_X17Y34         LUT2 (Prop_lut2_I0_O)        0.295     3.238 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12/O
+                         net (fo=1, routed)           0.000     3.238    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12_n_0
+    SLICE_X17Y34         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.788 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     3.788    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3_n_0
+    SLICE_X17Y35         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     4.059 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_2/CO[0]
+                         net (fo=3, routed)           0.838     4.898    u_css_tx/u_framer/u_ctrl/more1
+    SLICE_X15Y36         LUT4 (Prop_lut4_I3_O)        0.373     5.271 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_8/O
+                         net (fo=2, routed)           0.537     5.808    u_css_tx/u_framer/u_ctrl/more__0
+    SLICE_X14Y36         LUT5 (Prop_lut5_I4_O)        0.124     5.932 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6/O
+                         net (fo=2, routed)           0.582     6.513    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6_n_0
+    SLICE_X15Y36         LUT5 (Prop_lut5_I4_O)        0.124     6.637 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1/O
+                         net (fo=6, routed)           0.702     7.339    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1_n_0
+    SLICE_X16Y37         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.573    29.750    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X16Y37         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[4]/C
+                         clock pessimism              0.613    30.362    
+                         clock uncertainty           -0.096    30.266    
+    SLICE_X16Y37         FDRE (Setup_fdre_C_CE)      -0.169    30.097    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[4]
+  -------------------------------------------------------------------
+                         required time                         30.097    
+                         arrival time                          -7.339    
+  -------------------------------------------------------------------
+                         slack                                 22.758    
+
+Slack (MET) :             22.758ns  (required time - arrival time)
+  Source:                 u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[5]/CE
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        8.201ns  (logic 3.069ns (37.423%)  route 5.132ns (62.577%))
+  Logic Levels:           9  (CARRY4=4 LUT2=1 LUT3=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.500ns = ( 29.750 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.862ns
+    Clock Pessimism Removal (CPR):    0.613ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.750    -0.862    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X17Y38         FDRE                                         r  u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y38         FDRE (Prop_fdre_C_Q)         0.456    -0.406 r  u_css_tx/u_framer/u_ctrl/rate_q_reg/Q
+                         net (fo=96, routed)          1.582     1.177    u_css_tx/u_framer/u_ctrl/rate_q
+    SLICE_X16Y33         LUT3 (Prop_lut3_I0_O)        0.124     1.301 r  u_css_tx/u_framer/u_ctrl/left_next_carry_i_3/O
+                         net (fo=1, routed)           0.000     1.301    u_css_tx/u_framer/u_ctrl/left_next_carry_i_3_n_0
+    SLICE_X16Y33         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.834 r  u_css_tx/u_framer/u_ctrl/left_next_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.834    u_css_tx/u_framer/u_ctrl/left_next_carry_n_0
+    SLICE_X16Y34         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.053 f  u_css_tx/u_framer/u_ctrl/left_next_carry__0/O[0]
+                         net (fo=5, routed)           0.891     2.943    u_css_tx/u_framer/u_ctrl/in20[5]
+    SLICE_X17Y34         LUT2 (Prop_lut2_I0_O)        0.295     3.238 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12/O
+                         net (fo=1, routed)           0.000     3.238    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12_n_0
+    SLICE_X17Y34         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.788 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     3.788    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3_n_0
+    SLICE_X17Y35         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     4.059 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_2/CO[0]
+                         net (fo=3, routed)           0.838     4.898    u_css_tx/u_framer/u_ctrl/more1
+    SLICE_X15Y36         LUT4 (Prop_lut4_I3_O)        0.373     5.271 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_8/O
+                         net (fo=2, routed)           0.537     5.808    u_css_tx/u_framer/u_ctrl/more__0
+    SLICE_X14Y36         LUT5 (Prop_lut5_I4_O)        0.124     5.932 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6/O
+                         net (fo=2, routed)           0.582     6.513    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6_n_0
+    SLICE_X15Y36         LUT5 (Prop_lut5_I4_O)        0.124     6.637 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1/O
+                         net (fo=6, routed)           0.702     7.339    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1_n_0
+    SLICE_X16Y37         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[5]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.573    29.750    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X16Y37         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[5]/C
+                         clock pessimism              0.613    30.362    
+                         clock uncertainty           -0.096    30.266    
+    SLICE_X16Y37         FDRE (Setup_fdre_C_CE)      -0.169    30.097    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[5]
+  -------------------------------------------------------------------
+                         required time                         30.097    
+                         arrival time                          -7.339    
+  -------------------------------------------------------------------
+                         slack                                 22.758    
+
+Slack (MET) :             22.780ns  (required time - arrival time)
+  Source:                 u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[0]/CE
+                            (rising edge-triggered cell FDSE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        8.106ns  (logic 3.069ns (37.863%)  route 5.037ns (62.137%))
+  Logic Levels:           9  (CARRY4=4 LUT2=1 LUT3=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.501ns = ( 29.749 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.862ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.750    -0.862    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X17Y38         FDRE                                         r  u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y38         FDRE (Prop_fdre_C_Q)         0.456    -0.406 r  u_css_tx/u_framer/u_ctrl/rate_q_reg/Q
+                         net (fo=96, routed)          1.582     1.177    u_css_tx/u_framer/u_ctrl/rate_q
+    SLICE_X16Y33         LUT3 (Prop_lut3_I0_O)        0.124     1.301 r  u_css_tx/u_framer/u_ctrl/left_next_carry_i_3/O
+                         net (fo=1, routed)           0.000     1.301    u_css_tx/u_framer/u_ctrl/left_next_carry_i_3_n_0
+    SLICE_X16Y33         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.834 r  u_css_tx/u_framer/u_ctrl/left_next_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.834    u_css_tx/u_framer/u_ctrl/left_next_carry_n_0
+    SLICE_X16Y34         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.053 f  u_css_tx/u_framer/u_ctrl/left_next_carry__0/O[0]
+                         net (fo=5, routed)           0.891     2.943    u_css_tx/u_framer/u_ctrl/in20[5]
+    SLICE_X17Y34         LUT2 (Prop_lut2_I0_O)        0.295     3.238 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12/O
+                         net (fo=1, routed)           0.000     3.238    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12_n_0
+    SLICE_X17Y34         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.788 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     3.788    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3_n_0
+    SLICE_X17Y35         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     4.059 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_2/CO[0]
+                         net (fo=3, routed)           0.838     4.898    u_css_tx/u_framer/u_ctrl/more1
+    SLICE_X15Y36         LUT4 (Prop_lut4_I3_O)        0.373     5.271 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_8/O
+                         net (fo=2, routed)           0.537     5.808    u_css_tx/u_framer/u_ctrl/more__0
+    SLICE_X14Y36         LUT5 (Prop_lut5_I4_O)        0.124     5.932 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6/O
+                         net (fo=2, routed)           0.582     6.513    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6_n_0
+    SLICE_X15Y36         LUT5 (Prop_lut5_I4_O)        0.124     6.637 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1/O
+                         net (fo=6, routed)           0.606     7.244    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1_n_0
+    SLICE_X15Y36         FDSE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.572    29.749    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X15Y36         FDSE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[0]/C
+                         clock pessimism              0.577    30.325    
+                         clock uncertainty           -0.096    30.229    
+    SLICE_X15Y36         FDSE (Setup_fdse_C_CE)      -0.205    30.024    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[0]
+  -------------------------------------------------------------------
+                         required time                         30.024    
+                         arrival time                          -7.244    
+  -------------------------------------------------------------------
+                         slack                                 22.780    
+
+Slack (MET) :             22.780ns  (required time - arrival time)
+  Source:                 u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[1]/CE
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        8.106ns  (logic 3.069ns (37.863%)  route 5.037ns (62.137%))
+  Logic Levels:           9  (CARRY4=4 LUT2=1 LUT3=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.501ns = ( 29.749 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.862ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.750    -0.862    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X17Y38         FDRE                                         r  u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y38         FDRE (Prop_fdre_C_Q)         0.456    -0.406 r  u_css_tx/u_framer/u_ctrl/rate_q_reg/Q
+                         net (fo=96, routed)          1.582     1.177    u_css_tx/u_framer/u_ctrl/rate_q
+    SLICE_X16Y33         LUT3 (Prop_lut3_I0_O)        0.124     1.301 r  u_css_tx/u_framer/u_ctrl/left_next_carry_i_3/O
+                         net (fo=1, routed)           0.000     1.301    u_css_tx/u_framer/u_ctrl/left_next_carry_i_3_n_0
+    SLICE_X16Y33         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.834 r  u_css_tx/u_framer/u_ctrl/left_next_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.834    u_css_tx/u_framer/u_ctrl/left_next_carry_n_0
+    SLICE_X16Y34         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.053 f  u_css_tx/u_framer/u_ctrl/left_next_carry__0/O[0]
+                         net (fo=5, routed)           0.891     2.943    u_css_tx/u_framer/u_ctrl/in20[5]
+    SLICE_X17Y34         LUT2 (Prop_lut2_I0_O)        0.295     3.238 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12/O
+                         net (fo=1, routed)           0.000     3.238    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12_n_0
+    SLICE_X17Y34         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.788 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     3.788    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3_n_0
+    SLICE_X17Y35         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     4.059 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_2/CO[0]
+                         net (fo=3, routed)           0.838     4.898    u_css_tx/u_framer/u_ctrl/more1
+    SLICE_X15Y36         LUT4 (Prop_lut4_I3_O)        0.373     5.271 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_8/O
+                         net (fo=2, routed)           0.537     5.808    u_css_tx/u_framer/u_ctrl/more__0
+    SLICE_X14Y36         LUT5 (Prop_lut5_I4_O)        0.124     5.932 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6/O
+                         net (fo=2, routed)           0.582     6.513    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6_n_0
+    SLICE_X15Y36         LUT5 (Prop_lut5_I4_O)        0.124     6.637 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1/O
+                         net (fo=6, routed)           0.606     7.244    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1_n_0
+    SLICE_X15Y36         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.572    29.749    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X15Y36         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[1]/C
+                         clock pessimism              0.577    30.325    
+                         clock uncertainty           -0.096    30.229    
+    SLICE_X15Y36         FDRE (Setup_fdre_C_CE)      -0.205    30.024    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[1]
+  -------------------------------------------------------------------
+                         required time                         30.024    
+                         arrival time                          -7.244    
+  -------------------------------------------------------------------
+                         slack                                 22.780    
+
+Slack (MET) :             22.780ns  (required time - arrival time)
+  Source:                 u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Destination:            u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]/CE
+                            (rising edge-triggered cell FDRE clocked by core_clk_mmcm_w  {rise@0.000ns fall@15.625ns period=31.250ns})
+  Path Group:             core_clk_mmcm_w
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (core_clk_mmcm_w rise@31.250ns - core_clk_mmcm_w rise@0.000ns)
+  Data Path Delay:        8.106ns  (logic 3.069ns (37.863%)  route 5.037ns (62.137%))
+  Logic Levels:           9  (CARRY4=4 LUT2=1 LUT3=1 LUT4=1 LUT5=2)
+  Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.501ns = ( 29.749 - 31.250 ) 
+    Source Clock Delay      (SCD):    -0.862ns
+    Clock Pessimism Removal (CPR):    0.577ns
+  Clock Uncertainty:      0.096ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk_mmcm_w rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  gclk_i (IN)
+                         net (fo=0)                   0.000     0.000    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.285     2.775    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.568 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.713    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.612 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.750    -0.862    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X17Y38         FDRE                                         r  u_css_tx/u_framer/u_ctrl/rate_q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y38         FDRE (Prop_fdre_C_Q)         0.456    -0.406 r  u_css_tx/u_framer/u_ctrl/rate_q_reg/Q
+                         net (fo=96, routed)          1.582     1.177    u_css_tx/u_framer/u_ctrl/rate_q
+    SLICE_X16Y33         LUT3 (Prop_lut3_I0_O)        0.124     1.301 r  u_css_tx/u_framer/u_ctrl/left_next_carry_i_3/O
+                         net (fo=1, routed)           0.000     1.301    u_css_tx/u_framer/u_ctrl/left_next_carry_i_3_n_0
+    SLICE_X16Y33         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.834 r  u_css_tx/u_framer/u_ctrl/left_next_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.834    u_css_tx/u_framer/u_ctrl/left_next_carry_n_0
+    SLICE_X16Y34         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.053 f  u_css_tx/u_framer/u_ctrl/left_next_carry__0/O[0]
+                         net (fo=5, routed)           0.891     2.943    u_css_tx/u_framer/u_ctrl/in20[5]
+    SLICE_X17Y34         LUT2 (Prop_lut2_I0_O)        0.295     3.238 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12/O
+                         net (fo=1, routed)           0.000     3.238    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[3]_i_12_n_0
+    SLICE_X17Y34         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.788 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     3.788    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_3_n_0
+    SLICE_X17Y35         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     4.059 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]_i_2/CO[0]
+                         net (fo=3, routed)           0.838     4.898    u_css_tx/u_framer/u_ctrl/more1
+    SLICE_X15Y36         LUT4 (Prop_lut4_I3_O)        0.373     5.271 f  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_8/O
+                         net (fo=2, routed)           0.537     5.808    u_css_tx/u_framer/u_ctrl/more__0
+    SLICE_X14Y36         LUT5 (Prop_lut5_I4_O)        0.124     5.932 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6/O
+                         net (fo=2, routed)           0.582     6.513    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_6_n_0
+    SLICE_X15Y36         LUT5 (Prop_lut5_I4_O)        0.124     6.637 r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1/O
+                         net (fo=6, routed)           0.606     7.244    u_css_tx/u_framer/u_ctrl/FSM_onehot_state[5]_i_1_n_0
+    SLICE_X15Y36         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk_mmcm_w rise edge)
+                                                     31.250    31.250 r  
+    Y9                                                0.000    31.250 r  gclk_i (IN)
+                         net (fo=0)                   0.000    31.250    gclk_i
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    32.670 r  gclk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.162    33.832    gclk_i_IBUF
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438    26.394 r  u_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.691    28.085    core_clk_mmcm_w
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    28.176 r  u_core_clk_buf/O
+                         net (fo=233, routed)         1.572    29.749    u_css_tx/u_framer/u_ctrl/clk
+    SLICE_X15Y36         FDRE                                         r  u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]/C
+                         clock pessimism              0.577    30.325    
+                         clock uncertainty           -0.096    30.229    
+    SLICE_X15Y36         FDRE (Setup_fdre_C_CE)      -0.205    30.024    u_css_tx/u_framer/u_ctrl/FSM_onehot_state_reg[3]
+  -------------------------------------------------------------------
+                         required time                         30.024    
+                         arrival time                          -7.244    
+  -------------------------------------------------------------------
+                         slack                                 22.780    
+
+
+
+

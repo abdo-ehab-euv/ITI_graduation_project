@@ -1,0 +1,106 @@
+ 
+****************************************
+Report : area
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 13:24:17 2026
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/ICer/Downloads/Lib/synopsys/models/saed90nm_max.db)
+
+Number of ports:                         1537
+Number of nets:                          9504
+Number of cells:                         6685
+Number of combinational cells:           5285
+Number of sequential cells:              1344
+Number of macros/black boxes:               0
+Number of buf/inv:                       1908
+Number of references:                       5
+
+Combinational area:              49150.771160
+Buf/Inv area:                    11671.142659
+Noncombinational area:           41022.258858
+Macro/Black Box area:                0.000000
+Net Interconnect area:            6621.723122
+
+Total cell area:                 90173.030018
+Total area:                      96794.753140
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------
+CSS_Transmitter_Top               90173.0300    100.0     24.8832      0.0000  0.0000  CSS_Transmitter_Top
+u_framer                          76934.2461     85.3     66.3552      0.0000  0.0000  css_tx_framer_test_1
+u_framer/u_acc                     1401.7536      1.6    671.8464    729.9072  0.0000  bit_accumulator_test_1
+u_framer/u_ctrl                    5069.7216      5.6   2570.3424   2128.8960  0.0000  ppdu_ctrl_test_1
+u_framer/u_ctrl/add_133             112.4352      0.1    112.4352      0.0000  0.0000  ppdu_ctrl_DW01_inc_2
+u_framer/u_ctrl/add_246             113.3568      0.1    113.3568      0.0000  0.0000  ppdu_ctrl_DW01_inc_0
+u_framer/u_ctrl/r149                144.6912      0.2    144.6912      0.0000  0.0000  ppdu_ctrl_DW01_inc_3
+u_framer/u_demux                     75.5712      0.1     75.5712      0.0000  0.0000  iq_demux
+u_framer/u_il                      4546.2528      5.0   2599.8336   1946.4192  0.0000  bit_interleaver_test_1
+u_framer/u_map_i                    748.3392      0.8    748.3392      0.0000  0.0000  symbol_mapper_1
+u_framer/u_map_q                    806.4000      0.9    806.4000      0.0000  0.0000  symbol_mapper_0
+u_framer/u_mux                      106.9056      0.1    106.9056      0.0000  0.0000  ppdu_mux
+u_framer/u_payload_ram            63926.7837     70.9   3264.3072    732.6720  0.0000  payload_ram_test_1
+u_framer/u_payload_ram/b00         3673.4976      4.1   1727.0784   1946.4192  0.0000  payload_ram_bank8x8_test_0
+u_framer/u_payload_ram/b01         3790.5408      4.2   1844.1216   1946.4192  0.0000  payload_ram_bank8x8_test_1
+u_framer/u_payload_ram/b02         3670.7328      4.1   1724.3136   1946.4192  0.0000  payload_ram_bank8x8_test_2
+u_framer/u_payload_ram/b03         3653.2224      4.1   1706.8032   1946.4192  0.0000  payload_ram_bank8x8_test_3
+u_framer/u_payload_ram/b04         3655.9872      4.1   1709.5680   1946.4192  0.0000  payload_ram_bank8x8_test_4
+u_framer/u_payload_ram/b05         3881.7792      4.3   1935.3600   1946.4192  0.0000  payload_ram_bank8x8_test_5
+u_framer/u_payload_ram/b06         3686.4000      4.1   1739.9808   1946.4192  0.0000  payload_ram_bank8x8_test_6
+u_framer/u_payload_ram/b07         3802.5216      4.2   1856.1024   1946.4192  0.0000  payload_ram_bank8x8_test_7
+u_framer/u_payload_ram/b08         3933.3888      4.4   1986.9696   1946.4192  0.0000  payload_ram_bank8x8_test_8
+u_framer/u_payload_ram/b09         3753.6768      4.2   1807.2576   1946.4192  0.0000  payload_ram_bank8x8_test_9
+u_framer/u_payload_ram/b10         3715.8912      4.1   1769.4720   1946.4192  0.0000  payload_ram_bank8x8_test_10
+u_framer/u_payload_ram/b11         3761.9712      4.2   1815.5520   1946.4192  0.0000  payload_ram_bank8x8_test_11
+u_framer/u_payload_ram/b12         3726.0288      4.1   1779.6096   1946.4192  0.0000  payload_ram_bank8x8_test_12
+u_framer/u_payload_ram/b13         3829.2480      4.2   1882.8288   1946.4192  0.0000  payload_ram_bank8x8_test_13
+u_framer/u_payload_ram/b14         3678.1056      4.1   1731.6864   1946.4192  0.0000  payload_ram_bank8x8_test_14
+u_framer/u_payload_ram/b15         3716.8128      4.1   1770.3936   1946.4192  0.0000  payload_ram_bank8x8_test_15
+u_framer/u_shr                      186.1632      0.2    186.1632      0.0000  0.0000  shr_rom
+u_modulator                       13213.9007     14.7    102.2976      0.0000  0.0000  Modulation_system_N12_test_1
+u_modulator/Address_A               190.7712      0.2     77.4144    113.3568  0.0000  address_counter_N3_MAX4_test_1
+u_modulator/Address_C               354.8160      0.4    165.8880    188.9280  0.0000  address_counter_N5_MAX31_test_1
+u_modulator/Address_D               275.5584      0.3    124.4160    151.1424  0.0000  address_counter_N4_MAX15_test_1
+u_modulator/CSK_GEN                7698.1248      8.5      5.5296      0.0000  0.0000  CSK_GEN_N12_M6_test_1
+u_modulator/CSK_GEN/Freq_LUT         52.5312      0.1     52.5312      0.0000  0.0000  Freq_LUT
+u_modulator/CSK_GEN/Frequency_integrator
+                                   1011.9168      1.1    220.2624    453.4272  0.0000  integrator_N12_test_0
+u_modulator/CSK_GEN/Frequency_integrator/add_11
+                                    338.2272      0.4    338.2272      0.0000  0.0000  integrator_N12_0_DW01_add_0
+u_modulator/CSK_GEN/Phase_integrator
+                                    978.7392      1.1    187.0848    453.4272  0.0000  integrator_N12_test_1
+u_modulator/CSK_GEN/Phase_integrator/add_11
+                                    338.2272      0.4    338.2272      0.0000  0.0000  integrator_N12_1_DW01_add_0
+u_modulator/CSK_GEN/add_16          338.2272      0.4    338.2272      0.0000  0.0000  CSK_GEN_N12_M6_DW01_add_0
+u_modulator/CSK_GEN/complex_exp_LUT
+                                   4365.6192      4.8   3633.8688    453.4272  0.0000  complex_exp_LUT_N12_M6_test_1
+u_modulator/CSK_GEN/complex_exp_LUT/sign_gen1
+                                    139.1616      0.2    139.1616      0.0000  0.0000  twos_comp_gen_N6_1
+u_modulator/CSK_GEN/complex_exp_LUT/sign_gen2
+                                    139.1616      0.2    139.1616      0.0000  0.0000  twos_comp_gen_N6_0
+u_modulator/CSK_GEN/s_dfdt          315.1872      0.3    315.1872      0.0000  0.0000  twos_comp_gen_N12_0
+u_modulator/CSK_GEN/s_fc            315.1872      0.3    315.1872      0.0000  0.0000  twos_comp_gen_N12_2
+u_modulator/CSK_GEN/s_hBW           315.1872      0.3    315.1872      0.0000  0.0000  twos_comp_gen_N12_1
+u_modulator/DeLAY_REG                37.7856      0.0      0.0000     37.7856  0.0000  dreg_N1_test_1
+u_modulator/I_bit_RAM               255.2832      0.3    104.1408    151.1424  0.0000  bit_RAM_Depth4_test_0
+u_modulator/Q_bit_RAM               250.6752      0.3     99.5328    151.1424  0.0000  bit_RAM_Depth4_test_1
+u_modulator/control_unit            257.1264      0.3    181.5552     75.5712  0.0000  Modulation_FSM_test_1
+u_modulator/delay_LUT               132.7104      0.1    132.7104      0.0000  0.0000  delay_LUT
+u_modulator/delay_timer             708.7104      0.8    209.2032    302.2848  0.0000  timer_N7_test_1
+u_modulator/delay_timer/add_18       99.5328      0.1     99.5328      0.0000  0.0000  timer_N7_DW01_inc_1
+u_modulator/delay_timer/add_23       97.6896      0.1     97.6896      0.0000  0.0000  timer_N7_DW01_inc_0
+u_modulator/dqpsk_mapper             74.6496      0.1     74.6496      0.0000  0.0000  dqpsk_mapper_polar_N12
+u_modulator/feedback_memory        2875.3919      3.2   1065.3696   1810.0223  0.0000  feedback_memory_polar_N12_test_1
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------
+Total                                                  49150.7712  41022.2589  0.0000
+
+1

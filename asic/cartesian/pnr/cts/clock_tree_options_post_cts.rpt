@@ -1,0 +1,24 @@
+****************************************
+ Report : target skew and latency
+ Design : CSS_Transmitter_Top
+ Date   : Fri Sep 18 12:32:38 2026
+****************************************
+
+##Target Skew
+
+Clock                        Corner                        Target
+-----------------------------------------------------------------
+SYS_CLK (mode default)       default                       3.125
+
+##Target Latency
+
+Clock                        Corner                        Target
+-----------------------------------------------------------------
+SYS_CLK (mode default)       default                       0
+
+##Max Level Count
+
+Clock                                  Count
+-----------------------------------------------------------------
+No max level constraints found.
+1

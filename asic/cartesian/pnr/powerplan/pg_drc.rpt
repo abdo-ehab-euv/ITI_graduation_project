@@ -1,0 +1,7 @@
+Command check_pg_drc started  at Fri Sep 18 12:10:48 2026
+Begin building search trees for block cartesian_tx_powerplan.dlib:cartesian_tx_powerplan.design
+Done building search trees for block cartesian_tx_powerplan.dlib:cartesian_tx_powerplan.design (time 0s)
+Command check_pg_drc finished at Fri Sep 18 12:10:49 2026
+CPU usage for check_pg_drc: 0.18 seconds ( 0.00 hours)
+Elapsed time for check_pg_drc: 0.16 seconds ( 0.00 hours)
+No errors found.

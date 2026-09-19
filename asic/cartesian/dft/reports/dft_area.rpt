@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : area
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:08:53 2026
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/ICer/Downloads/Lib/synopsys/models/saed90nm_max.db)
+
+Number of ports:                         1325
+Number of nets:                          9765
+Number of cells:                         7215
+Number of combinational cells:           5888
+Number of sequential cells:              1275
+Number of macros/black boxes:               0
+Number of buf/inv:                       2140
+Number of references:                       5
+
+Combinational area:              52760.678400
+Buf/Inv area:                    12811.161882
+Noncombinational area:           38875.852531
+Macro/Black Box area:                0.000000
+Net Interconnect area:            6674.373050
+
+Total cell area:                 91636.530931
+Total area:                      98310.903981
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------------------
+CSS_Transmitter_Top               91636.5309    100.0     24.8832      0.0000  0.0000  CSS_Transmitter_Top
+Modulation_system_cart            14670.9504     16.0     27.6480      0.0000  0.0000  Modulation_system_cart_N2_test_1
+Modulation_system_cart/Address_A    190.7712      0.2     77.4144    113.3568  0.0000  address_counter_N3_MAX4_test_1
+Modulation_system_cart/Address_C    866.3040      0.9    236.8512    453.4272  0.0000  address_counter_N12_MAX1535_test_1
+Modulation_system_cart/Address_C/add_23
+                                    176.0256      0.2    176.0256      0.0000  0.0000  address_counter_N12_MAX1535_DW01_inc_0
+Modulation_system_cart/Address_D    275.5584      0.3    124.4160    151.1424  0.0000  address_counter_N4_MAX15_test_1
+Modulation_system_cart/CSK_GEN    10357.8625     11.3     53.4528    151.1424  0.0000  CSK_GEN_cart_N2_M6_test_1
+Modulation_system_cart/CSK_GEN/complex_exp_LUT
+                                   8475.0336      9.2   8475.0336      0.0000  0.0000  complex_exp_LUT_cart
+Modulation_system_cart/CSK_GEN/complex_multiplier_c
+                                   1678.2336      1.8    405.5040      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6
+Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53
+                                    321.6384      0.4    321.6384      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_3
+Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_54
+                                    309.6576      0.3    309.6576      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_2
+Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55
+                                    306.8928      0.3    306.8928      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_1
+Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56
+                                    334.5408      0.4    334.5408      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_0
+Modulation_system_cart/DeLAY_REG     37.7856      0.0      0.0000     37.7856  0.0000  dreg_N1_test_1
+Modulation_system_cart/I_bit_RAM    255.2832      0.3    104.1408    151.1424  0.0000  bit_RAM_Depth4_test_0
+Modulation_system_cart/Q_bit_RAM    250.6752      0.3     99.5328    151.1424  0.0000  bit_RAM_Depth4_test_1
+Modulation_system_cart/complex_multiplier_c
+                                    239.6160      0.3    239.6160      0.0000  0.0000  complex_multiplier_c_WIDTH_12_WIDTH_22_OUT_WIDTH2
+Modulation_system_cart/control_unit
+                                    257.1264      0.3    181.5552     75.5712  0.0000  Modulation_FSM_cart_test_1
+Modulation_system_cart/delay_LUT    132.7104      0.1    132.7104      0.0000  0.0000  delay_LUT
+Modulation_system_cart/delay_timer
+                                    708.7104      0.8    209.2032    302.2848  0.0000  timer_N7_test_1
+Modulation_system_cart/delay_timer/add_18
+                                     99.5328      0.1     99.5328      0.0000  0.0000  timer_N7_DW01_inc_1
+Modulation_system_cart/delay_timer/add_23
+                                     97.6896      0.1     97.6896      0.0000  0.0000  timer_N7_DW01_inc_0
+Modulation_system_cart/dqpsk_mapper
+                                     32.2560      0.0     32.2560      0.0000  0.0000  dqpsk_mapper_cartesian_N2
+Modulation_system_cart/feedback_memory
+                                   1038.6432      1.1    441.4464    597.1968  0.0000  feedback_memory_cartesian_N2_test_1
+u_framer                          76940.6973     84.0     51.6096      0.0000  0.0000  css_tx_framer_test_1
+u_framer/u_acc                     1400.8320      1.5    670.9248    729.9072  0.0000  bit_accumulator_test_1
+u_framer/u_ctrl                    5037.4656      5.5   2528.8704   2131.6608  0.0000  ppdu_ctrl_test_1
+u_framer/u_ctrl/add_133             113.3568      0.1    113.3568      0.0000  0.0000  ppdu_ctrl_DW01_inc_2
+u_framer/u_ctrl/add_246             118.8864      0.1    118.8864      0.0000  0.0000  ppdu_ctrl_DW01_inc_0
+u_framer/u_ctrl/r149                144.6912      0.2    144.6912      0.0000  0.0000  ppdu_ctrl_DW01_inc_3
+u_framer/u_demux                     80.1792      0.1     80.1792      0.0000  0.0000  iq_demux
+u_framer/u_il                      4687.2576      5.1   2740.8384   1946.4192  0.0000  bit_interleaver_test_1
+u_framer/u_map_i                    733.5936      0.8    733.5936      0.0000  0.0000  symbol_mapper_1
+u_framer/u_map_q                    770.4576      0.8    770.4576      0.0000  0.0000  symbol_mapper_0
+u_framer/u_mux                      106.9056      0.1    106.9056      0.0000  0.0000  ppdu_mux
+u_framer/u_payload_ram            63877.9389     69.7   3634.7904    738.2016  0.0000  payload_ram_test_1
+u_framer/u_payload_ram/b00         3757.3632      4.1   1810.9440   1946.4192  0.0000  payload_ram_bank8x8_test_0
+u_framer/u_payload_ram/b01         3659.6736      4.0   1713.2544   1946.4192  0.0000  payload_ram_bank8x8_test_1
+u_framer/u_payload_ram/b02         3679.9488      4.0   1733.5296   1946.4192  0.0000  payload_ram_bank8x8_test_2
+u_framer/u_payload_ram/b03         3760.1280      4.1   1813.7088   1946.4192  0.0000  payload_ram_bank8x8_test_3
+u_framer/u_payload_ram/b04         3790.5408      4.1   1844.1216   1946.4192  0.0000  payload_ram_bank8x8_test_4
+u_framer/u_payload_ram/b05         3682.7136      4.0   1736.2944   1946.4192  0.0000  payload_ram_bank8x8_test_5
+u_framer/u_payload_ram/b06         3759.2064      4.1   1812.7872   1946.4192  0.0000  payload_ram_bank8x8_test_6
+u_framer/u_payload_ram/b07         3692.8512      4.0   1746.4320   1946.4192  0.0000  payload_ram_bank8x8_test_7
+u_framer/u_payload_ram/b08         3668.8896      4.0   1722.4704   1946.4192  0.0000  payload_ram_bank8x8_test_8
+u_framer/u_payload_ram/b09         3657.8304      4.0   1711.4112   1946.4192  0.0000  payload_ram_bank8x8_test_9
+u_framer/u_payload_ram/b10         3822.7968      4.2   1876.3776   1946.4192  0.0000  payload_ram_bank8x8_test_10
+u_framer/u_payload_ram/b11         3620.9664      4.0   1674.5472   1946.4192  0.0000  payload_ram_bank8x8_test_11
+u_framer/u_payload_ram/b12         3648.6144      4.0   1702.1952   1946.4192  0.0000  payload_ram_bank8x8_test_12
+u_framer/u_payload_ram/b13         3752.7552      4.1   1803.5712   1949.1840  0.0000  payload_ram_bank8x8_test_13
+u_framer/u_payload_ram/b14         3857.8176      4.2   1911.3984   1946.4192  0.0000  payload_ram_bank8x8_test_14
+u_framer/u_payload_ram/b15         3692.8512      4.0   1746.4320   1946.4192  0.0000  payload_ram_bank8x8_test_15
+u_framer/u_shr                      194.4576      0.2    194.4576      0.0000  0.0000  shr_rom
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------------------
+Total                                                  52760.6784  38875.8525  0.0000
+
+1

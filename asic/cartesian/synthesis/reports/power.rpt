@@ -1,0 +1,176 @@
+Loading db file '/home/ICer/Downloads/Lib/synopsys/models/saed90nm_max.db'
+Information: Updating design information... (UID-85)
+Warning: Design 'CSS_Transmitter_Top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:05:27 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/ICer/Downloads/Lib/synopsys/models/saed90nm_max.db)
+
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CSS_Transmitter_Top    140000            saed90nm_max
+css_tx_framer          70000             saed90nm_max
+Modulation_system_cart_N2
+                       35000             saed90nm_max
+ppdu_ctrl              8000              saed90nm_max
+payload_ram            70000             saed90nm_max
+bit_accumulator        8000              saed90nm_max
+iq_demux               ForQA             saed90nm_max
+symbol_mapper_1        8000              saed90nm_max
+symbol_mapper_0        8000              saed90nm_max
+bit_interleaver        8000              saed90nm_max
+shr_rom                ForQA             saed90nm_max
+ppdu_mux               ForQA             saed90nm_max
+complex_multiplier_c_WIDTH_12_WIDTH_22_OUT_WIDTH2
+                       8000              saed90nm_max
+dreg_N1                ForQA             saed90nm_max
+address_counter_N3_MAX4
+                       ForQA             saed90nm_max
+bit_RAM_Depth4_1       8000              saed90nm_max
+bit_RAM_Depth4_0       8000              saed90nm_max
+dqpsk_mapper_cartesian_N2
+                       ForQA             saed90nm_max
+feedback_memory_cartesian_N2
+                       8000              saed90nm_max
+CSK_GEN_cart_N2_M6     16000             saed90nm_max
+address_counter_N12_MAX1535
+                       8000              saed90nm_max
+delay_LUT              ForQA             saed90nm_max
+timer_N7               8000              saed90nm_max
+address_counter_N4_MAX15
+                       8000              saed90nm_max
+Modulation_FSM_cart    8000              saed90nm_max
+ppdu_ctrl_DW01_inc_0   ForQA             saed90nm_max
+ppdu_ctrl_DW01_inc_2   ForQA             saed90nm_max
+ppdu_ctrl_DW01_inc_3   ForQA             saed90nm_max
+payload_ram_bank8x8_15 8000              saed90nm_max
+payload_ram_bank8x8_14 8000              saed90nm_max
+payload_ram_bank8x8_13 8000              saed90nm_max
+payload_ram_bank8x8_12 8000              saed90nm_max
+payload_ram_bank8x8_11 8000              saed90nm_max
+payload_ram_bank8x8_10 8000              saed90nm_max
+payload_ram_bank8x8_9  8000              saed90nm_max
+payload_ram_bank8x8_8  8000              saed90nm_max
+payload_ram_bank8x8_7  8000              saed90nm_max
+payload_ram_bank8x8_6  8000              saed90nm_max
+payload_ram_bank8x8_5  8000              saed90nm_max
+payload_ram_bank8x8_4  8000              saed90nm_max
+payload_ram_bank8x8_3  8000              saed90nm_max
+payload_ram_bank8x8_2  8000              saed90nm_max
+payload_ram_bank8x8_1  8000              saed90nm_max
+payload_ram_bank8x8_0  8000              saed90nm_max
+complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6
+                       8000              saed90nm_max
+complex_exp_LUT_cart   16000             saed90nm_max
+address_counter_N12_MAX1535_DW01_inc_0
+                       ForQA             saed90nm_max
+timer_N7_DW01_inc_0    ForQA             saed90nm_max
+timer_N7_DW01_inc_1    ForQA             saed90nm_max
+complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_3
+                       8000              saed90nm_max
+complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_2
+                       8000              saed90nm_max
+complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_1
+                       8000              saed90nm_max
+complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_0
+                       8000              saed90nm_max
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+CSS_Transmitter_Top                       3.758   21.455 3.20e+08  345.477 100.0
+  Modulation_system_cart (Modulation_system_cart_N2)
+                                          1.449    3.274 6.13e+07   66.034  19.1
+    control_unit (Modulation_FSM_cart) 2.48e-02 4.91e-02 7.55e+05    0.829   0.2
+    Address_D (address_counter_N4_MAX15)
+                                       3.79e-03 9.76e-03 7.59e+05    0.772   0.2
+    delay_timer (timer_N7)             4.97e-02    0.184 2.30e+06    2.534   0.7
+      add_18 (timer_N7_DW01_inc_1)     8.68e-03 6.30e-02 4.94e+05    0.566   0.2
+      add_23 (timer_N7_DW01_inc_0)     6.72e-03 6.29e-02 4.62e+05    0.532   0.2
+    delay_LUT (delay_LUT)              5.42e-05 1.88e-07 5.08e+05    0.508   0.1
+    Address_C (address_counter_N12_MAX1535)
+                                       5.96e-02    0.125 2.84e+06    3.029   0.9
+      add_23 (address_counter_N12_MAX1535_DW01_inc_0)
+                                       7.13e-03 6.34e-02 9.39e+05    1.010   0.3
+    CSK_GEN (CSK_GEN_cart_N2_M6)          1.194    2.695 4.87e+07   52.542  15.2
+      complex_exp_LUT (complex_exp_LUT_cart)
+                                          0.553    0.989 3.83e+07   39.849  11.5
+      complex_multiplier_c (complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6)
+                                          0.634    1.689 9.83e+06   12.156   3.5
+        mult_56 (complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_0)
+                                          0.130    0.330 2.06e+06    2.522   0.7
+        mult_55 (complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_1)
+                                          0.130    0.304 2.08e+06    2.511   0.7
+        mult_54 (complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_2)
+                                          0.124    0.314 2.03e+06    2.471   0.7
+        mult_53 (complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_3)
+                                          0.132    0.334 2.14e+06    2.606   0.8
+    feedback_memory (feedback_memory_cartesian_N2)
+                                       3.53e-02 2.66e-02 2.62e+06    2.682   0.8
+    dqpsk_mapper (dqpsk_mapper_cartesian_N2)
+                                       5.17e-03 4.31e-03 8.40e+04 9.35e-02   0.0
+    Q_bit_RAM (bit_RAM_Depth4_0)       1.85e-02 3.44e-02 7.06e+05    0.759   0.2
+    I_bit_RAM (bit_RAM_Depth4_1)       1.68e-02 3.09e-02 7.05e+05    0.753   0.2
+    Address_A (address_counter_N3_MAX4)
+                                       1.42e-02 1.94e-02 5.02e+05    0.536   0.2
+    DeLAY_REG (dreg_N1)                1.06e-03      N/A 7.98e+04 8.06e-02   0.0
+    complex_multiplier_c (complex_multiplier_c_WIDTH_12_WIDTH_22_OUT_WIDTH2)
+                                       1.40e-02 8.91e-02 6.80e+05    0.783   0.2
+  u_framer (css_tx_framer)                2.309   18.174 2.59e+08  279.374  80.9
+    u_mux (ppdu_mux)                   9.91e-03 2.14e-03 2.96e+05    0.308   0.1
+    u_shr (shr_rom)                    1.15e-02 1.32e-02 4.76e+05    0.501   0.1
+    u_il (bit_interleaver)                0.128    0.261 1.38e+07   14.170   4.1
+    u_map_q (symbol_mapper_0)          2.46e-02 4.32e-02 3.25e+06    3.323   1.0
+    u_map_i (symbol_mapper_1)          2.51e-02 3.99e-02 3.41e+06    3.475   1.0
+    u_demux (iq_demux)                    0.000    0.000 8.92e+05    0.892   0.3
+    u_acc (bit_accumulator)            5.02e-02 6.32e-02 4.12e+06    4.236   1.2
+    u_payload_ram (payload_ram)           1.692   16.701 2.16e+08  234.482  67.9
+      b15 (payload_ram_bank8x8_0)      6.65e-02    1.071 1.26e+07   13.737   4.0
+      b14 (payload_ram_bank8x8_1)      6.35e-02    0.951 1.30e+07   13.974   4.0
+      b13 (payload_ram_bank8x8_2)      6.57e-02    1.160 1.22e+07   13.401   3.9
+      b12 (payload_ram_bank8x8_3)      5.84e-02    1.117 1.24e+07   13.598   3.9
+      b11 (payload_ram_bank8x8_4)      6.81e-02    0.795 1.23e+07   13.154   3.8
+      b10 (payload_ram_bank8x8_5)      6.33e-02    0.928 1.25e+07   13.498   3.9
+      b09 (payload_ram_bank8x8_6)      5.64e-02    1.142 1.25e+07   13.743   4.0
+      b08 (payload_ram_bank8x8_7)      6.84e-02    0.828 1.22e+07   13.068   3.8
+      b07 (payload_ram_bank8x8_8)      6.41e-02    0.973 1.25e+07   13.550   3.9
+      b06 (payload_ram_bank8x8_9)      5.60e-02    0.863 1.28e+07   13.673   4.0
+      b05 (payload_ram_bank8x8_10)     6.22e-02    0.902 1.30e+07   14.006   4.1
+      b04 (payload_ram_bank8x8_11)     5.57e-02    0.979 1.25e+07   13.575   3.9
+      b03 (payload_ram_bank8x8_12)     5.70e-02    1.038 1.28e+07   13.915   4.0
+      b02 (payload_ram_bank8x8_13)     5.39e-02    0.802 1.24e+07   13.264   3.8
+      b01 (payload_ram_bank8x8_14)     6.42e-02    1.059 1.24e+07   13.572   3.9
+      b00 (payload_ram_bank8x8_15)     7.36e-02    0.880 1.26e+07   13.518   3.9
+    u_ctrl (ppdu_ctrl)                    0.361    1.023 1.61e+07   17.522   5.1
+      r149 (ppdu_ctrl_DW01_inc_3)      8.15e-04 6.73e-03 7.09e+05    0.717   0.2
+      add_133 (ppdu_ctrl_DW01_inc_2)   6.56e-05 5.14e-04 4.62e+05    0.463   0.1
+      add_246 (ppdu_ctrl_DW01_inc_0)   2.17e-04 1.36e-03 5.44e+05    0.546   0.2
+1

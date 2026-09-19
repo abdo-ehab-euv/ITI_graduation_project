@@ -1,0 +1,1327 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:11:59 2026
+****************************************
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_RE_cart[5] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U26/QN (NAND2X0)
+                                                   0.18      6.38 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U37/Q (XNOR2X1)
+                                                   0.46      6.83 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U36/QN (AOI22X1)
+                                                   0.37      7.21 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U16/QN (NAND2X0)
+                                                   0.15      7.35 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U15/QN (NAND2X0)
+                                                   0.21      7.56 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U32/Q (XNOR2X1)
+                                                   0.42      7.98 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_2/CO (FADDX1)
+                                                   0.40      8.38 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_3/CO (FADDX1)
+                                                   0.39      8.76 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_4/CO (FADDX1)
+                                                   0.35      9.11 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/U23/Q (XNOR3X1)
+                                                   0.44      9.56 f
+  DAC_RE_cart[5] (out)                             0.00      9.56 f
+  data arrival time                                          9.56
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -9.56
+  ------------------------------------------------------------------------
+  slack (MET)                                               14.99
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_IM_cart[5] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U18/QN (NAND2X0)
+                                                   0.17      6.37 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U37/Q (XNOR2X1)
+                                                   0.45      6.82 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U36/QN (AOI22X1)
+                                                   0.38      7.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U3/Q (XOR2X1)
+                                                   0.39      7.59 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_1/CO (FADDX1)
+                                                   0.48      8.08 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_2/CO (FADDX1)
+                                                   0.40      8.48 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_3/CO (FADDX1)
+                                                   0.38      8.86 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_4/CO (FADDX1)
+                                                   0.35      9.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_5/Q (XOR3X1)
+                                                   0.31      9.51 f
+  DAC_IM_cart[5] (out)                             0.00      9.51 f
+  data arrival time                                          9.51
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -9.51
+  ------------------------------------------------------------------------
+  slack (MET)                                               15.04
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_RE_cart[4] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U26/QN (NAND2X0)
+                                                   0.18      6.38 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U37/Q (XNOR2X1)
+                                                   0.46      6.83 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U36/QN (AOI22X1)
+                                                   0.37      7.21 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U16/QN (NAND2X0)
+                                                   0.15      7.35 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U15/QN (NAND2X0)
+                                                   0.21      7.56 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U32/Q (XNOR2X1)
+                                                   0.46      8.02 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_2/CO (FADDX1)
+                                                   0.39      8.41 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_3/CO (FADDX1)
+                                                   0.36      8.77 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_4/S (FADDX1)
+                                                   0.51      9.28 f
+  DAC_RE_cart[4] (out)                             0.00      9.29 f
+  data arrival time                                          9.29
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -9.29
+  ------------------------------------------------------------------------
+  slack (MET)                                               15.26
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_IM_cart[4] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U18/QN (NAND2X0)
+                                                   0.17      6.37 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U37/Q (XNOR2X1)
+                                                   0.45      6.82 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U36/QN (AOI22X1)
+                                                   0.38      7.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U3/Q (XOR2X1)
+                                                   0.39      7.59 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_1/CO (FADDX1)
+                                                   0.48      8.08 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_2/CO (FADDX1)
+                                                   0.40      8.48 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_3/CO (FADDX1)
+                                                   0.38      8.86 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_4/S (FADDX1)
+                                                   0.41      9.26 f
+  DAC_IM_cart[4] (out)                             0.00      9.26 f
+  data arrival time                                          9.26
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -9.26
+  ------------------------------------------------------------------------
+  slack (MET)                                               15.29
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_RE_cart[3] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U26/QN (NAND2X0)
+                                                   0.18      6.38 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U37/Q (XNOR2X1)
+                                                   0.46      6.83 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U36/QN (AOI22X1)
+                                                   0.37      7.21 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U16/QN (NAND2X0)
+                                                   0.15      7.35 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U15/QN (NAND2X0)
+                                                   0.21      7.56 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U32/Q (XNOR2X1)
+                                                   0.46      8.02 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_2/CO (FADDX1)
+                                                   0.39      8.41 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_3/S (FADDX1)
+                                                   0.49      8.90 f
+  DAC_RE_cart[3] (out)                             0.00      8.90 f
+  data arrival time                                          8.90
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -8.90
+  ------------------------------------------------------------------------
+  slack (MET)                                               15.65
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_IM_cart[3] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U18/QN (NAND2X0)
+                                                   0.17      6.37 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U37/Q (XNOR2X1)
+                                                   0.45      6.82 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U36/QN (AOI22X1)
+                                                   0.38      7.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U3/Q (XOR2X1)
+                                                   0.39      7.59 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_1/CO (FADDX1)
+                                                   0.48      8.08 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_2/CO (FADDX1)
+                                                   0.40      8.48 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_3/S (FADDX1)
+                                                   0.42      8.90 f
+  DAC_IM_cart[3] (out)                             0.00      8.90 f
+  data arrival time                                          8.90
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -8.90
+  ------------------------------------------------------------------------
+  slack (MET)                                               15.65
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_IM_cart[2] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U18/QN (NAND2X0)
+                                                   0.17      6.37 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U37/Q (XNOR2X1)
+                                                   0.45      6.82 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U36/QN (AOI22X1)
+                                                   0.38      7.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U14/QN (NAND2X0)
+                                                   0.15      7.36 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U29/QN (NAND2X0)
+                                                   0.22      7.58 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U32/Q (XNOR2X1)
+                                                   0.48      8.05 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_2/S (FADDX1)
+                                                   0.49      8.54 f
+  DAC_IM_cart[2] (out)                             0.00      8.54 f
+  data arrival time                                          8.54
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -8.54
+  ------------------------------------------------------------------------
+  slack (MET)                                               16.01
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_RE_cart[2] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U26/QN (NAND2X0)
+                                                   0.18      6.38 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U37/Q (XNOR2X1)
+                                                   0.46      6.83 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U36/QN (AOI22X1)
+                                                   0.37      7.21 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U16/QN (NAND2X0)
+                                                   0.15      7.35 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U15/QN (NAND2X0)
+                                                   0.21      7.56 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U32/Q (XNOR2X1)
+                                                   0.46      8.02 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_2/S (FADDX1)
+                                                   0.52      8.54 f
+  DAC_RE_cart[2] (out)                             0.00      8.54 f
+  data arrival time                                          8.54
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -8.54
+  ------------------------------------------------------------------------
+  slack (MET)                                               16.01
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_IM_cart[1] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U18/QN (NAND2X0)
+                                                   0.17      6.37 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U37/Q (XNOR2X1)
+                                                   0.45      6.82 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U36/QN (AOI22X1)
+                                                   0.38      7.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U3/Q (XOR2X1)
+                                                   0.39      7.59 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_1/S (FADDX1)
+                                                   0.59      8.19 f
+  DAC_IM_cart[1] (out)                             0.00      8.19 f
+  data arrival time                                          8.19
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -8.19
+  ------------------------------------------------------------------------
+  slack (MET)                                               16.36
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_RE_cart[1] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U26/QN (NAND2X0)
+                                                   0.18      6.38 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U37/Q (XNOR2X1)
+                                                   0.46      6.83 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U36/QN (AOI22X1)
+                                                   0.37      7.21 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U3/Q (XOR2X1)
+                                                   0.35      7.55 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/sub_57_U2_1/S (FADDX1)
+                                                   0.50      8.05 f
+  DAC_RE_cart[1] (out)                             0.00      8.05 f
+  data arrival time                                          8.05
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -8.05
+  ------------------------------------------------------------------------
+  slack (MET)                                               16.50
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_RE_cart[0] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U31/QN (NAND2X0)
+                                                   0.19      6.39 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/U20/ZN (INVX0)
+                                                   0.22      6.61 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/U17/QN (NOR2X0)
+                                                   0.19      6.80 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/U15/Q (AO21X1)
+                                                   0.28      7.08 r
+  DAC_RE_cart[0] (out)                             0.00      7.08 r
+  data arrival time                                          7.08
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -7.08
+  ------------------------------------------------------------------------
+  slack (MET)                                               17.47
+
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_IM_cart[0] (output port clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  Modulation_system_cart/Address_C/address_reg_9_/CLK (SDFFARX1)
+                                                   0.00      0.00 r
+  Modulation_system_cart/Address_C/address_reg_9_/Q (SDFFARX1)
+                                                   0.74      0.74 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1066/ZN (INVX0)
+                                                   0.14      0.88 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1079/QN (NOR2X0)
+                                                   0.19      1.07 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U908/Q (AND3X1)
+                                                   0.46      1.52 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/PLACE_HFSBUF_36_1077/Z (NBUFFX2)
+                                                   0.25      1.77 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U894/Q (AO22X1)
+                                                   0.40      2.18 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U326/ZN (INVX0)
+                                                   0.31      2.49 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U339/QN (NAND2X0)
+                                                   0.30      2.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U337/QN (NOR4X0)
+                                                   0.22      3.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U640/QN (NAND4X0)
+                                                   0.25      3.25 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U639/Q (AO222X1)
+                                                   0.36      3.61 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U436/QN (NOR4X0)
+                                                   0.39      4.00 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U634/QN (NAND4X0)
+                                                   0.40      4.40 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U11/QN (NOR4X0)
+                                                   0.31      4.72 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U575/Q (AND4X1)
+                                                   0.47      5.18 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U573/Q (AND4X1)
+                                                   0.44      5.62 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                   0.16      5.78 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/Q (OA21X1)
+                                                   0.42      6.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U39/QN (NAND2X0)
+                                                   0.26      6.46 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/U26/ZN (INVX0)
+                                                   0.22      6.68 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/U18/Q (XOR2X1)
+                                                   0.35      7.03 f
+  DAC_IM_cart[0] (out)                             0.00      7.03 f
+  data arrival time                                          7.03
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  clock uncertainty                               -0.45     30.80
+  output external delay                           -6.25     24.55
+  data required time                                        24.55
+  ------------------------------------------------------------------------
+  data required time                                        24.55
+  data arrival time                                         -7.03
+  ------------------------------------------------------------------------
+  slack (MET)                                               17.52
+
+
+
+  Startpoint: start_Tx (input port clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_10_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             6.25      6.25
+
+  start_Tx (in)                                    0.07      6.32 r
+  u_framer/u_ctrl/U127/ZN (INVX0)                  0.12      6.43 f
+  u_framer/u_ctrl/U126/QN (NOR4X0)                 0.34      6.78 r
+  u_framer/u_ctrl/U27/ZN (INVX0)                   0.27      7.04 f
+  u_framer/u_ctrl/U52/QN (NAND2X0)                 0.31      7.35 r
+  u_framer/u_ctrl/PLACE_HFSINV_527_659/ZN (INVX0)
+                                                   0.44      7.79 f
+  u_framer/u_ctrl/U243/Q (AO21X1)                  0.53      8.32 f
+  u_framer/u_ctrl/PLACE_HFSBUF_30_493/Z (NBUFFX2)
+                                                   0.25      8.57 f
+  u_framer/u_ctrl/U54/QN (NOR2X0)                  0.46      9.03 r
+  u_framer/u_ctrl/U239/Q (AND2X1)                  0.41      9.45 r
+  u_framer/u_ctrl/U237/Q (AO222X1)                 0.35      9.79 r
+  u_framer/u_ctrl/bits_left_reg_10_/D (SDFFX1)     0.00      9.79 r
+  data arrival time                                          9.79
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  u_framer/u_ctrl/bits_left_reg_10_/CLK (SDFFX1)   0.00     31.25 r
+  clock uncertainty                               -0.45     30.80
+  library setup time                              -0.48     30.32
+  data required time                                        30.32
+  ------------------------------------------------------------------------
+  data required time                                        30.32
+  data arrival time                                         -9.79
+  ------------------------------------------------------------------------
+  slack (MET)                                               20.52
+
+
+
+  Startpoint: start_Tx (input port clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_6_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             6.25      6.25
+
+  start_Tx (in)                                    0.07      6.32 r
+  u_framer/u_ctrl/U127/ZN (INVX0)                  0.12      6.43 f
+  u_framer/u_ctrl/U126/QN (NOR4X0)                 0.34      6.78 r
+  u_framer/u_ctrl/U27/ZN (INVX0)                   0.27      7.04 f
+  u_framer/u_ctrl/U52/QN (NAND2X0)                 0.31      7.35 r
+  u_framer/u_ctrl/PLACE_HFSINV_527_659/ZN (INVX0)
+                                                   0.44      7.79 f
+  u_framer/u_ctrl/U243/Q (AO21X1)                  0.53      8.32 f
+  u_framer/u_ctrl/PLACE_HFSBUF_30_493/Z (NBUFFX2)
+                                                   0.25      8.57 f
+  u_framer/u_ctrl/U54/QN (NOR2X0)                  0.46      9.03 r
+  u_framer/u_ctrl/U225/Q (AO222X1)                 0.66      9.69 r
+  u_framer/u_ctrl/bits_left_reg_6_/D (SDFFX1)      0.00      9.69 r
+  data arrival time                                          9.69
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  u_framer/u_ctrl/bits_left_reg_6_/CLK (SDFFX1)    0.00     31.25 r
+  clock uncertainty                               -0.45     30.80
+  library setup time                              -0.49     30.31
+  data required time                                        30.31
+  ------------------------------------------------------------------------
+  data required time                                        30.31
+  data arrival time                                         -9.69
+  ------------------------------------------------------------------------
+  slack (MET)                                               20.62
+
+
+
+  Startpoint: start_Tx (input port clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_4_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             6.25      6.25
+
+  start_Tx (in)                                    0.07      6.32 r
+  u_framer/u_ctrl/U127/ZN (INVX0)                  0.12      6.43 f
+  u_framer/u_ctrl/U126/QN (NOR4X0)                 0.34      6.78 r
+  u_framer/u_ctrl/U27/ZN (INVX0)                   0.27      7.04 f
+  u_framer/u_ctrl/U52/QN (NAND2X0)                 0.31      7.35 r
+  u_framer/u_ctrl/PLACE_HFSINV_527_659/ZN (INVX0)
+                                                   0.44      7.79 f
+  u_framer/u_ctrl/U243/Q (AO21X1)                  0.53      8.32 f
+  u_framer/u_ctrl/PLACE_HFSBUF_30_493/Z (NBUFFX2)
+                                                   0.25      8.57 f
+  u_framer/u_ctrl/U54/QN (NOR2X0)                  0.46      9.03 r
+  u_framer/u_ctrl/U219/Q (AO222X1)                 0.65      9.68 r
+  u_framer/u_ctrl/bits_left_reg_4_/D (SDFFX1)      0.00      9.68 r
+  data arrival time                                          9.68
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  u_framer/u_ctrl/bits_left_reg_4_/CLK (SDFFX1)    0.00     31.25 r
+  clock uncertainty                               -0.45     30.80
+  library setup time                              -0.49     30.31
+  data required time                                        30.31
+  ------------------------------------------------------------------------
+  data required time                                        30.31
+  data arrival time                                         -9.68
+  ------------------------------------------------------------------------
+  slack (MET)                                               20.63
+
+
+
+  Startpoint: start_Tx (input port clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_8_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             6.25      6.25
+
+  start_Tx (in)                                    0.07      6.32 r
+  u_framer/u_ctrl/U127/ZN (INVX0)                  0.12      6.43 f
+  u_framer/u_ctrl/U126/QN (NOR4X0)                 0.34      6.78 r
+  u_framer/u_ctrl/U27/ZN (INVX0)                   0.27      7.04 f
+  u_framer/u_ctrl/U52/QN (NAND2X0)                 0.31      7.35 r
+  u_framer/u_ctrl/PLACE_HFSINV_527_659/ZN (INVX0)
+                                                   0.44      7.79 f
+  u_framer/u_ctrl/U243/Q (AO21X1)                  0.53      8.32 f
+  u_framer/u_ctrl/PLACE_HFSBUF_30_493/Z (NBUFFX2)
+                                                   0.25      8.57 f
+  u_framer/u_ctrl/U54/QN (NOR2X0)                  0.46      9.03 r
+  u_framer/u_ctrl/U231/Q (AO222X1)                 0.65      9.68 r
+  u_framer/u_ctrl/bits_left_reg_8_/D (SDFFX1)      0.00      9.68 r
+  data arrival time                                          9.68
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  u_framer/u_ctrl/bits_left_reg_8_/CLK (SDFFX1)    0.00     31.25 r
+  clock uncertainty                               -0.45     30.80
+  library setup time                              -0.49     30.31
+  data required time                                        30.31
+  ------------------------------------------------------------------------
+  data required time                                        30.31
+  data arrival time                                         -9.68
+  ------------------------------------------------------------------------
+  slack (MET)                                               20.63
+
+
+
+  Startpoint: start_Tx (input port clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_7_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             6.25      6.25
+
+  start_Tx (in)                                    0.07      6.32 r
+  u_framer/u_ctrl/U127/ZN (INVX0)                  0.12      6.43 f
+  u_framer/u_ctrl/U126/QN (NOR4X0)                 0.34      6.78 r
+  u_framer/u_ctrl/U27/ZN (INVX0)                   0.27      7.04 f
+  u_framer/u_ctrl/U52/QN (NAND2X0)                 0.31      7.35 r
+  u_framer/u_ctrl/PLACE_HFSINV_527_659/ZN (INVX0)
+                                                   0.44      7.79 f
+  u_framer/u_ctrl/U243/Q (AO21X1)                  0.53      8.32 f
+  u_framer/u_ctrl/PLACE_HFSBUF_30_493/Z (NBUFFX2)
+                                                   0.25      8.57 f
+  u_framer/u_ctrl/U23/Q (OR2X1)                    0.21      8.78 f
+  u_framer/u_ctrl/PLACE_HFSINV_228_3/ZN (INVX0)    0.31      9.09 r
+  u_framer/u_ctrl/U228/Q (AO222X1)                 0.56      9.65 r
+  u_framer/u_ctrl/bits_left_reg_7_/D (SDFFX1)      0.00      9.65 r
+  data arrival time                                          9.65
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  u_framer/u_ctrl/bits_left_reg_7_/CLK (SDFFX1)    0.00     31.25 r
+  clock uncertainty                               -0.45     30.80
+  library setup time                              -0.49     30.31
+  data required time                                        30.31
+  ------------------------------------------------------------------------
+  data required time                                        30.31
+  data arrival time                                         -9.65
+  ------------------------------------------------------------------------
+  slack (MET)                                               20.66
+
+
+
+  Startpoint: start_Tx (input port clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_5_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             6.25      6.25
+
+  start_Tx (in)                                    0.07      6.32 r
+  u_framer/u_ctrl/U127/ZN (INVX0)                  0.12      6.43 f
+  u_framer/u_ctrl/U126/QN (NOR4X0)                 0.34      6.78 r
+  u_framer/u_ctrl/U27/ZN (INVX0)                   0.27      7.04 f
+  u_framer/u_ctrl/U52/QN (NAND2X0)                 0.31      7.35 r
+  u_framer/u_ctrl/PLACE_HFSINV_527_659/ZN (INVX0)
+                                                   0.44      7.79 f
+  u_framer/u_ctrl/U243/Q (AO21X1)                  0.53      8.32 f
+  u_framer/u_ctrl/PLACE_HFSBUF_30_493/Z (NBUFFX2)
+                                                   0.25      8.57 f
+  u_framer/u_ctrl/U23/Q (OR2X1)                    0.21      8.78 f
+  u_framer/u_ctrl/PLACE_HFSINV_228_3/ZN (INVX0)    0.31      9.09 r
+  u_framer/u_ctrl/U222/Q (AO222X1)                 0.56      9.65 r
+  u_framer/u_ctrl/bits_left_reg_5_/D (SDFFX1)      0.00      9.65 r
+  data arrival time                                          9.65
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  u_framer/u_ctrl/bits_left_reg_5_/CLK (SDFFX1)    0.00     31.25 r
+  clock uncertainty                               -0.45     30.80
+  library setup time                              -0.49     30.31
+  data required time                                        30.31
+  ------------------------------------------------------------------------
+  data required time                                        30.31
+  data arrival time                                         -9.65
+  ------------------------------------------------------------------------
+  slack (MET)                                               20.67
+
+
+
+  Startpoint: start_Tx (input port clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_9_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             6.25      6.25
+
+  start_Tx (in)                                    0.07      6.32 r
+  u_framer/u_ctrl/U127/ZN (INVX0)                  0.12      6.43 f
+  u_framer/u_ctrl/U126/QN (NOR4X0)                 0.34      6.78 r
+  u_framer/u_ctrl/U27/ZN (INVX0)                   0.27      7.04 f
+  u_framer/u_ctrl/U52/QN (NAND2X0)                 0.31      7.35 r
+  u_framer/u_ctrl/PLACE_HFSINV_527_659/ZN (INVX0)
+                                                   0.44      7.79 f
+  u_framer/u_ctrl/U243/Q (AO21X1)                  0.53      8.32 f
+  u_framer/u_ctrl/PLACE_HFSBUF_30_493/Z (NBUFFX2)
+                                                   0.25      8.57 f
+  u_framer/u_ctrl/U23/Q (OR2X1)                    0.21      8.78 f
+  u_framer/u_ctrl/PLACE_HFSINV_228_3/ZN (INVX0)    0.31      9.09 r
+  u_framer/u_ctrl/U234/Q (AO222X1)                 0.55      9.64 r
+  u_framer/u_ctrl/bits_left_reg_9_/D (SDFFX1)      0.00      9.64 r
+  data arrival time                                          9.64
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  u_framer/u_ctrl/bits_left_reg_9_/CLK (SDFFX1)    0.00     31.25 r
+  clock uncertainty                               -0.45     30.80
+  library setup time                              -0.48     30.32
+  data required time                                        30.32
+  ------------------------------------------------------------------------
+  data required time                                        30.32
+  data arrival time                                         -9.64
+  ------------------------------------------------------------------------
+  slack (MET)                                               20.68
+
+
+
+  Startpoint: start_Tx (input port clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_3_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             6.25      6.25
+
+  start_Tx (in)                                    0.07      6.32 r
+  u_framer/u_ctrl/U127/ZN (INVX0)                  0.12      6.43 f
+  u_framer/u_ctrl/U126/QN (NOR4X0)                 0.34      6.78 r
+  u_framer/u_ctrl/U27/ZN (INVX0)                   0.27      7.04 f
+  u_framer/u_ctrl/U52/QN (NAND2X0)                 0.31      7.35 r
+  u_framer/u_ctrl/PLACE_HFSINV_527_659/ZN (INVX0)
+                                                   0.44      7.79 f
+  u_framer/u_ctrl/U243/Q (AO21X1)                  0.53      8.32 f
+  u_framer/u_ctrl/PLACE_HFSBUF_30_493/Z (NBUFFX2)
+                                                   0.25      8.57 f
+  u_framer/u_ctrl/U54/QN (NOR2X0)                  0.46      9.03 r
+  u_framer/u_ctrl/U218/Q (AO222X1)                 0.60      9.63 r
+  u_framer/u_ctrl/bits_left_reg_3_/D (SDFFX1)      0.00      9.63 r
+  data arrival time                                          9.63
+
+  clock SYS_CLK (rise edge)                       31.25     31.25
+  clock network delay (ideal)                      0.00     31.25
+  u_framer/u_ctrl/bits_left_reg_3_/CLK (SDFFX1)    0.00     31.25 r
+  clock uncertainty                               -0.45     30.80
+  library setup time                              -0.49     30.31
+  data required time                                        30.31
+  ------------------------------------------------------------------------
+  data required time                                        30.31
+  data arrival time                                         -9.63
+  ------------------------------------------------------------------------
+  slack (MET)                                               20.69
+
+
+1

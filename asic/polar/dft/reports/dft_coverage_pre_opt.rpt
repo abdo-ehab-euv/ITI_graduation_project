@@ -1,0 +1,115 @@
+In mode: Internal_scan...
+  Design has scan chains in this mode
+  Design is scan routed
+  Post-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  ...checking vector rules...
+  ...checking clock rules...
+  ...checking scan chain rules...
+  ...checking scan compression rules...
+  ...checking X-state rules...
+  ...checking tristate rules...
+  ...extracting scan details...
+
+-----------------------------------------------------------------
+Begin Clock violations...
+
+ Warning: Clock rstn used as data is different than capture clock clk for inputs CLK/D of stable DFF (u_framer/u_ctrl/busy_prev_reg). (C26-1)
+Information: There are 181 other cells with the same violation. (TEST-171)
+
+Clock violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 182
+
+-----------------------------------------------------------------
+
+182 CLOCK VIOLATIONS
+   182 Clock as data different from capture clock for stable cell violations (C26)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  0 out of 1321 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      *1321 cells are valid scan cells
+
+Information: Test design rule checking completed. (TEST-123)
+  Running test coverage estimation...
+ 54782 faults were added to fault list.
+ ATPG performed for stuck fault model using internal pattern source.
+ ----------------------------------------------------------
+ #patterns     #faults     #ATPG faults  test      process
+ stored     detect/active  red/au/abort  coverage  CPU time
+ ---------  -------------  ------------  --------  --------
+ Begin deterministic ATPG: #uncollapsed_faults=44933, abort_limit=10...
+ 0           26070  18863         0/0/0    65.41%      0.01
+ 0            4064  14799         0/0/0    72.86%      0.02
+ 0            2817  11980         0/2/0    78.03%      0.02
+ 0            1703  10276         0/3/0    81.15%      0.03
+ 0            1317   8957         1/3/0    83.57%      0.03
+ 0            1290   7666         2/3/0    85.94%      0.03
+ 0             987   6679         2/3/0    87.75%      0.04
+ 0             852   5825         4/3/0    89.31%      0.04
+ 0             838   4986         5/3/0    90.85%      0.05
+ 0             574   4410         6/3/0    91.91%      0.05
+ 0             532   3877         7/3/1    92.88%      0.05
+ 0             532   3342        10/3/1    93.86%      0.05
+ 0             351   2987        13/4/1    94.51%      0.05
+ 0             422   2562        16/4/1    95.29%      0.06
+ 0             311   2246        19/5/1    95.87%      0.06
+ 0             249   1994        21/5/1    96.33%      0.07
+ 0             196   1796        23/5/1    96.70%      0.07
+ 0             223   1569        26/6/1    97.11%      0.08
+ 0             214   1352        29/6/1    97.51%      0.08
+ 0             152   1194        34/7/1    97.80%      0.08
+ 0             133   1056        39/7/1    98.05%      0.08
+ 0             142    909        44/7/1    98.32%      0.08
+ 0             155    745        50/7/1    98.62%      0.09
+ 0             107    623        54/9/1    98.83%      0.10
+ 0              89    528       58/11/1    99.00%      0.10
+ 0              65    454       63/12/1    99.13%      0.10
+ 0              68    377       69/13/1    99.27%      0.11
+ 0              65    305       75/13/1    99.40%      0.11
+ 0              69    227       81/14/1    99.54%      0.11
+ 0              61    159       88/14/1    99.67%      0.11
+ 0              49     92       95/16/1    99.79%      0.13
+ 0              51     33      101/18/1    99.89%      0.13
+ 0              22      0      110/19/1    99.95%      0.13
+ 
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           0
+ -----------------------------------------------
+ 
+
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT      54372
+ Possibly detected                PT          0
+ Undetectable                     UD        383
+ ATPG untestable                  AU         27
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                             54782
+ test coverage                            99.95%
+ -----------------------------------------------
+  Information: The test coverage above may be inferior
+               than the real test coverage with customized
+               protocol and test simulation library.
+1

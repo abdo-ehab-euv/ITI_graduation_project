@@ -1,0 +1,52 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Sep 18 12:05:26 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      9
+    Unconnected ports (LINT-28)                                     9
+
+Cells                                                               8
+    Connected to power or ground (LINT-32)                          8
+
+Nets                                                                7
+    Unloaded nets (LINT-2)                                          7
+--------------------------------------------------------------------------------
+
+Warning: In design 'CSS_Transmitter_Top', net 'u_framer/SYNOPSYS_UNCONNECTED_2' driven by pin 'u_framer/u_shr/last_idx[0]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_framer/SYNOPSYS_UNCONNECTED_1' driven by pin 'u_framer/u_shr/last_idx[1]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'Modulation_system_cart/SYNOPSYS_UNCONNECTED_1' driven by pin 'Modulation_system_cart/delay_LUT/delay[0]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'Modulation_system_cart/CSK_GEN/complex_multiplier_c/SYNOPSYS_UNCONNECTED_4' driven by pin 'Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_56/PRODUCT[6]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'Modulation_system_cart/CSK_GEN/complex_multiplier_c/SYNOPSYS_UNCONNECTED_3' driven by pin 'Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/PRODUCT[6]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'Modulation_system_cart/CSK_GEN/complex_multiplier_c/SYNOPSYS_UNCONNECTED_2' driven by pin 'Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_54/PRODUCT[6]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'Modulation_system_cart/CSK_GEN/complex_multiplier_c/SYNOPSYS_UNCONNECTED_1' driven by pin 'Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_53/PRODUCT[6]' has no loads. (LINT-2)
+Warning: In design 'timer_N7_DW01_inc_1', port 'A[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_3', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_3', port 'PRODUCT[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_2', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_2', port 'PRODUCT[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_1', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_1', port 'PRODUCT[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_0', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_0', port 'PRODUCT[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'css_tx_framer', a pin on submodule 'u_ctrl' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'shr_last[1]' is connected to logic 1. 
+Warning: In design 'css_tx_framer', a pin on submodule 'u_ctrl' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'shr_last[0]' is connected to logic 1. 
+Warning: In design 'Modulation_system_cart_N2', a pin on submodule 'delay_timer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'time_limit[0]' is connected to logic 0. 
+Warning: In design 'timer_N7', a pin on submodule 'add_18' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[7]' is connected to logic 0. 
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6', a pin on submodule 'mult_53' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 1. 
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6', a pin on submodule 'mult_54' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 1. 
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6', a pin on submodule 'mult_55' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 1. 
+Warning: In design 'complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6', a pin on submodule 'mult_56' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 1. 
+1

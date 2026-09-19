@@ -1,0 +1,724 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 20
+        -report_by design
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:33:00 2026
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+  Startpoint: u_framer/u_ctrl/load_cnt_reg_1_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/load_cnt_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.26      1.26
+
+  u_framer/u_ctrl/load_cnt_reg_1_/CLK (SDFFX1)     0.00      1.26 r
+  u_framer/u_ctrl/load_cnt_reg_1_/QN (SDFFX1)      0.48      1.74 f
+  u_framer/u_ctrl/U153/Q (AO22X1)                  0.29      2.02 f
+  u_framer/u_ctrl/load_cnt_reg_0_/D (SDFFX1)       0.00      2.02 f
+  data arrival time                                          2.02
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.36      1.36
+  clock reconvergence pessimism                   -0.05      1.31
+  u_framer/u_ctrl/load_cnt_reg_0_/CLK (SDFFX1)     0.00      1.31 r
+  clock uncertainty                                0.45      1.76
+  library hold time                               -0.15      1.61
+  data required time                                         1.61
+  ------------------------------------------------------------------------
+  data required time                                         1.61
+  data arrival time                                         -2.02
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.41
+
+
+
+  Startpoint: u_framer/u_ctrl/k_reg_2_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/k_reg_2_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.26      1.26
+
+  u_framer/u_ctrl/k_reg_2_/CLK (SDFFX1)            0.00      1.26 r
+  u_framer/u_ctrl/k_reg_2_/QN (SDFFX1)             0.46      1.72 f
+  u_framer/u_ctrl/U210/Q (AO22X1)                  0.28      2.00 f
+  u_framer/u_ctrl/k_reg_2_/D (SDFFX1)              0.00      2.00 f
+  data arrival time                                          2.00
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  clock reconvergence pessimism                   -0.08      1.26
+  u_framer/u_ctrl/k_reg_2_/CLK (SDFFX1)            0.00      1.26 r
+  clock uncertainty                                0.45      1.71
+  library hold time                               -0.16      1.55
+  data required time                                         1.55
+  ------------------------------------------------------------------------
+  data required time                                         1.55
+  data arrival time                                         -2.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.45
+
+
+
+  Startpoint: u_framer/u_ctrl/load_cnt_reg_1_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/load_cnt_reg_1_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.26      1.26
+
+  u_framer/u_ctrl/load_cnt_reg_1_/CLK (SDFFX1)     0.00      1.26 r
+  u_framer/u_ctrl/load_cnt_reg_1_/QN (SDFFX1)      0.48      1.74 f
+  u_framer/u_ctrl/U152/Q (AO22X1)                  0.28      2.02 f
+  u_framer/u_ctrl/load_cnt_reg_1_/D (SDFFX1)       0.00      2.02 f
+  data arrival time                                          2.02
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  clock reconvergence pessimism                   -0.08      1.26
+  u_framer/u_ctrl/load_cnt_reg_1_/CLK (SDFFX1)     0.00      1.26 r
+  clock uncertainty                                0.45      1.71
+  library hold time                               -0.16      1.55
+  data required time                                         1.55
+  ------------------------------------------------------------------------
+  data required time                                         1.55
+  data arrival time                                         -2.02
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.47
+
+
+
+  Startpoint: u_framer/u_ctrl/shr_cnt_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/shr_cnt_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.24      1.24
+
+  u_framer/u_ctrl/shr_cnt_reg_0_/CLK (SDFFX1)      0.00      1.24 r
+  u_framer/u_ctrl/shr_cnt_reg_0_/QN (SDFFX1)       0.48      1.72 f
+  u_framer/u_ctrl/U198/Q (AO22X1)                  0.29      2.01 f
+  u_framer/u_ctrl/shr_cnt_reg_0_/D (SDFFX1)       -0.00      2.01 f
+  data arrival time                                          2.01
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.31      1.31
+  clock reconvergence pessimism                   -0.07      1.24
+  u_framer/u_ctrl/shr_cnt_reg_0_/CLK (SDFFX1)      0.00      1.24 r
+  clock uncertainty                                0.45      1.69
+  library hold time                               -0.16      1.53
+  data required time                                         1.53
+  ------------------------------------------------------------------------
+  data required time                                         1.53
+  data arrival time                                         -2.01
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.48
+
+
+
+  Startpoint: Modulation_system_cart/control_unit/state_reg_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: Modulation_system_cart/control_unit/state_reg_reg_1_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.26      1.26
+
+  Modulation_system_cart/control_unit/state_reg_reg_0_/CLK (SDFFARX1)
+                                                   0.00      1.26 r
+  Modulation_system_cart/control_unit/state_reg_reg_0_/QN (SDFFARX1)
+                                                   0.50      1.75 f
+  Modulation_system_cart/control_unit/U22/Q (OA22X1)
+                                                   0.27      2.02 f
+  Modulation_system_cart/control_unit/state_reg_reg_1_/D (SDFFARX1)
+                                                   0.00      2.02 f
+  data arrival time                                          2.02
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  clock reconvergence pessimism                   -0.08      1.26
+  Modulation_system_cart/control_unit/state_reg_reg_1_/CLK (SDFFARX1)
+                                                   0.00      1.26 r
+  clock uncertainty                                0.45      1.71
+  library hold time                               -0.17      1.53
+  data required time                                         1.53
+  ------------------------------------------------------------------------
+  data required time                                         1.53
+  data arrival time                                         -2.02
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.49
+
+
+
+  Startpoint: Modulation_system_cart/Address_D/address_reg_2_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: Modulation_system_cart/Address_D/address_reg_2_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.28      1.28
+
+  Modulation_system_cart/Address_D/address_reg_2_/CLK (SDFFARX1)
+                                                   0.00      1.28 r
+  Modulation_system_cart/Address_D/address_reg_2_/QN (SDFFARX1)
+                                                   0.50      1.78 f
+  Modulation_system_cart/Address_D/U13/Q (AO22X1)
+                                                   0.27      2.05 f
+  Modulation_system_cart/Address_D/address_reg_2_/D (SDFFARX1)
+                                                   0.00      2.05 f
+  data arrival time                                          2.05
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.37      1.37
+  clock reconvergence pessimism                   -0.09      1.28
+  Modulation_system_cart/Address_D/address_reg_2_/CLK (SDFFARX1)
+                                                   0.00      1.28 r
+  clock uncertainty                                0.45      1.73
+  library hold time                               -0.17      1.56
+  data required time                                         1.56
+  ------------------------------------------------------------------------
+  data required time                                         1.56
+  data arrival time                                         -2.05
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.50
+
+
+
+  Startpoint: Modulation_system_cart/Address_D/address_reg_1_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: Modulation_system_cart/Address_D/address_reg_1_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.28      1.28
+
+  Modulation_system_cart/Address_D/address_reg_1_/CLK (SDFFARX1)
+                                                   0.00      1.28 r
+  Modulation_system_cart/Address_D/address_reg_1_/QN (SDFFARX1)
+                                                   0.50      1.78 f
+  Modulation_system_cart/Address_D/U12/Q (AO22X1)
+                                                   0.30      2.08 f
+  Modulation_system_cart/Address_D/address_reg_1_/D (SDFFARX1)
+                                                   0.00      2.08 f
+  data arrival time                                          2.08
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.37      1.37
+  clock reconvergence pessimism                   -0.09      1.28
+  Modulation_system_cart/Address_D/address_reg_1_/CLK (SDFFARX1)
+                                                   0.00      1.28 r
+  clock uncertainty                                0.45      1.73
+  library hold time                               -0.17      1.55
+  data required time                                         1.55
+  ------------------------------------------------------------------------
+  data required time                                         1.55
+  data arrival time                                         -2.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.52
+
+
+
+  Startpoint: u_framer/u_payload_ram/rdata_reg_5_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_acc/acc_reg_21_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.25      1.25
+
+  u_framer/u_payload_ram/rdata_reg_5_/CLK (SDFFX1)
+                                                   0.00      1.25 r
+  u_framer/u_payload_ram/rdata_reg_5_/Q (SDFFX1)   0.66      1.91 f
+  u_framer/u_acc/U45/Q (AO22X1)                    0.25      2.16 f
+  u_framer/u_acc/acc_reg_21_/D (SDFFX1)            0.00      2.16 f
+  data arrival time                                          2.16
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.36      1.36
+  clock reconvergence pessimism                   -0.03      1.33
+  u_framer/u_acc/acc_reg_21_/CLK (SDFFX1)          0.00      1.33 r
+  clock uncertainty                                0.45      1.78
+  library hold time                               -0.16      1.62
+  data required time                                         1.62
+  ------------------------------------------------------------------------
+  data required time                                         1.62
+  data arrival time                                         -2.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.54
+
+
+
+  Startpoint: u_framer/u_payload_ram/rdata_reg_6_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_acc/acc_reg_22_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.25      1.25
+
+  u_framer/u_payload_ram/rdata_reg_6_/CLK (SDFFX1)
+                                                   0.00      1.25 r
+  u_framer/u_payload_ram/rdata_reg_6_/Q (SDFFX1)   0.67      1.92 f
+  u_framer/u_acc/U46/Q (AO22X1)                    0.25      2.17 f
+  u_framer/u_acc/acc_reg_22_/D (SDFFX1)            0.00      2.17 f
+  data arrival time                                          2.17
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.36      1.36
+  clock reconvergence pessimism                   -0.03      1.33
+  u_framer/u_acc/acc_reg_22_/CLK (SDFFX1)          0.00      1.33 r
+  clock uncertainty                                0.45      1.78
+  library hold time                               -0.16      1.62
+  data required time                                         1.62
+  ------------------------------------------------------------------------
+  data required time                                         1.62
+  data arrival time                                         -2.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.54
+
+
+
+  Startpoint: u_framer/u_ctrl/k_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/k_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.24      1.24
+
+  u_framer/u_ctrl/k_reg_0_/CLK (SDFFX1)            0.00      1.24 r
+  u_framer/u_ctrl/k_reg_0_/QN (SDFFX1)             0.50      1.73 f
+  u_framer/u_ctrl/U208/Q (AO22X1)                  0.35      2.08 f
+  u_framer/u_ctrl/k_reg_0_/D (SDFFX1)             -0.00      2.08 f
+  data arrival time                                          2.08
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.31      1.31
+  clock reconvergence pessimism                   -0.07      1.24
+  u_framer/u_ctrl/k_reg_0_/CLK (SDFFX1)            0.00      1.24 r
+  clock uncertainty                                0.45      1.69
+  library hold time                               -0.16      1.53
+  data required time                                         1.53
+  ------------------------------------------------------------------------
+  data required time                                         1.53
+  data arrival time                                         -2.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.55
+
+
+
+  Startpoint: u_framer/u_payload_ram/rdata_reg_7_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_acc/acc_reg_23_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.26      1.26
+
+  u_framer/u_payload_ram/rdata_reg_7_/CLK (SDFFX1)
+                                                   0.00      1.26 r
+  u_framer/u_payload_ram/rdata_reg_7_/Q (SDFFX1)   0.68      1.94 f
+  u_framer/u_acc/U47/Q (AO22X1)                    0.26      2.20 f
+  u_framer/u_acc/acc_reg_23_/D (SDFFX1)           -0.00      2.20 f
+  data arrival time                                          2.20
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.36      1.36
+  clock reconvergence pessimism                   -0.03      1.33
+  u_framer/u_acc/acc_reg_23_/CLK (SDFFX1)          0.00      1.33 r
+  clock uncertainty                                0.45      1.78
+  library hold time                               -0.15      1.63
+  data required time                                         1.63
+  ------------------------------------------------------------------------
+  data required time                                         1.63
+  data arrival time                                         -2.20
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.57
+
+
+
+  Startpoint: Modulation_system_cart/Address_D/address_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: Modulation_system_cart/Address_D/address_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.28      1.28
+
+  Modulation_system_cart/Address_D/address_reg_0_/CLK (SDFFARX1)
+                                                   0.00      1.28 r
+  Modulation_system_cart/Address_D/address_reg_0_/QN (SDFFARX1)
+                                                   0.52      1.80 f
+  Modulation_system_cart/Address_D/U11/Q (AO22X1)
+                                                   0.33      2.13 f
+  Modulation_system_cart/Address_D/address_reg_0_/D (SDFFARX1)
+                                                   0.00      2.13 f
+  data arrival time                                          2.13
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.37      1.37
+  clock reconvergence pessimism                   -0.09      1.28
+  Modulation_system_cart/Address_D/address_reg_0_/CLK (SDFFARX1)
+                                                   0.00      1.28 r
+  clock uncertainty                                0.45      1.73
+  library hold time                               -0.17      1.56
+  data required time                                         1.56
+  ------------------------------------------------------------------------
+  data required time                                         1.56
+  data arrival time                                         -2.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.57
+
+
+
+  Startpoint: u_framer/u_ctrl/k_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/k_reg_1_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.24      1.24
+
+  u_framer/u_ctrl/k_reg_0_/CLK (SDFFX1)            0.00      1.24 r
+  u_framer/u_ctrl/k_reg_0_/QN (SDFFX1)             0.54      1.77 r
+  u_framer/u_ctrl/U121/QN (NOR2X0)                 0.16      1.93 f
+  u_framer/u_ctrl/U209/Q (AO22X1)                  0.25      2.18 f
+  u_framer/u_ctrl/k_reg_1_/D (SDFFX1)             -0.00      2.18 f
+  data arrival time                                          2.18
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  clock reconvergence pessimism                   -0.03      1.31
+  u_framer/u_ctrl/k_reg_1_/CLK (SDFFX1)            0.00      1.31 r
+  clock uncertainty                                0.45      1.76
+  library hold time                               -0.16      1.60
+  data required time                                         1.60
+  ------------------------------------------------------------------------
+  data required time                                         1.60
+  data arrival time                                         -2.18
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.57
+
+
+
+  Startpoint: Modulation_system_cart/Address_A/address_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: Modulation_system_cart/Address_A/address_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.26      1.26
+
+  Modulation_system_cart/Address_A/address_reg_0_/CLK (SDFFARX1)
+                                                   0.00      1.26 r
+  Modulation_system_cart/Address_A/address_reg_0_/QN (SDFFARX1)
+                                                   0.52      1.78 f
+  Modulation_system_cart/Address_A/U9/Q (AO22X1)   0.34      2.12 f
+  Modulation_system_cart/Address_A/address_reg_0_/D (SDFFARX1)
+                                                   0.00      2.12 f
+  data arrival time                                          2.12
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  clock reconvergence pessimism                   -0.08      1.26
+  Modulation_system_cart/Address_A/address_reg_0_/CLK (SDFFARX1)
+                                                   0.00      1.26 r
+  clock uncertainty                                0.45      1.71
+  library hold time                               -0.17      1.53
+  data required time                                         1.53
+  ------------------------------------------------------------------------
+  data required time                                         1.53
+  data arrival time                                         -2.12
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.58
+
+
+
+  Startpoint: u_framer/u_ctrl/bits_left_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/bits_left_reg_0_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.28      1.28
+
+  u_framer/u_ctrl/bits_left_reg_0_/CLK (SDFFX1)    0.00      1.28 r
+  u_framer/u_ctrl/bits_left_reg_0_/Q (SDFFX1)      0.67      1.95 f
+  u_framer/u_ctrl/U69/Q (OA21X1)                   0.22      2.17 f
+  u_framer/u_ctrl/bits_left_reg_0_/D (SDFFX1)      0.00      2.17 f
+  data arrival time                                          2.17
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.36      1.36
+  clock reconvergence pessimism                   -0.08      1.28
+  u_framer/u_ctrl/bits_left_reg_0_/CLK (SDFFX1)    0.00      1.28 r
+  clock uncertainty                                0.45      1.73
+  library hold time                               -0.15      1.58
+  data required time                                         1.58
+  ------------------------------------------------------------------------
+  data required time                                         1.58
+  data arrival time                                         -2.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.59
+
+
+
+  Startpoint: u_framer/u_ctrl/start_prev_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/len_err_reg (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.24      1.24
+
+  u_framer/u_ctrl/start_prev_reg/CLK (SDFFX1)      0.00      1.24 r
+  u_framer/u_ctrl/start_prev_reg/QN (SDFFX1)       0.49      1.73 f
+  u_framer/u_ctrl/U151/QN (NAND4X0)                0.18      1.91 r
+  u_framer/u_ctrl/U150/QN (OAI21X1)                0.29      2.20 f
+  u_framer/u_ctrl/len_err_reg/D (SDFFX1)          -0.00      2.20 f
+  data arrival time                                          2.20
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  clock reconvergence pessimism                   -0.03      1.31
+  u_framer/u_ctrl/len_err_reg/CLK (SDFFX1)         0.00      1.31 r
+  clock uncertainty                                0.45      1.76
+  library hold time                               -0.15      1.61
+  data required time                                         1.61
+  ------------------------------------------------------------------------
+  data required time                                         1.61
+  data arrival time                                         -2.20
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.59
+
+
+
+  Startpoint: u_framer/u_payload_ram/rdata_reg_3_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_acc/acc_reg_19_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.27      1.27
+
+  u_framer/u_payload_ram/rdata_reg_3_/CLK (SDFFX1)
+                                                   0.00      1.27 r
+  u_framer/u_payload_ram/rdata_reg_3_/Q (SDFFX1)   0.66      1.94 f
+  u_framer/u_acc/U43/Q (AO22X1)                    0.25      2.18 f
+  u_framer/u_acc/acc_reg_19_/D (SDFFX1)            0.00      2.18 f
+  data arrival time                                          2.18
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.36      1.36
+  clock reconvergence pessimism                   -0.07      1.29
+  u_framer/u_acc/acc_reg_19_/CLK (SDFFX1)          0.00      1.29 r
+  clock uncertainty                                0.45      1.74
+  library hold time                               -0.15      1.59
+  data required time                                         1.59
+  ------------------------------------------------------------------------
+  data required time                                         1.59
+  data arrival time                                         -2.18
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.59
+
+
+
+  Startpoint: u_framer/u_payload_ram/rdata_reg_4_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_acc/acc_reg_20_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.28      1.28
+
+  u_framer/u_payload_ram/rdata_reg_4_/CLK (SDFFX1)
+                                                   0.00      1.28 r
+  u_framer/u_payload_ram/rdata_reg_4_/Q (SDFFX1)   0.65      1.93 f
+  u_framer/u_acc/U44/Q (AO22X1)                    0.25      2.17 f
+  u_framer/u_acc/acc_reg_20_/D (SDFFX1)            0.00      2.17 f
+  data arrival time                                          2.17
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.36      1.36
+  clock reconvergence pessimism                   -0.08      1.28
+  u_framer/u_acc/acc_reg_20_/CLK (SDFFX1)          0.00      1.28 r
+  clock uncertainty                                0.45      1.73
+  library hold time                               -0.16      1.57
+  data required time                                         1.57
+  ------------------------------------------------------------------------
+  data required time                                         1.57
+  data arrival time                                         -2.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.60
+
+
+
+  Startpoint: u_framer/u_payload_ram/rdata_reg_2_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_acc/acc_reg_18_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.28      1.28
+
+  u_framer/u_payload_ram/rdata_reg_2_/CLK (SDFFX1)
+                                                   0.00      1.28 r
+  u_framer/u_payload_ram/rdata_reg_2_/Q (SDFFX1)   0.67      1.95 f
+  u_framer/u_acc/U42/Q (AO22X1)                    0.25      2.19 f
+  u_framer/u_acc/acc_reg_18_/D (SDFFX1)            0.00      2.19 f
+  data arrival time                                          2.19
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.36      1.36
+  clock reconvergence pessimism                   -0.07      1.29
+  u_framer/u_acc/acc_reg_18_/CLK (SDFFX1)          0.00      1.29 r
+  clock uncertainty                                0.45      1.74
+  library hold time                               -0.15      1.59
+  data required time                                         1.59
+  ------------------------------------------------------------------------
+  data required time                                         1.59
+  data arrival time                                         -2.19
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.60
+
+
+
+  Startpoint: u_framer/u_ctrl/win_reg_1_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_ctrl/win_reg_1_ (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SYS_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.26      1.26
+
+  u_framer/u_ctrl/win_reg_1_/CLK (SDFFX1)          0.00      1.26 r
+  u_framer/u_ctrl/win_reg_1_/QN (SDFFX1)           0.54      1.79 r
+  u_framer/u_ctrl/U135/QN (OAI21X1)                0.37      2.16 f
+  u_framer/u_ctrl/win_reg_1_/D (SDFFX1)            0.00      2.16 f
+  data arrival time                                          2.16
+
+  clock SYS_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)                 1.34      1.34
+  clock reconvergence pessimism                   -0.08      1.26
+  u_framer/u_ctrl/win_reg_1_/CLK (SDFFX1)          0.00      1.26 r
+  clock uncertainty                                0.45      1.71
+  library hold time                               -0.15      1.56
+  data required time                                         1.56
+  ------------------------------------------------------------------------
+  data required time                                         1.56
+  data arrival time                                         -2.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.60
+
+
+1

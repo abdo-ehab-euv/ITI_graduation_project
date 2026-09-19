@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -slack_lesser_than 0.00
+        -max_paths 20
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:05:27 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+No paths.
+
+1

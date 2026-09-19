@@ -1,0 +1,16 @@
+****************************************
+Report : ideal_network
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:10:52 2026
+****************************************
+
+Ideal network data for scenario 'default':
+
+Source ports                    Latency                        Transition
+and pins                  Rise            Fall            Rise            Fall
+                       min    max      min    max      min    max      min    max
+-------------------------------------------------------------------------------------
+clk                    --     --      --      --       --     --       --     --
+
+1

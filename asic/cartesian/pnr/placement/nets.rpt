@@ -1,0 +1,116 @@
+****************************************
+Report : net
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:11:59 2026
+****************************************
+
+Attributes
+    d - user dont_touch
+    D - derived dont_touch
+
+
+Net                 Fanout    Fanin   Pins         Attributes
+--------------------------------------------------------------------------------
+DAC_IM_cart[0]           1        1      2         
+DAC_IM_cart[1]           1        1      2         
+DAC_IM_cart[2]           1        1      2         
+DAC_IM_cart[3]           1        1      2         
+DAC_IM_cart[4]           1        1      2         
+DAC_IM_cart[5]           1        1      2         
+DAC_RE_cart[0]           1        1      2         
+DAC_RE_cart[1]           1        1      2         
+DAC_RE_cart[2]           1        1      2         
+DAC_RE_cart[3]           1        1      2         
+DAC_RE_cart[4]           1        1      2         
+DAC_RE_cart[5]           1        1      2         
+PLACE_HFSNET_247         5        1      6         
+PLACE_HFSNET_250         8        1      9         
+PLACE_HFSNET_251         8        1      9         
+PLACE_HFSNET_252         9        1     10         
+PLACE_HFSNET_258        10        1     11         
+PLACE_HFSNET_262         6        1      7         
+PLACE_HFSNET_263         8        1      9         
+PLACE_HFSNET_265        10        1     11         
+PLACE_HFSNET_740        10        1     11         
+PLACE_HFSNET_742         5        1      6         
+PLACE_HFSNET_752         8        1      9         
+PLACE_HFSNET_753         8        1      9         
+Scan_Data_In             1        1      2         
+Scan_Data_Out            1        1      2         
+Scan_En                  6        1      7         
+VDD                      0        0      0         
+VSS                      0        0      0         
+clk                   1264        1   1265         
+final_ppdu_nibbles[0]
+                         2        1      3         
+final_ppdu_nibbles[1]
+                         2        1      3         
+final_ppdu_nibbles[2]
+                         2        1      3         
+final_ppdu_nibbles[3]
+                         2        1      3         
+final_ppdu_nibbles[4]
+                         2        1      3         
+final_ppdu_nibbles[5]
+                         2        1      3         
+final_ppdu_nibbles[6]
+                         2        1      3         
+final_ppdu_nibbles[7]
+                         2        1      3         
+final_ppdu_nibbles[8]
+                         2        1      3         
+final_ppdu_nibbles[9]
+                         3        1      4         
+frame_ready              6        1      7         
+framer_busy              3        1      4         
+len_err                  1        1      2         
+mod_busy                10        1     11         
+n3                       1        1      2         
+n5                       1        1      2         
+payloadLength[0]         4        1      5         
+payloadLength[1]         3        1      4         
+payloadLength[2]         2        1      3         
+payloadLength[3]         3        1      4         
+payloadLength[4]         2        1      3         
+payloadLength[5]         3        1      4         
+payloadLength[6]         3        1      4         
+payloadLength[7]         2        1      3         
+payload_addr[0]          1        1      2         
+payload_addr[1]          1        1      2         
+payload_addr[2]          1        1      2         
+payload_addr[3]          1        1      2         
+payload_addr[4]          1        1      2         
+payload_addr[5]          1        1      2         
+payload_addr[6]          1        1      2         
+payload_din[0]           1        1      2         
+payload_din[1]           1        1      2         
+payload_din[2]           1        1      2         
+payload_din[3]           1        1      2         
+payload_din[4]           1        1      2         
+payload_din[5]           1        1      2         
+payload_din[6]           1        1      2         
+payload_din[7]           1        1      2         
+payload_we               1        1      2         
+rate                     1        1      2         
+rstn                     2        1      3         
+start_Tx                 3        1      4         
+stream_i[0]              1        1      2         
+stream_i[1]              1        1      2         
+stream_i[2]              1        1      2         
+stream_i[3]              1        1      2         
+stream_q[0]              1        1      2         
+stream_q[1]              1        1      2         
+stream_q[2]              1        1      2         
+stream_q[3]              1        1      2         
+system_busy              1        1      2         
+
+Attributes
+    d - user dont_touch
+    D - derived dont_touch
+
+--------------------------------------------------------------------------------
+Total 82 nets         1475       80   1555
+Maximum               1264        1   1265
+Average              17.99     0.98   18.96
+1

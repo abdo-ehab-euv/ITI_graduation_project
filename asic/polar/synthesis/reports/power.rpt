@@ -1,0 +1,175 @@
+Loading db file '/home/ICer/Downloads/Lib/synopsys/models/saed90nm_max.db'
+Information: Updating design information... (UID-85)
+Warning: Design 'CSS_Transmitter_Top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 13:22:44 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/ICer/Downloads/Lib/synopsys/models/saed90nm_max.db)
+
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CSS_Transmitter_Top    140000            saed90nm_max
+css_tx_framer          70000             saed90nm_max
+Modulation_system_N12  16000             saed90nm_max
+ppdu_ctrl              8000              saed90nm_max
+payload_ram            70000             saed90nm_max
+bit_accumulator        8000              saed90nm_max
+iq_demux               ForQA             saed90nm_max
+symbol_mapper_1        8000              saed90nm_max
+symbol_mapper_0        8000              saed90nm_max
+bit_interleaver        8000              saed90nm_max
+shr_rom                ForQA             saed90nm_max
+ppdu_mux               ForQA             saed90nm_max
+dreg_N1                ForQA             saed90nm_max
+address_counter_N3_MAX4
+                       ForQA             saed90nm_max
+bit_RAM_Depth4_1       8000              saed90nm_max
+bit_RAM_Depth4_0       8000              saed90nm_max
+dqpsk_mapper_polar_N12 ForQA             saed90nm_max
+feedback_memory_polar_N12
+                       8000              saed90nm_max
+CSK_GEN_N12_M6         16000             saed90nm_max
+address_counter_N5_MAX31
+                       8000              saed90nm_max
+delay_LUT              ForQA             saed90nm_max
+timer_N7               8000              saed90nm_max
+address_counter_N4_MAX15
+                       8000              saed90nm_max
+Modulation_FSM         8000              saed90nm_max
+ppdu_ctrl_DW01_inc_0   ForQA             saed90nm_max
+ppdu_ctrl_DW01_inc_2   ForQA             saed90nm_max
+ppdu_ctrl_DW01_inc_3   ForQA             saed90nm_max
+payload_ram_bank8x8_15 8000              saed90nm_max
+payload_ram_bank8x8_14 8000              saed90nm_max
+payload_ram_bank8x8_13 8000              saed90nm_max
+payload_ram_bank8x8_12 8000              saed90nm_max
+payload_ram_bank8x8_11 8000              saed90nm_max
+payload_ram_bank8x8_10 8000              saed90nm_max
+payload_ram_bank8x8_9  8000              saed90nm_max
+payload_ram_bank8x8_8  8000              saed90nm_max
+payload_ram_bank8x8_7  8000              saed90nm_max
+payload_ram_bank8x8_6  8000              saed90nm_max
+payload_ram_bank8x8_5  8000              saed90nm_max
+payload_ram_bank8x8_4  8000              saed90nm_max
+payload_ram_bank8x8_3  8000              saed90nm_max
+payload_ram_bank8x8_2  8000              saed90nm_max
+payload_ram_bank8x8_1  8000              saed90nm_max
+payload_ram_bank8x8_0  8000              saed90nm_max
+integrator_N12_1       8000              saed90nm_max
+complex_exp_LUT_N12_M6 8000              saed90nm_max
+integrator_N12_0       8000              saed90nm_max
+Freq_LUT               ForQA             saed90nm_max
+twos_comp_gen_N12_2    8000              saed90nm_max
+twos_comp_gen_N12_1    8000              saed90nm_max
+twos_comp_gen_N12_0    8000              saed90nm_max
+CSK_GEN_N12_M6_DW01_add_0
+                       8000              saed90nm_max
+timer_N7_DW01_inc_0    ForQA             saed90nm_max
+timer_N7_DW01_inc_1    ForQA             saed90nm_max
+integrator_N12_1_DW01_add_0
+                       8000              saed90nm_max
+twos_comp_gen_N6_1     8000              saed90nm_max
+twos_comp_gen_N6_0     8000              saed90nm_max
+integrator_N12_0_DW01_add_0
+                       8000              saed90nm_max
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+CSS_Transmitter_Top                       5.193   24.955 3.09e+08  338.777 100.0
+  u_modulator (Modulation_system_N12)     2.819    6.699 4.56e+07   55.151  16.3
+    control_unit (Modulation_FSM)      2.28e-02 3.83e-02 6.65e+05    0.726   0.2
+    Address_D (address_counter_N4_MAX15)
+                                       3.70e-03 9.56e-03 7.59e+05    0.772   0.2
+    delay_timer (timer_N7)             5.01e-02    0.186 2.30e+06    2.536   0.7
+      add_18 (timer_N7_DW01_inc_1)     8.80e-03 6.37e-02 4.94e+05    0.567   0.2
+      add_23 (timer_N7_DW01_inc_0)     6.80e-03 6.36e-02 4.62e+05    0.533   0.2
+    delay_LUT (delay_LUT)              5.42e-05 1.82e-07 5.08e+05    0.508   0.2
+    Address_C (address_counter_N5_MAX31)
+                                       1.22e-02 2.10e-02 1.03e+06    1.061   0.3
+    CSK_GEN (CSK_GEN_N12_M6)              2.591    6.198 3.00e+07   38.825  11.5
+      add_16 (CSK_GEN_N12_M6_DW01_add_0)
+                                       8.75e-03 3.93e-02 1.22e+06    1.271   0.4
+      s_dfdt (twos_comp_gen_N12_0)     9.43e-04 1.32e-03 1.68e+06    1.678   0.5
+      s_hBW (twos_comp_gen_N12_1)      7.89e-04 1.01e-03 1.65e+06    1.655   0.5
+      s_fc (twos_comp_gen_N12_2)       3.08e-02 4.75e-02 1.68e+06    1.759   0.5
+      Freq_LUT (Freq_LUT)              2.25e-03 9.17e-03 1.80e+05    0.191   0.1
+      Frequency_integrator (integrator_N12_0)
+                                          0.428    0.944 2.96e+06    4.333   1.3
+        add_11 (integrator_N12_0_DW01_add_0)
+                                          0.115    0.540 1.14e+06    1.797   0.5
+      complex_exp_LUT (complex_exp_LUT_N12_M6)
+                                          1.693    3.678 1.78e+07   23.190   6.8
+        sign_gen2 (twos_comp_gen_N6_0) 7.70e-02    0.368 6.82e+05    1.127   0.3
+        sign_gen1 (twos_comp_gen_N6_1)    0.104    0.400 6.95e+05    1.199   0.4
+      Phase_integrator (integrator_N12_1)
+                                          0.426    1.479 2.84e+06    4.743   1.4
+        add_11 (integrator_N12_1_DW01_add_0)
+                                          0.151    1.059 1.13e+06    2.340   0.7
+    feedback_memory (feedback_memory_polar_N12)
+                                       6.38e-02 8.19e-02 7.79e+06    7.937   2.3
+    dqpsk_mapper (dqpsk_mapper_polar_N12)
+                                       2.35e-03 3.48e-02 2.97e+05    0.334   0.1
+    Q_bit_RAM (bit_RAM_Depth4_0)       1.65e-02 3.09e-02 7.05e+05    0.752   0.2
+    I_bit_RAM (bit_RAM_Depth4_1)       1.92e-02 3.10e-02 7.05e+05    0.755   0.2
+    Address_A (address_counter_N3_MAX4)
+                                       1.47e-02 1.71e-02 5.17e+05    0.549   0.2
+    DeLAY_REG (dreg_N1)                1.04e-03      N/A 7.98e+04 8.06e-02   0.0
+  u_framer (css_tx_framer)                2.374   18.249 2.63e+08  283.530  83.7
+    u_mux (ppdu_mux)                   9.68e-03 2.10e-03 2.96e+05    0.308   0.1
+    u_shr (shr_rom)                    1.13e-02 1.63e-02 6.64e+05    0.692   0.2
+    u_il (bit_interleaver)                0.205    0.518 1.49e+07   15.578   4.6
+    u_map_q (symbol_mapper_0)          2.69e-02 4.80e-02 3.28e+06    3.351   1.0
+    u_map_i (symbol_mapper_1)          2.90e-02 5.20e-02 3.15e+06    3.229   1.0
+    u_demux (iq_demux)                 5.57e-05 4.31e-04 9.06e+05    0.907   0.3
+    u_acc (bit_accumulator)            5.85e-02    0.107 4.48e+06    4.647   1.4
+    u_payload_ram (payload_ram)           1.675   16.524 2.18e+08  236.601  69.8
+      b15 (payload_ram_bank8x8_0)      5.04e-02    0.969 1.30e+07   13.974   4.1
+      b14 (payload_ram_bank8x8_1)      7.50e-02    1.143 1.28e+07   14.063   4.2
+      b13 (payload_ram_bank8x8_2)      6.47e-02    0.841 1.28e+07   13.736   4.1
+      b12 (payload_ram_bank8x8_3)      5.38e-02    0.891 1.30e+07   13.908   4.1
+      b11 (payload_ram_bank8x8_4)      7.18e-02    0.885 1.23e+07   13.280   3.9
+      b10 (payload_ram_bank8x8_5)      5.70e-02    0.930 1.29e+07   13.896   4.1
+      b09 (payload_ram_bank8x8_6)      5.51e-02    0.845 1.28e+07   13.712   4.0
+      b08 (payload_ram_bank8x8_7)      5.93e-02    0.766 1.27e+07   13.518   4.0
+      b07 (payload_ram_bank8x8_8)      7.92e-02    0.863 1.24e+07   13.336   3.9
+      b06 (payload_ram_bank8x8_9)      5.94e-02    1.201 1.29e+07   14.160   4.2
+      b05 (payload_ram_bank8x8_10)     5.63e-02    1.098 1.31e+07   14.303   4.2
+      b04 (payload_ram_bank8x8_11)     5.30e-02    1.014 1.26e+07   13.663   4.0
+      b03 (payload_ram_bank8x8_12)     5.90e-02    0.889 1.30e+07   13.978   4.1
+      b02 (payload_ram_bank8x8_13)     5.68e-02    1.009 1.27e+07   13.754   4.1
+      b01 (payload_ram_bank8x8_14)     7.12e-02    1.033 1.23e+07   13.436   4.0
+      b00 (payload_ram_bank8x8_15)     6.68e-02    0.927 1.23e+07   13.321   3.9
+    u_ctrl (ppdu_ctrl)                    0.350    0.961 1.65e+07   17.770   5.2
+      r149 (ppdu_ctrl_DW01_inc_3)      7.92e-04 6.52e-03 7.09e+05    0.716   0.2
+      add_133 (ppdu_ctrl_DW01_inc_2)   2.11e-04 2.31e-03 5.35e+05    0.538   0.2
+      add_246 (ppdu_ctrl_DW01_inc_0)   2.14e-04 2.07e-03 5.44e+05    0.546   0.2
+1

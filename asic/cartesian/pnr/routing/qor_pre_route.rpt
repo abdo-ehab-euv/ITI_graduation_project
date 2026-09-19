@@ -1,0 +1,44 @@
+****************************************
+Report : qor
+        -summary
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:32:42 2026
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 enabled
+Timing Window Analysis:                    enabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     enabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner default: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned ON for design 'cartesian_tx_routing.dlib:cartesian_tx_routing.design'. (TIM-125)
+Information: Design cartesian_tx_routing has 7775 nets, 0 global routed, 167 detail routed. (NEX-024)
+Information: The RC mode used is CTO for design 'CSS_Transmitter_Top'. (NEX-022)
+Information: Crosstalk analysis has been disabled. (TIM-114)
+Information: Design Average RC for design cartesian_tx_routing  (NEX-011)
+Information: r = 0.562500 ohm/um, via_r = 0.900000 ohm/cut, c = 0.108885 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 0.562500 ohm/um, via_r = 0.900000 ohm/cut, c = 0.105777 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 7773, routed nets = 167, across physical hierarchy nets = 0, parasitics cached nets = 7773, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+Design             (Setup)            14.53           0.00              0
+
+Design             (Hold)              0.42           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                          86539.16
+Cell Area (netlist and physical only):        86539.16
+Nets with DRC Violations:        0
+1

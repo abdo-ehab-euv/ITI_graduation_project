@@ -1,0 +1,49 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Sep 17 20:47:24 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file C:/Users/iamth/AppData/Roaming/Xilinx/Vivado/cartesian_final_reports/cart_utilization_hierarchical.rpt
+| Design       : zedboard_cartesian_final_hw_top
+| Device       : 7z020clg484-1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------+--------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|               Instance              |                Module                | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------------+--------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| zedboard_cartesian_final_hw_top     |                                (top) |        538 |        538 |       0 |    0 | 231 |      0 |      1 |          0 |
+|   (zedboard_cartesian_final_hw_top) |                                (top) |         15 |         15 |       0 |    0 |  37 |      0 |      0 |          0 |
+|   u_css_tx                          |                  CSS_Transmitter_Top |        524 |        524 |       0 |    0 | 194 |      0 |      1 |          0 |
+|     (u_css_tx)                      |                  CSS_Transmitter_Top |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|     Modulation_system_cart          |               Modulation_system_cart |        350 |        350 |       0 |    0 |  79 |      0 |      0 |          0 |
+|       Address_A                     |                      address_counter |          4 |          4 |       0 |    0 |   3 |      0 |      0 |          0 |
+|       Address_C                     |      address_counter__parameterized0 |        310 |        310 |       0 |    0 |  34 |      0 |      0 |          0 |
+|       Address_D                     |      address_counter__parameterized1 |          9 |          9 |       0 |    0 |   4 |      0 |      0 |          0 |
+|       CSK_GEN                       |                         CSK_GEN_cart |          4 |          4 |       0 |    0 |   4 |      0 |      0 |          0 |
+|         (CSK_GEN)                   |                         CSK_GEN_cart |          0 |          0 |       0 |    0 |   4 |      0 |      0 |          0 |
+|         complex_multiplier_c        | complex_multiplier_c__parameterized0 |          4 |          4 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       DeLAY_REG                     |                                 dreg |          0 |          0 |       0 |    0 |   1 |      0 |      0 |          0 |
+|       I_bit_RAM                     |                              bit_RAM |          1 |          1 |       0 |    0 |   3 |      0 |      0 |          0 |
+|       Q_bit_RAM                     |                            bit_RAM_0 |          1 |          1 |       0 |    0 |   3 |      0 |      0 |          0 |
+|       control_unit                  |                  Modulation_FSM_cart |          8 |          8 |       0 |    0 |   3 |      0 |      0 |          0 |
+|       delay_timer                   |                                timer |          9 |          9 |       0 |    0 |   8 |      0 |      0 |          0 |
+|       feedback_memory               |            feedback_memory_cartesian |          7 |          7 |       0 |    0 |  16 |      0 |      0 |          0 |
+|     u_framer                        |                        css_tx_framer |        174 |        174 |       0 |    0 | 115 |      0 |      1 |          0 |
+|       u_acc                         |                      bit_accumulator |         55 |         55 |       0 |    0 |  24 |      0 |      0 |          0 |
+|       u_ctrl                        |                            ppdu_ctrl |        109 |        109 |       0 |    0 |  43 |      0 |      0 |          0 |
+|       u_il                          |                      bit_interleaver |         10 |         10 |       0 |    0 |  48 |      0 |      0 |          0 |
+|       u_payload_ram                 |                          payload_ram |          0 |          0 |       0 |    0 |   0 |      0 |      1 |          0 |
++-------------------------------------+--------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

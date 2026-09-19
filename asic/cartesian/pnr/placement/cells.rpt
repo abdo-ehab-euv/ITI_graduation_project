@@ -1,0 +1,45 @@
+****************************************
+Report : cell
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:11:59 2026
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model
+    U - Unbound (missing)
+    s - user size_only
+    S - implicit size_only
+    d - user dont_touch
+    D - derived dont_touch
+    o - synthetic operator
+
+
+Cell                      Reference       Library          Attributes
+--------------------------------------------------------------------------------
+Modulation_system_cart    Modulation_system_cart_N2_test_1 h
+PLACE_HFSBUF_1726_992     NBUFFX2         saed90nm_max     
+PLACE_HFSBUF_2070_290     NBUFFX2         saed90nm_max     
+PLACE_HFSBUF_2496_295     NBUFFX2         saed90nm_max     
+PLACE_HFSBUF_2530_993     NBUFFX8         saed90nm_max     
+PLACE_HFSBUF_2591_294     NBUFFX2         saed90nm_max     
+PLACE_HFSBUF_2753_296     NBUFFX2         saed90nm_max     
+PLACE_HFSBUF_3343_304     NBUFFX2         saed90nm_max     
+PLACE_HFSBUF_3747_308     NBUFFX2         saed90nm_max     
+PLACE_HFSBUF_4601_310     NBUFFX2         saed90nm_max     
+PLACE_HFSBUF_5553_312     NBUFFX8         saed90nm_max     
+PLACE_HFSBUF_741_974      NBUFFX2         saed90nm_max     
+PLACE_HFSINV_1030_976     INVX0           saed90nm_max     
+U3                        OR2X1           saed90nm_max     
+U4                        INVX0           saed90nm_max     
+U5                        INVX0           saed90nm_max     
+u_framer                  css_tx_framer_test_1             h
+--------------------------------------------------------------------------------
+Total 17 cells
+
+1

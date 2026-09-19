@@ -1,0 +1,114 @@
+ 
+****************************************
+Report : net fanout
+        -threshold 50
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 13:24:17 2026
+****************************************
+
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CSS_Transmitter_Top    140000            saed90nm_max
+css_tx_framer_test_1   140000            saed90nm_max
+Modulation_system_N12_test_1
+                       16000             saed90nm_max
+ppdu_ctrl_test_1       8000              saed90nm_max
+payload_ram_test_1     70000             saed90nm_max
+bit_accumulator_test_1 8000              saed90nm_max
+iq_demux               ForQA             saed90nm_max
+symbol_mapper_1        8000              saed90nm_max
+symbol_mapper_0        8000              saed90nm_max
+bit_interleaver_test_1 8000              saed90nm_max
+shr_rom                ForQA             saed90nm_max
+ppdu_mux               ForQA             saed90nm_max
+dreg_N1_test_1         ForQA             saed90nm_max
+address_counter_N3_MAX4_test_1
+                       ForQA             saed90nm_max
+bit_RAM_Depth4_test_0  8000              saed90nm_max
+bit_RAM_Depth4_test_1  8000              saed90nm_max
+dqpsk_mapper_polar_N12 ForQA             saed90nm_max
+feedback_memory_polar_N12_test_1
+                       8000              saed90nm_max
+CSK_GEN_N12_M6_test_1  8000              saed90nm_max
+address_counter_N5_MAX31_test_1
+                       8000              saed90nm_max
+delay_LUT              ForQA             saed90nm_max
+timer_N7_test_1        8000              saed90nm_max
+address_counter_N4_MAX15_test_1
+                       8000              saed90nm_max
+Modulation_FSM_test_1  8000              saed90nm_max
+ppdu_ctrl_DW01_inc_0   ForQA             saed90nm_max
+ppdu_ctrl_DW01_inc_2   ForQA             saed90nm_max
+ppdu_ctrl_DW01_inc_3   ForQA             saed90nm_max
+payload_ram_bank8x8_test_0
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_1
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_2
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_3
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_4
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_5
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_6
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_7
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_8
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_9
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_10
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_11
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_12
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_13
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_14
+                       8000              saed90nm_max
+payload_ram_bank8x8_test_15
+                       8000              saed90nm_max
+integrator_N12_test_1  8000              saed90nm_max
+complex_exp_LUT_N12_M6_test_1
+                       8000              saed90nm_max
+integrator_N12_test_0  8000              saed90nm_max
+Freq_LUT               ForQA             saed90nm_max
+twos_comp_gen_N12_2    8000              saed90nm_max
+twos_comp_gen_N12_1    8000              saed90nm_max
+twos_comp_gen_N12_0    8000              saed90nm_max
+CSK_GEN_N12_M6_DW01_add_0
+                       8000              saed90nm_max
+timer_N7_DW01_inc_0    ForQA             saed90nm_max
+timer_N7_DW01_inc_1    ForQA             saed90nm_max
+integrator_N12_1_DW01_add_0
+                       8000              saed90nm_max
+twos_comp_gen_N6_1     ForQA             saed90nm_max
+twos_comp_gen_N6_0     ForQA             saed90nm_max
+integrator_N12_0_DW01_add_0
+                       8000              saed90nm_max
+
+
+Attributes:
+   dr - drc disabled
+    c - annotated capacitance
+    d - dont_touch
+    i - ideal_net
+    I - ideal_network
+    p - includes pin load
+    r - annotated resistance
+    h - high fanout
+
+Net                 Fanout   Attributes   Capacitance   Driver
+--------------------------------------------------------------------------------
+clk                   1321   dr, d, I, h      0.00      clk
+rstn                   116   d, I             0.00      rstn
+1

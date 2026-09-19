@@ -1,0 +1,57 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Sep 18 12:05:00 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     18
+    Feedthrough (LINT-29)                                          12
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      3
+
+Cells                                                              16
+    Cells do not drive (LINT-1)                                    16
+
+Nets                                                                1
+    Unloaded nets (LINT-2)                                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'ppdu_ctrl', cell 'B_23' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'B_24' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'B_25' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C968' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C972' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C976' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C979' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C991' does not drive any nets. (LINT-1)
+Warning: In design 'ppdu_ctrl', cell 'C992' does not drive any nets. (LINT-1)
+Warning: In design 'shr_rom', cell 'C165' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N3_MAX4', cell 'C58' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N12_MAX1535', cell 'C103' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N12_MAX1535', cell 'C106' does not drive any nets. (LINT-1)
+Warning: In design 'timer_N7', cell 'C66' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N4_MAX15', cell 'C63' does not drive any nets. (LINT-1)
+Warning: In design 'address_counter_N4_MAX15', cell 'C66' does not drive any nets. (LINT-1)
+Warning: In design 'CSS_Transmitter_Top', net 'ppdu_done' driven by pin 'u_framer/ppdu_done' has no loads. (LINT-2)
+Warning: In design 'iq_demux', input port 'bits_in[11]' is connected directly to output port 'q_bits[5]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[10]' is connected directly to output port 'i_bits[5]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[9]' is connected directly to output port 'q_bits[4]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[8]' is connected directly to output port 'i_bits[4]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[7]' is connected directly to output port 'q_bits[3]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[6]' is connected directly to output port 'i_bits[3]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[5]' is connected directly to output port 'q_bits[2]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[4]' is connected directly to output port 'i_bits[2]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[3]' is connected directly to output port 'q_bits[1]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[2]' is connected directly to output port 'i_bits[1]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[1]' is connected directly to output port 'q_bits[0]'. (LINT-29)
+Warning: In design 'iq_demux', input port 'bits_in[0]' is connected directly to output port 'i_bits[0]'. (LINT-29)
+Warning: In design 'ppdu_ctrl', output port 'acc_clear' is connected directly to output port 'il_clear'. (LINT-31)
+Warning: In design 'shr_rom', output port 'last_idx[4]' is connected directly to output port 'last_idx[2]'. (LINT-31)
+Warning: In design 'shr_rom', output port 'last_idx[1]' is connected directly to output port 'last_idx[0]'. (LINT-31)
+Warning: In design 'shr_rom', output port 'last_idx[1]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'shr_rom', output port 'last_idx[0]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'delay_LUT', output port 'delay[0]' is connected directly to 'logic 0'. (LINT-52)
+1

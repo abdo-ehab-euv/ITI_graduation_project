@@ -1,0 +1,164 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Sep 18 13:22:43 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      8
+    Unconnected ports (LINT-28)                                     8
+
+Cells                                                              61
+    Connected to power or ground (LINT-32)                         45
+    Nets connected to multiple pins on same cell (LINT-33)         16
+
+Nets                                                               13
+    Unloaded nets (LINT-2)                                         13
+--------------------------------------------------------------------------------
+
+Warning: In design 'CSS_Transmitter_Top', net 'u_framer/SYNOPSYS_UNCONNECTED_2' driven by pin 'u_framer/u_shr/last_idx[0]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_framer/SYNOPSYS_UNCONNECTED_1' driven by pin 'u_framer/u_shr/last_idx[1]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_11' driven by pin 'u_modulator/delay_LUT/delay[0]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_10' driven by pin 'u_modulator/dqpsk_mapper/PHI[0]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_9' driven by pin 'u_modulator/dqpsk_mapper/PHI[1]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_8' driven by pin 'u_modulator/dqpsk_mapper/PHI[2]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_7' driven by pin 'u_modulator/dqpsk_mapper/PHI[3]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_6' driven by pin 'u_modulator/dqpsk_mapper/PHI[4]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_5' driven by pin 'u_modulator/dqpsk_mapper/PHI[5]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_4' driven by pin 'u_modulator/dqpsk_mapper/PHI[6]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_3' driven by pin 'u_modulator/dqpsk_mapper/PHI[7]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_2' driven by pin 'u_modulator/dqpsk_mapper/PHI[8]' has no loads. (LINT-2)
+Warning: In design 'CSS_Transmitter_Top', net 'u_modulator/SYNOPSYS_UNCONNECTED_1' driven by pin 'u_modulator/dqpsk_mapper/PHI[9]' has no loads. (LINT-2)
+Warning: In design 'Freq_LUT', port 'lut_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'CSK_GEN_N12_M6_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'CSK_GEN_N12_M6_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'timer_N7_DW01_inc_1', port 'A[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'integrator_N12_1_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'integrator_N12_1_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'integrator_N12_0_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'integrator_N12_0_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'css_tx_framer', a pin on submodule 'u_ctrl' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'shr_last[1]' is connected to logic 1. 
+Warning: In design 'css_tx_framer', a pin on submodule 'u_ctrl' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'shr_last[0]' is connected to logic 1. 
+Warning: In design 'Modulation_system_N12', a pin on submodule 'delay_timer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'time_limit[0]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[11]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[10]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[9]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[8]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[7]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[6]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[4]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[3]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[2]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[1]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_fc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[0]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[11]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[10]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[9]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[8]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[7]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[6]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[4]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[3]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[2]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[1]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_hBW' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[0]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[11]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[10]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[9]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[8]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[7]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[6]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[4]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[3]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[2]' is connected to logic 1. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[1]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 's_dfdt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[0]' is connected to logic 0. 
+Warning: In design 'CSK_GEN_N12_M6', a pin on submodule 'add_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'timer_N7', a pin on submodule 'add_18' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[7]' is connected to logic 0. 
+Warning: In design 'integrator_N12_1', a pin on submodule 'add_11' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'complex_exp_LUT_N12_M6', a pin on submodule 'sign_gen1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'complex_exp_LUT_N12_M6', a pin on submodule 'sign_gen2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'X[5]' is connected to logic 0. 
+Warning: In design 'integrator_N12_0', a pin on submodule 'add_11' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[9]' is connected to pins 'datain[9]', 'dataout[9]''.
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[8]' is connected to pins 'datain[8]', 'dataout[8]''.
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[7]' is connected to pins 'datain[7]', 'dataout[7]''.
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[6]' is connected to pins 'datain[6]', 'dataout[6]''.
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[5]' is connected to pins 'datain[5]', 'dataout[5]''.
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[4]' is connected to pins 'datain[4]', 'dataout[4]''.
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[3]' is connected to pins 'datain[3]', 'dataout[3]''.
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[2]' is connected to pins 'datain[2]', 'dataout[2]''.
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[1]' is connected to pins 'datain[1]', 'dataout[1]''.
+Warning: In design 'Modulation_system_N12', the same net is connected to more than one pin on submodule 'feedback_memory'. (LINT-33)
+   Net 'DQPSK[0]' is connected to pins 'datain[0]', 'dataout[0]''.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_fc'. (LINT-33)
+   Net 'n_Logic0_' is connected to pins 'X[11]', 'X[10]'', 'X[9]', 'X[6]', 'X[5]', 'X[3]', 'X[1]', 'X[0]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_fc'. (LINT-33)
+   Net 'n_Logic1_' is connected to pins 'X[8]', 'X[7]'', 'X[4]', 'X[2]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_hBW'. (LINT-33)
+   Net 'n_Logic0_' is connected to pins 'X[11]', 'X[9]'', 'X[8]', 'X[7]', 'X[5]', 'X[2]', 'X[1]', 'X[0]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_hBW'. (LINT-33)
+   Net 'n_Logic1_' is connected to pins 'X[10]', 'X[6]'', 'X[4]', 'X[3]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_dfdt'. (LINT-33)
+   Net 'n_Logic0_' is connected to pins 'X[11]', 'X[10]'', 'X[9]', 'X[8]', 'X[7]', 'X[6]', 'X[5]', 'X[1]', 'X[0]'.
+Warning: In design 'CSK_GEN_N12_M6', the same net is connected to more than one pin on submodule 's_dfdt'. (LINT-33)
+   Net 'n_Logic1_' is connected to pins 'X[4]', 'X[3]'', 'X[2]'.
+1

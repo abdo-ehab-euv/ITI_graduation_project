@@ -1,0 +1,129 @@
+INFO: Setting bounds and VA...
+INFO: Setting up voltage area DEFAULT_VA
+INFO: Setting up cell instances...
+INFO: All fillers in the reference libraries will be considered during legalization/check legality
+Information: Initializing site map 'unit' at {10 10} {400.72 398.8}.
+INFO: Init siteMap unit with 1221 sites x 135 rows
+Adding rule engine Basic Rules version 1.0.0...
+Adding rule engine VT Implant Rules version 1.0.0...
+Adding rule engine OD Rules version 1.0.0...
+Adding rule engine TPO Rules version 1.0.0...
+Adding rule engine Pin Access Rules version 1.0.0...
+Adding rule engine Span Rules version 1.0.0...
+Adding rule engine Index Rules version 1.0.0...
+Adding rule engine Color Rules version 1.0.0...
+Adding rule engine Inbound (PPNN) Rules version 1.0.0...
+Adding rule engine PG DRC/VINS Rules version 1.0.0...
+Adding rule engine Exp Rules version 1.0.0...
+Adding rule engine N5 Soft Rules version 1.0.0...
+2D rule auto detection will enable the following rules:
+spacing_rule
+pg_drc
+INFO: Initializing CTS constraints...
+WARNING: No via0 alignment grid is specified, via0 alignment rule will be ignored
+WARNING: Please check place.legalize.via0_alignment_grid_name
+Constructing pin color alignment legality info...
+Initializing PG drc check engine...
+Expand check halo by 0.3200 x 0.3200
+Scanning PG objects...
+PG hash cached 2 nets; 8 viaBoxes; 0 viaMatrices.
+PG scanned 82 objects; 18929 vias; 0 staples.
+PG scan complete.  Hash key = 7efbc87f7fb6ad69
+Loading layers using 12 cores.
+Loading layer M1:
+Loading layer M2:
+Loading layer M3:
+Loading layer M4:
+Loading layer M5:
+Loading layer M6:
+Layer M1:  0 straps, 0 other, 0 preroute
+Layer M1:  0 secDefs  0 sectors (0 empty)
+Loading layer M7:
+Loading layer M8:
+Loading layer M9:
+Layer M9:  59 straps, 61 other, 0 preroute
+Layer M9:  13 secDefs  120 sectors (0 empty)
+Layer M9:   27.769 ave hvObjs/secDef max 59 at {{7.1200 19.5000} {8.7300 401.6800}}
+Layer M8:  139 straps, 136 other, 0 preroute
+Layer M8:  5 secDefs  275 sectors (0 empty)
+Layer M8:   38.200 ave hvObjs/secDef max 57 at {{19.5000 398.7300} {392.5000 398.8700}}
+Layer M2:  0 straps, 7752 other, 0 preroute
+Layer M2:  6 secDefs  7752 sectors (0 empty)
+Layer M2:    2.000 ave hvObjs/secDef max 2 at {{299.5700 398.8800} {302.4300 398.9200}}
+Layer M3:  0 straps, 7752 other, 0 preroute
+Layer M3:  6 secDefs  7752 sectors (0 empty)
+Layer M3:    2.000 ave hvObjs/secDef max 2 at {{299.5700 398.8800} {302.4300 398.9200}}
+Layer M6:  0 straps, 7752 other, 0 preroute
+Layer M6:  6 secDefs  7752 sectors (0 empty)
+Layer M6:    2.000 ave hvObjs/secDef max 2 at {{299.5700 398.8800} {302.4300 398.9200}}
+Layer M5:  0 straps, 7752 other, 0 preroute
+Layer M5:  6 secDefs  7752 sectors (0 empty)
+Layer M5:    2.000 ave hvObjs/secDef max 2 at {{299.5700 398.8800} {302.4300 398.9200}}
+Layer M4:  0 straps, 7752 other, 0 preroute
+Layer M4:  6 secDefs  7752 sectors (0 empty)
+Layer M4:    2.000 ave hvObjs/secDef max 2 at {{299.5700 398.8800} {302.4300 398.9200}}
+Layer M7:  0 straps, 7752 other, 0 preroute
+Layer M7:  6 secDefs  7752 sectors (0 empty)
+Layer M7:    2.000 ave hvObjs/secDef max 2 at {{299.5700 398.8800} {302.4300 398.9200}}
+
+Sector Array Stats:
+Num Sectors: 46907
+Num SecDefs:    54
+Shared: 46 count; 1019.5 ave; 1292 max
+SecDef Shapes: 45 Below-aligned, 0 Above-aligned, 6 Horizontal, 3 Vertical
+Referenced Patterns: 2 count; 2.0 ave; 2 max
+
+Connection checks for layer M2: blocked_pin pin_access_default track_drc pin_extend0
+Connection checks for layer M3: blocked_pin pin_access_default track_drc pin_extend1
+Connection checks for layer M4: blocked_pin pin_access_default track_drc pin_extend1
+Connection checks for layer M5: blocked_pin pin_access_default track_drc pin_extend1
+INFO: Extracting M1 PG straps
+INFO: Constructing BlkInst pin extension data for fast PG check
+INFO: Constructing PG-Via/VIB/VINS layer info (VIA1/M2)...
+INFO: VIB check extension is 0
+INFO: VINS check extension is 0
+INFO: PG-Via(pg_via_abut) design rule for layer VIA1 and VIA1 not found
+INFO: VIB(vib_abut) design rule for layer M2 and VIA1 not found
+INFO: VINS(vins_abut) design rule for layer M2 and VIA1 not found
+INFO: Enabling hard placement rule spacing_rule...
+INFO: Enabling hard placement rule pg_drc...
+
+Checking rule Overlap rule...
+
+Checking rule Spacing Rule...
+
+Checking rule Cell On Site Rule...
+
+Checking rule Cell On Legal Orientation Rule...
+
+Checking rule Check PG DRC rules...
+Checking 626 of 6262 cells...
+Checking 1252 of 6262 cells...
+Checking 1878 of 6262 cells...
+Checking 2504 of 6262 cells...
+Checking 3130 of 6262 cells...
+Checking 3756 of 6262 cells...
+Checking 4382 of 6262 cells...
+Checking 5008 of 6262 cells...
+Checking 5634 of 6262 cells...
+Checking 6260 of 6262 cells...
+================= 2D Rule Check Legality Report ===================
+                                    Violating  Cells               
+Legality Rules                 Moveable AppFixed UserFixed   Total 
+-------------------------------------------------------------------
+overlap                               0        0        0        0
+spacing_rule                          0        0        0        0
+cell_on_site                          0        0        0        0
+legal_orient                          0        0        0        0
+pg_drc                                0        0        0        0
+-------------------------------------------------------------------
+Total Violations                      0        0        0        0
+===================================================================
+NPLDRC Place Cache: unique cache elements 2479
+NPLDRC Place Cache: hit rate  44.4%  (2479 / 4457)
+NPLDRC Access Cache: unique cache elements 2479
+NPLDRC Access Cache: hit rate  44.4%  (2479 / 4457)
+NPLDRC Pin Status Cache: no calls
+NPLDRC Multi Cell Cache: no calls
+NPLDRC ViaLadder Cache: no calls
+1

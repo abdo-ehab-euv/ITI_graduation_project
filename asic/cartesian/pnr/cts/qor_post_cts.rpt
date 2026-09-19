@@ -1,0 +1,24 @@
+****************************************
+Report : qor
+        -summary
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:32:38 2026
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+Design             (Setup)            14.53           0.00              0
+
+Design             (Hold)              0.42           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                          86539.16
+Cell Area (netlist and physical only):        86539.16
+Nets with DRC Violations:        0
+1

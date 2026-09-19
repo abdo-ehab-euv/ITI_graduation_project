@@ -1,0 +1,14 @@
+****************************************
+Report : Reference Library Report
+Library: cartesian_tx.dlib
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:10:42 2026
+****************************************
+
+    Name                           Path                                                            Location
+    -------------------------------------------------------------------------------------------------------
+*+  saed90nm_max                   /home/ICer/Downloads/Lib/ndm/saed90nm_max.ndm                   /home/ICer/Downloads/Lib/ndm/saed90nm_max.ndm
+*+  SAED90_Workspace_physical_only /home/ICer/Downloads/Lib/ndm/SAED90_Workspace_physical_only.ndm /home/ICer/Downloads/Lib/ndm/SAED90_Workspace_physical_only.ndm
+    "*" = Library currently open
+    "+" = Library has technology information
+1

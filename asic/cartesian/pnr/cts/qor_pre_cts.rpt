@@ -1,0 +1,41 @@
+****************************************
+Report : qor
+        -summary
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:30:28 2026
+****************************************
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner default: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'cartesian_tx_cts.dlib:cartesian_tx_cts.design'. (TIM-125)
+Information: Design Average RC for design cartesian_tx_cts  (NEX-011)
+Information: r = 0.530306 ohm/um, via_r = 0.872727 ohm/cut, c = 0.095097 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 0.562500 ohm/um, via_r = 0.879668 ohm/cut, c = 0.111223 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'CSS_Transmitter_Top'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 7607, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 219, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+Design             (Setup)            14.99           0.00              0
+
+Design             (Hold)              0.43           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                          85621.25
+Cell Area (netlist and physical only):        85621.25
+Nets with DRC Violations:        0
+1

@@ -1,0 +1,1027 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : CSS_Transmitter_Top
+Version: O-2018.06-SP1
+Date   : Fri Sep 18 12:05:27 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_1_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b06/mem_reg_1__7_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_9
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_1_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_1_/QN (DFFX1)        0.41       0.41 f
+  u_framer/u_payload_ram/U302/ZN (INVX0)                  0.42       0.83 r
+  u_framer/u_payload_ram/U303/ZN (INVX0)                  1.65       2.48 f
+  u_framer/u_payload_ram/U361/ZN (INVX0)                  3.83       6.32 r
+  u_framer/u_payload_ram/b06/waddr[1] (payload_ram_bank8x8_9)
+                                                          0.00       6.32 r
+  u_framer/u_payload_ram/b06/U180/ZN (INVX0)             18.33      24.65 f
+  u_framer/u_payload_ram/b06/U59/QN (NAND3X1)             1.35      26.00 r
+  u_framer/u_payload_ram/b06/U105/ZN (INVX0)              0.41      26.40 f
+  u_framer/u_payload_ram/b06/U76/Q (AO22X1)               4.18      30.58 f
+  u_framer/u_payload_ram/b06/mem_reg_1__7_/D (DFFX1)      0.04      30.62 f
+  data arrival time                                                 30.62
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b06/mem_reg_1__7_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.18      30.62
+  data required time                                                30.62
+  --------------------------------------------------------------------------
+  data required time                                                30.62
+  data arrival time                                                -30.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_1_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b06/mem_reg_1__5_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_9
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_1_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_1_/QN (DFFX1)        0.41       0.41 f
+  u_framer/u_payload_ram/U302/ZN (INVX0)                  0.42       0.83 r
+  u_framer/u_payload_ram/U303/ZN (INVX0)                  1.65       2.48 f
+  u_framer/u_payload_ram/U361/ZN (INVX0)                  3.83       6.32 r
+  u_framer/u_payload_ram/b06/waddr[1] (payload_ram_bank8x8_9)
+                                                          0.00       6.32 r
+  u_framer/u_payload_ram/b06/U180/ZN (INVX0)             18.33      24.65 f
+  u_framer/u_payload_ram/b06/U59/QN (NAND3X1)             1.35      26.00 r
+  u_framer/u_payload_ram/b06/U105/ZN (INVX0)              0.41      26.40 f
+  u_framer/u_payload_ram/b06/U74/Q (AO22X1)               4.18      30.58 f
+  u_framer/u_payload_ram/b06/mem_reg_1__5_/D (DFFX1)      0.04      30.62 f
+  data arrival time                                                 30.62
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b06/mem_reg_1__5_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.18      30.62
+  data required time                                                30.62
+  --------------------------------------------------------------------------
+  data required time                                                30.62
+  data arrival time                                                -30.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_1_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b06/mem_reg_1__4_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_9
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_1_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_1_/QN (DFFX1)        0.41       0.41 f
+  u_framer/u_payload_ram/U302/ZN (INVX0)                  0.42       0.83 r
+  u_framer/u_payload_ram/U303/ZN (INVX0)                  1.65       2.48 f
+  u_framer/u_payload_ram/U361/ZN (INVX0)                  3.83       6.32 r
+  u_framer/u_payload_ram/b06/waddr[1] (payload_ram_bank8x8_9)
+                                                          0.00       6.32 r
+  u_framer/u_payload_ram/b06/U180/ZN (INVX0)             18.33      24.65 f
+  u_framer/u_payload_ram/b06/U59/QN (NAND3X1)             1.35      26.00 r
+  u_framer/u_payload_ram/b06/U105/ZN (INVX0)              0.41      26.40 f
+  u_framer/u_payload_ram/b06/U73/Q (AO22X1)               4.18      30.58 f
+  u_framer/u_payload_ram/b06/mem_reg_1__4_/D (DFFX1)      0.04      30.62 f
+  data arrival time                                                 30.62
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b06/mem_reg_1__4_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.18      30.62
+  data required time                                                30.62
+  --------------------------------------------------------------------------
+  data required time                                                30.62
+  data arrival time                                                -30.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_1_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b06/mem_reg_1__3_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_9
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_1_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_1_/QN (DFFX1)        0.41       0.41 f
+  u_framer/u_payload_ram/U302/ZN (INVX0)                  0.42       0.83 r
+  u_framer/u_payload_ram/U303/ZN (INVX0)                  1.65       2.48 f
+  u_framer/u_payload_ram/U361/ZN (INVX0)                  3.83       6.32 r
+  u_framer/u_payload_ram/b06/waddr[1] (payload_ram_bank8x8_9)
+                                                          0.00       6.32 r
+  u_framer/u_payload_ram/b06/U180/ZN (INVX0)             18.33      24.65 f
+  u_framer/u_payload_ram/b06/U59/QN (NAND3X1)             1.35      26.00 r
+  u_framer/u_payload_ram/b06/U105/ZN (INVX0)              0.41      26.40 f
+  u_framer/u_payload_ram/b06/U72/Q (AO22X1)               4.18      30.58 f
+  u_framer/u_payload_ram/b06/mem_reg_1__3_/D (DFFX1)      0.04      30.62 f
+  data arrival time                                                 30.62
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b06/mem_reg_1__3_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.18      30.62
+  data required time                                                30.62
+  --------------------------------------------------------------------------
+  data required time                                                30.62
+  data arrival time                                                -30.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_1_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b06/mem_reg_1__1_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_9
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_1_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_1_/QN (DFFX1)        0.41       0.41 f
+  u_framer/u_payload_ram/U302/ZN (INVX0)                  0.42       0.83 r
+  u_framer/u_payload_ram/U303/ZN (INVX0)                  1.65       2.48 f
+  u_framer/u_payload_ram/U361/ZN (INVX0)                  3.83       6.32 r
+  u_framer/u_payload_ram/b06/waddr[1] (payload_ram_bank8x8_9)
+                                                          0.00       6.32 r
+  u_framer/u_payload_ram/b06/U180/ZN (INVX0)             18.33      24.65 f
+  u_framer/u_payload_ram/b06/U59/QN (NAND3X1)             1.35      26.00 r
+  u_framer/u_payload_ram/b06/U105/ZN (INVX0)              0.41      26.40 f
+  u_framer/u_payload_ram/b06/U70/Q (AO22X1)               4.18      30.58 f
+  u_framer/u_payload_ram/b06/mem_reg_1__1_/D (DFFX1)      0.04      30.62 f
+  data arrival time                                                 30.62
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b06/mem_reg_1__1_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.18      30.62
+  data required time                                                30.62
+  --------------------------------------------------------------------------
+  data required time                                                30.62
+  data arrival time                                                -30.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_1_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b06/mem_reg_1__2_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_9
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_1_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_1_/QN (DFFX1)        0.41       0.41 f
+  u_framer/u_payload_ram/U302/ZN (INVX0)                  0.42       0.83 r
+  u_framer/u_payload_ram/U303/ZN (INVX0)                  1.65       2.48 f
+  u_framer/u_payload_ram/U361/ZN (INVX0)                  3.83       6.32 r
+  u_framer/u_payload_ram/b06/waddr[1] (payload_ram_bank8x8_9)
+                                                          0.00       6.32 r
+  u_framer/u_payload_ram/b06/U180/ZN (INVX0)             18.33      24.65 f
+  u_framer/u_payload_ram/b06/U59/QN (NAND3X1)             1.35      26.00 r
+  u_framer/u_payload_ram/b06/U105/ZN (INVX0)              0.41      26.40 f
+  u_framer/u_payload_ram/b06/U71/Q (AO22X1)               4.18      30.58 f
+  u_framer/u_payload_ram/b06/mem_reg_1__2_/D (DFFX1)      0.04      30.62 f
+  data arrival time                                                 30.62
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b06/mem_reg_1__2_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.18      30.62
+  data required time                                                30.62
+  --------------------------------------------------------------------------
+  data required time                                                30.62
+  data arrival time                                                -30.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_1_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b06/mem_reg_1__0_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_9
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_1_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_1_/QN (DFFX1)        0.41       0.41 f
+  u_framer/u_payload_ram/U302/ZN (INVX0)                  0.42       0.83 r
+  u_framer/u_payload_ram/U303/ZN (INVX0)                  1.65       2.48 f
+  u_framer/u_payload_ram/U361/ZN (INVX0)                  3.83       6.32 r
+  u_framer/u_payload_ram/b06/waddr[1] (payload_ram_bank8x8_9)
+                                                          0.00       6.32 r
+  u_framer/u_payload_ram/b06/U180/ZN (INVX0)             18.33      24.65 f
+  u_framer/u_payload_ram/b06/U59/QN (NAND3X1)             1.35      26.00 r
+  u_framer/u_payload_ram/b06/U105/ZN (INVX0)              0.41      26.40 f
+  u_framer/u_payload_ram/b06/U69/Q (AO22X1)               4.18      30.58 f
+  u_framer/u_payload_ram/b06/mem_reg_1__0_/D (DFFX1)      0.04      30.62 f
+  data arrival time                                                 30.62
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b06/mem_reg_1__0_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.18      30.62
+  data required time                                                30.62
+  --------------------------------------------------------------------------
+  data required time                                                30.62
+  data arrival time                                                -30.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: Modulation_system_cart/Address_C/address_reg_3_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: DAC_IM_cart[5]
+            (output port clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  Modulation_system_cart_N2
+                     35000                 saed90nm_max
+  complex_exp_LUT_cart
+                     16000                 saed90nm_max
+  CSK_GEN_cart_N2_M6 16000                 saed90nm_max
+  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6
+                     8000                  saed90nm_max
+  complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_1
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Modulation_system_cart/Address_C/address_reg_3_/CLK (DFFARX1)
+                                                          0.00 #     0.00 r
+  Modulation_system_cart/Address_C/address_reg_3_/Q (DFFARX1)
+                                                          0.69       0.69 r
+  Modulation_system_cart/Address_C/address[3] (address_counter_N12_MAX1535)
+                                                          0.00       0.69 r
+  Modulation_system_cart/U6/ZN (INVX0)                    0.98       1.67 f
+  Modulation_system_cart/U7/ZN (INVX0)                    0.15       1.82 r
+  Modulation_system_cart/CSK_GEN/sample_address[3] (CSK_GEN_cart_N2_M6)
+                                                          0.00       1.82 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/sample_address[3] (complex_exp_LUT_cart)
+                                                          0.00       1.82 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U114/Q (OR2X4)
+                                                          0.79       2.60 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U1239/ZN (INVX0)
+                                                          0.98       3.58 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U267/Z (DELLN1X2)
+                                                          3.31       6.90 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U702/QN (NAND3X0)
+                                                          1.86       8.75 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U411/ZN (INVX0)
+                                                          3.78      12.53 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U558/Q (AO22X1)
+                                                          0.46      12.99 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U557/QN (AOI221X1)
+                                                          0.36      13.35 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U553/QN (NAND4X0)
+                                                          0.31      13.66 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U533/Q (OR4X1)
+                                                          0.63      14.29 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U9/QN (NOR4X1)
+                                                          0.38      14.67 r
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/U6/QN (NOR2X0)
+                                                          0.17      14.84 f
+  Modulation_system_cart/CSK_GEN/complex_exp_LUT/chirp_im[4] (complex_exp_LUT_cart)
+                                                          0.00      14.84 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/b_imag[4] (complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6)
+                                                          0.00      14.84 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/U11/Z (NBUFFX4)
+                                                          0.46      15.30 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/B[4] (complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_1)
+                                                          0.00      15.30 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/U7/Q (MUX21X1)
+                                                          3.60      18.90 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/U28/ZN (INVX0)
+                                                          0.14      19.04 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/U71/QN (NOR2X0)
+                                                          0.37      19.40 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/U16/QN (NAND2X0)
+                                                          0.53      19.93 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/U53/Q (OA21X1)
+                                                          0.27      20.21 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/U81/ZN (INVX0)
+                                                          0.28      20.49 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/U59/Q (AND2X1)
+                                                          0.50      20.99 r
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/U60/Q (XOR2X1)
+                                                          0.87      21.86 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/U11/Q (MUX21X1)
+                                                          0.34      22.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/mult_55/PRODUCT[2] (complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6_DW02_mult_1)
+                                                          0.00      22.20 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_2/CO (FADDX1)
+                                                          0.53      22.73 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_3/CO (FADDX1)
+                                                          0.53      23.26 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_4/CO (FADDX1)
+                                                          0.50      23.76 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/add_58_U1_5/Q (XOR3X1)
+                                                          0.33      24.10 f
+  Modulation_system_cart/CSK_GEN/complex_multiplier_c/y_imag[5] (complex_multiplier_c_WIDTH_12_WIDTH_25_OUT_WIDTH6)
+                                                          0.00      24.10 f
+  Modulation_system_cart/CSK_GEN/DAC_IM[5] (CSK_GEN_cart_N2_M6)
+                                                          0.00      24.10 f
+  Modulation_system_cart/DAC_IM[5] (Modulation_system_cart_N2)
+                                                          0.00      24.10 f
+  DAC_IM_cart[5] (out)                                    0.45      24.54 f
+  data arrival time                                                 24.54
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  output external delay                                  -6.25      24.55
+  data required time                                                24.55
+  --------------------------------------------------------------------------
+  data required time                                                24.55
+  data arrival time                                                -24.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_1_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b06/mem_reg_1__6_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_9
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_1_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_1_/QN (DFFX1)        0.41       0.41 f
+  u_framer/u_payload_ram/U302/ZN (INVX0)                  0.42       0.83 r
+  u_framer/u_payload_ram/U303/ZN (INVX0)                  1.65       2.48 f
+  u_framer/u_payload_ram/U361/ZN (INVX0)                  3.83       6.32 r
+  u_framer/u_payload_ram/b06/waddr[1] (payload_ram_bank8x8_9)
+                                                          0.00       6.32 r
+  u_framer/u_payload_ram/b06/U180/ZN (INVX0)             18.33      24.65 f
+  u_framer/u_payload_ram/b06/U59/QN (NAND3X1)             1.35      26.00 r
+  u_framer/u_payload_ram/b06/U105/ZN (INVX0)              0.41      26.40 f
+  u_framer/u_payload_ram/b06/U75/Q (AO22X1)               4.18      30.58 f
+  u_framer/u_payload_ram/b06/mem_reg_1__6_/D (DFFX1)      0.04      30.62 f
+  data arrival time                                                 30.62
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b06/mem_reg_1__6_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.18      30.62
+  data required time                                                30.62
+  --------------------------------------------------------------------------
+  data required time                                                30.62
+  data arrival time                                                -30.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_framer/u_ctrl/state_reg_1_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/rdata_reg_6_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  ppdu_ctrl          8000                  saed90nm_max
+  css_tx_framer      70000                 saed90nm_max
+  payload_ram        70000                 saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_ctrl/state_reg_1_/CLK (DFFX1)                0.00 #     0.00 r
+  u_framer/u_ctrl/state_reg_1_/Q (DFFX1)                  0.58       0.58 r
+  u_framer/u_ctrl/U68/QN (NAND3X0)                        0.32       0.89 f
+  u_framer/u_ctrl/U99/ZN (INVX0)                          0.28       1.17 r
+  u_framer/u_ctrl/U5/Z (NBUFFX2)                          0.46       1.63 r
+  u_framer/u_ctrl/U100/ZN (INVX0)                         0.46       2.09 f
+  u_framer/u_ctrl/U116/ZN (INVX0)                         0.28       2.37 r
+  u_framer/u_ctrl/U76/Q (AO22X1)                          0.91       3.28 r
+  u_framer/u_ctrl/ram_raddr[6] (ppdu_ctrl)                0.00       3.28 r
+  u_framer/u_payload_ram/raddr[6] (payload_ram)           0.00       3.28 r
+  u_framer/u_payload_ram/U248/ZN (INVX0)                  0.42       3.70 f
+  u_framer/u_payload_ram/U228/Z (DELLN1X2)                1.97       5.67 f
+  u_framer/u_payload_ram/U19/ZN (INVX0)                   1.68       7.35 r
+  u_framer/u_payload_ram/U393/QN (NOR2X0)                 1.87       9.22 f
+  u_framer/u_payload_ram/U313/QN (NAND2X0)                6.56      15.78 r
+  u_framer/u_payload_ram/U173/ZN (INVX0)                  4.29      20.07 f
+  u_framer/u_payload_ram/U44/Q (AND2X2)                   6.83      26.90 f
+  u_framer/u_payload_ram/U41/QN (NOR2X1)                  0.67      27.57 r
+  u_framer/u_payload_ram/U43/ZN (INVX1)                   0.68      28.25 f
+  u_framer/u_payload_ram/U42/QN (NOR2X0)                  0.51      28.76 r
+  u_framer/u_payload_ram/U17/QN (NAND2X0)                 0.42      29.18 f
+  u_framer/u_payload_ram/U15/Q (OR2X1)                    0.68      29.86 f
+  u_framer/u_payload_ram/U249/Q (AND2X1)                  0.47      30.33 f
+  u_framer/u_payload_ram/rdata_reg_6_/D (DFFX1)           0.30      30.63 f
+  data arrival time                                                 30.63
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/rdata_reg_6_/CLK (DFFX1)         0.00      30.80 r
+  library setup time                                     -0.17      30.63
+  data required time                                                30.63
+  --------------------------------------------------------------------------
+  data required time                                                30.63
+  data arrival time                                                -30.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_0__7_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U128/QN (NAND3X0)            1.38      24.84 f
+  u_framer/u_payload_ram/b03/U91/Z (NBUFFX2)              0.65      25.49 f
+  u_framer/u_payload_ram/b03/U112/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U85/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_0__7_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_0__7_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_0__5_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U128/QN (NAND3X0)            1.38      24.84 f
+  u_framer/u_payload_ram/b03/U91/Z (NBUFFX2)              0.65      25.49 f
+  u_framer/u_payload_ram/b03/U112/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U83/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_0__5_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_0__5_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_0__4_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U128/QN (NAND3X0)            1.38      24.84 f
+  u_framer/u_payload_ram/b03/U91/Z (NBUFFX2)              0.65      25.49 f
+  u_framer/u_payload_ram/b03/U112/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U82/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_0__4_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_0__4_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_0__2_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U128/QN (NAND3X0)            1.38      24.84 f
+  u_framer/u_payload_ram/b03/U91/Z (NBUFFX2)              0.65      25.49 f
+  u_framer/u_payload_ram/b03/U112/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U80/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_0__2_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_0__2_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_0__0_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U128/QN (NAND3X0)            1.38      24.84 f
+  u_framer/u_payload_ram/b03/U91/Z (NBUFFX2)              0.65      25.49 f
+  u_framer/u_payload_ram/b03/U112/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U78/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_0__0_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_0__0_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_0__6_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U128/QN (NAND3X0)            1.38      24.84 f
+  u_framer/u_payload_ram/b03/U91/Z (NBUFFX2)              0.65      25.49 f
+  u_framer/u_payload_ram/b03/U112/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U84/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_0__6_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_0__6_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_0__3_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U128/QN (NAND3X0)            1.38      24.84 f
+  u_framer/u_payload_ram/b03/U91/Z (NBUFFX2)              0.65      25.49 f
+  u_framer/u_payload_ram/b03/U112/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U81/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_0__3_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_0__3_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_0__1_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U128/QN (NAND3X0)            1.38      24.84 f
+  u_framer/u_payload_ram/b03/U91/Z (NBUFFX2)              0.65      25.49 f
+  u_framer/u_payload_ram/b03/U112/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U79/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_0__1_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_0__1_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_1__5_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U93/QN (NAND3X0)             1.38      24.84 f
+  u_framer/u_payload_ram/b03/U92/Z (NBUFFX2)              0.64      25.49 f
+  u_framer/u_payload_ram/b03/U111/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U74/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_1__5_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_1__5_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: u_framer/u_payload_ram/waddr_q_reg_2_
+              (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: u_framer/u_payload_ram/b03/mem_reg_1__4_
+            (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Path Group: SYS_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CSS_Transmitter_Top
+                     140000                saed90nm_max
+  payload_ram        70000                 saed90nm_max
+  payload_ram_bank8x8_12
+                     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_framer/u_payload_ram/waddr_q_reg_2_/CLK (DFFX1)       0.00 #     0.00 r
+  u_framer/u_payload_ram/waddr_q_reg_2_/QN (DFFX1)        0.46       0.46 r
+  u_framer/u_payload_ram/U292/ZN (INVX0)                  1.71       2.17 f
+  u_framer/u_payload_ram/b03/waddr[2] (payload_ram_bank8x8_12)
+                                                          0.00       2.17 f
+  u_framer/u_payload_ram/b03/U133/QN (NOR2X0)            21.29      23.46 r
+  u_framer/u_payload_ram/b03/U93/QN (NAND3X0)             1.38      24.84 f
+  u_framer/u_payload_ram/b03/U92/Z (NBUFFX2)              0.64      25.49 f
+  u_framer/u_payload_ram/b03/U111/ZN (INVX0)              0.95      26.44 r
+  u_framer/u_payload_ram/b03/U73/Q (AO22X1)               4.04      30.47 r
+  u_framer/u_payload_ram/b03/mem_reg_1__4_/D (DFFX1)      0.03      30.51 r
+  data arrival time                                                 30.51
+
+  clock SYS_CLK (rise edge)                              31.25      31.25
+  clock network delay (ideal)                             0.00      31.25
+  clock uncertainty                                      -0.45      30.80
+  u_framer/u_payload_ram/b03/mem_reg_1__4_/CLK (DFFX1)
+                                                          0.00      30.80 r
+  library setup time                                     -0.27      30.53
+  data required time                                                30.53
+  --------------------------------------------------------------------------
+  data required time                                                30.53
+  data arrival time                                                -30.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1
