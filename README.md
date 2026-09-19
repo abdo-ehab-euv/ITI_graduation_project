@@ -7,7 +7,7 @@ This repository contains the graduation project developed for the ITI Digital IC
 - **Cartesian:** chirps and DQPSK symbols are handled in real/imaginary form and combined with complex multiplication.
 - **Polar:** the same unit-magnitude operations are moved to the phase domain so the expensive complex multiplication becomes phase addition followed by a sine/cosine lookup.
 
-Both versions were verified and implemented independently on a **ZedBoard / XC7Z020** at a **32 MHz core clock**. ASIC synthesis used the **SAED 90 nm** standard-cell library at the reported worst operating condition. Both architectures were then carried through post-synthesis equivalence, scan insertion, post-DFT equivalence, floorplanning, power planning, placement, CTS and detailed routing. The public repository now contains readable result artifacts for **both Cartesian and Polar through the final routed stage**.
+Both versions were verified and implemented independently on a **ZedBoard / XC7Z020** at a **32 MHz core clock**. ASIC synthesis used the **90 nm** standard-cell library at the reported worst operating condition. Both architectures were then carried through post-synthesis equivalence, scan insertion, post-DFT equivalence, floorplanning, power planning, placement, CTS and detailed routing. The public repository now contains readable result artifacts for **both Cartesian and Polar through the final routed stage**.
 
 | Result | Cartesian | Polar | Change with Polar |
 |---|---:|---:|---:|
@@ -365,8 +365,6 @@ Both implementations meet the required 32 MHz timing constraint in the retained 
 
 ## ASIC implementation
 
-The ASIC work used the SAED 90 nm standard-cell environment and Synopsys tools from the archived reports. The public repository intentionally keeps **RTL and result artifacts**, not the private flow automation or copied technology databases.
-
 The implementation sequence was:
 
 ```text
@@ -388,7 +386,7 @@ Floorplan → power planning → placement → CTS → routing
 Two changes mattered at architecture level:
 
 - FPGA-style ROM initialization was replaced by synthesizable constant/case logic for the ASIC source set.
-- The payload store was reorganized because the educational SAED90 environment did not provide a characterized SRAM macro for this memory.
+- The payload store was reorganized because the educational 90 nm environment did not provide a characterized SRAM macro for this memory.
 
 The ASIC-adapted RTL is kept separately under `asic/cartesian/rtl/` and `asic/polar/rtl/`; it should not be confused with the FPGA-oriented memory initialization in `rtl/`.
 
@@ -421,7 +419,7 @@ The recovery strategy was to treat the saved design database as the authoritativ
 
 ### ASIC synthesis results
 
-The two synthesis reports use the same 31.25 ns target and the same SAED90 worst library condition.
+The two synthesis reports use the same 31.25 ns target and the same 90 nm worst library condition.
 
 | Metric | Cartesian | Polar | Polar change |
 |---|---:|---:|---:|
@@ -457,8 +455,6 @@ The new Cartesian ASIC package closes the archival gap from the earlier public v
 | CTS | `asic/cartesian/pnr/cts/` | **+14.53 ns setup WNS / +0.42 ns hold WNS**, TNS 0 |
 | Detailed routing | `asic/cartesian/pnr/routing/` | **+13.89 ns setup WNS / +0.41 ns hold WNS**, 0 timing violations |
 | Route verification | routing checks | **0 DRCs, 0 open nets, 0 shorts** |
-
-The public Cartesian directory also retains the DFT handoff files and final routed DEF/netlist. The raw flow automation, local logs and Synopsys design databases are still intentionally excluded.
 
 #### Cartesian PnR issue: placement was good, the wrapper called it bad
 
@@ -529,7 +525,7 @@ The different number of compare points reflects the different implementation str
 
 ## Complete Cartesian vs Polar comparison
 
-This section compares like-for-like implementation stages. FPGA numbers come from the two routed Vivado designs. ASIC synthesis and DFT numbers come from the corresponding Synopsys reports under the same 31.25 ns target, and the physical comparison uses the final detailed-routing reports for both architectures.
+This section compares like-for-like implementation stages. FPGA numbers come from the two routed Vivado designs. ASIC synthesis and DFT numbers come from the corresponding reports under the same 31.25 ns target, and the physical comparison uses the final detailed-routing reports for both architectures.
 
 ### FPGA comparison
 
@@ -645,7 +641,6 @@ The whole-chip area reduction is smaller than the **22% modulator-area** reducti
 │       └── pnr/
 └── docs/
     ├── project_report.pdf
-    ├── CLEANUP_MANIFEST.md
     └── images/
 ```
 
@@ -738,16 +733,11 @@ The detailed differences from the ITI starting model, and the reason for each ch
 - `asic/cartesian/dft/` and `asic/cartesian/formality/` contain the generated scan/coverage outputs and post-synthesis/post-DFT equivalence reports from the corrected Cartesian archive.
 - `asic/polar/pnr/` contains the retained floorplan, placement, CTS and detailed-routing reports.
 - `asic/polar/dft/` and `asic/polar/formality/` contain the corresponding quantitative DFT and equivalence evidence.
-- `docs/CLEANUP_MANIFEST.md` records what was consolidated, renamed and intentionally excluded from the public package.
-
-The public ASIC folders do not contain the original flow scripts. They also do not redistribute the SAED90 technology/library database. Re-running the ASIC flow therefore requires an authorized local SAED90/Synopsys environment and a locally maintained flow setup.
-
-The IEEE standard and course reference documents used during development are cited in the project report rather than redistributed here. The final project report is included because it is the team's own deliverable.
 
 ## Contributors
 
+- **Abdelrahman Ellaban**
 - **Mohammed Salah**
 - **Abdallah Mahmoud**
-- **Abdelrahman Ellaban**
 - **Alaa Khaled**
 - **Yasmin Samir**
