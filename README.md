@@ -124,46 +124,39 @@ The public `matlab/` directory contains the team's final adapted model and gener
 The key observation came directly from the modulation equations, not from a synthesis trick.
 
 A complex sample in Cartesian form is
-
-$$
-x = I + jQ
-$$
-
-and multiplying two complex values gives
-
-$$
-(I_1+jQ_1)(I_2+jQ_2)
-=
-(I_1I_2-Q_1Q_2)+j(I_1Q_2+Q_1I_2).
-$$
+```math
+(I_1 + jQ_1)(I_2 + jQ_2)
+= (I_1I_2 - Q_1Q_2) + j(I_1Q_2 + Q_1I_2)
+```
 
 A generic hardware implementation therefore needs four real multiplications plus additions/subtractions.
 
 For a unit-magnitude chirp, however,
 
-$$
-s(t)=e^{j\theta(t)}
-$$
+```math
+s(t) = e^{j\theta(t)}
+```
 
 with
 
-$$
-\theta(t)=\omega_c t + \frac{k}{2}t^2+\phi,
-$$
+```math
+\theta(t) = \omega_c t + \frac{k}{2}t^2 + \phi
+```
 
 so the instantaneous angular frequency is
 
-$$
-\omega_i(t)=\frac{d\theta(t)}{dt}=\omega_c+kt.
-$$
+```math
+\omega_i(t)
+= \frac{d\theta(t)}{dt}
+= \omega_c + kt
+```
 
 DQPSK contributes another unit-magnitude phase term. Multiplication becomes
 
-$$
-e^{j\theta}e^{j\phi_{DQPSK}}
-=
-e^{j(\theta+\phi_{DQPSK})}.
-$$
+```math
+e^{j\theta} e^{j\phi_{\mathrm{DQPSK}}}
+= e^{j(\theta + \phi_{\mathrm{DQPSK}})}
+```
 
 That changes the hardware problem. Instead of multiplying two complex numbers, the Polar design updates frequency, integrates frequency into phase, adds the DQPSK phase, then maps the final phase to sine/cosine samples.
 
